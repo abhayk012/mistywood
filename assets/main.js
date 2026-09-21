@@ -419,15 +419,24 @@ var initNavTabs = () => {
 if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", initNavTabs);
 else initNavTabs();
 //#endregion
-//#region src/js/animation/header-scroll.js
 var headerAnimation$1 = { headerOne() {
 	const header = document.querySelector(".header-scroll");
-	if (header) window.addEventListener("scroll", () => {
-		if (window.scrollY > 100) {
-			header.style.transition = "all 0.5s ease-in-out";
-			header.classList.add("scroll-header");
-		} else header.classList.remove("scroll-header");
-	});
+	if (!header) return;
+	let lastScrollY = window.scrollY;
+	window.addEventListener("scroll", () => {
+		const currentScrollY = window.scrollY;
+		if (currentScrollY > 100) {
+			header.classList.add("header-scrolled");
+			if (currentScrollY > lastScrollY && currentScrollY > 150) {
+				header.classList.add("header-hidden");
+			} else {
+				header.classList.remove("header-hidden");
+			}
+		} else {
+			header.classList.remove("header-scrolled", "header-hidden");
+		}
+		lastScrollY = currentScrollY;
+	}, { passive: true });
 } };
 if (globalThis.window !== void 0) headerAnimation$1.headerOne();
 //#endregion
@@ -1329,12 +1338,22 @@ document.addEventListener("DOMContentLoaded", () => {
 //#region src/js/utils/header-scroll.js
 var headerAnimation = { headerOne() {
 	const header = document.querySelector(".header-scroll");
-	if (header) window.addEventListener("scroll", () => {
-		if (window.scrollY > 100) {
-			header.style.transition = "all 0.5s ease-in-out";
-			header.classList.add("scroll-header");
-		} else header.classList.remove("scroll-header");
-	});
+	if (!header) return;
+	let lastScrollY = window.scrollY;
+	window.addEventListener("scroll", () => {
+		const currentScrollY = window.scrollY;
+		if (currentScrollY > 100) {
+			header.classList.add("header-scrolled");
+			if (currentScrollY > lastScrollY && currentScrollY > 150) {
+				header.classList.add("header-hidden");
+			} else {
+				header.classList.remove("header-hidden");
+			}
+		} else {
+			header.classList.remove("header-scrolled", "header-hidden");
+		}
+		lastScrollY = currentScrollY;
+	}, { passive: true });
 } };
 if (globalThis.window !== void 0) headerAnimation.headerOne();
 //#endregion

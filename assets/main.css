@@ -6870,3 +6870,28 @@ button.swiper-pagination-bullet {
   inherits: false;
   initial-value: 100%;
 }
+
+/* Glassmorphism Header & Scroll Behavior */
+.header-glass {
+  background: rgba(255, 255, 255, 0.751) !important;
+  backdrop-filter: blur(20px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(20px) saturate(180%) !important;
+  /* border: 1px solid rgba(255, 255, 255, 0.5) !important; */
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.08), inset 0 0 0 1px rgba(255, 255, 255, 0.3) !important;
+}
+
+.header-scroll {
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  will-change: transform, opacity;
+}
+
+.header-scroll.header-hidden {
+  transform: translate(-50%, -120%) !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+.header-scroll.header-scrolled {
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12) !important;
+}
+
