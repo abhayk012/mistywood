@@ -1,0 +1,2691 @@
+<!doctype html>
+<html lang="en">
+
+<!-- Mirrored from arcion-tailwind.pixels71.workers.dev/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 10 Sep 2026 06:25:54 GMT -->
+
+<head>
+  <!-- =========================
+Head links
+===========================-->
+  <meta charset="UTF-8" />
+  <meta name="description"
+    content="" />
+  <meta name="keywords"
+    content="" />
+  <meta name="author" content="" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="" />
+  <meta property="og:title" content="" />
+  <meta property="og:description"
+    content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="" />
+  <meta property="og:site_name" content="" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="" />
+  <meta property="twitter:url" content="" />
+  <meta property="twitter:title" content="" />
+  <meta property="twitter:description"
+    content="" />
+  <meta property="twitter:image" content="" />
+
+  <!-- Additional SEO Meta Tags -->
+  <meta name="robots" content="index, follow" />
+  <meta name="googlebot" content="index, follow" />
+  <meta name="theme-color" content="#335c30" />
+  <meta name="msapplication-TileColor" content="#335c30" />
+  <!-- <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="shortcut icon" href="favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png" />
+  <link rel="manifest" href="site.webmanifest" /> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com/" />
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&amp;display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300..600&amp;display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=PT+Mono&amp;display=swap" rel="stylesheet" />
+
+
+  <title>MISTY WOODS</title>
+
+  <link rel="stylesheet" href="assets/main.css">
+
+  <style>
+
+    .nature-gallery {
+    display: grid;
+    grid-template-columns: 1.65fr 0.85fr;
+    gap: 35px;
+    align-items: start;
+}
+
+
+/* =========================
+   LARGE IMAGE
+========================= */
+
+.nature-main-image {
+    height: 610px;
+    overflow: hidden;
+    position: relative;
+}
+
+.nature-main-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+
+    transform: scale(1.12);
+
+    transition:
+        transform 1.2s cubic-bezier(.2,.8,.2,1);
+}
+
+.nature-main-image:hover img {
+    transform: scale(1.05);
+}
+
+
+/* =========================
+   RIGHT COLUMN
+========================= */
+
+.nature-side {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+/* =========================
+   SMALL IMAGE
+========================= */
+
+.nature-small-image {
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+}
+
+.nature-small-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+
+    transform: scale(1.12);
+
+    transition:
+        transform 1.2s cubic-bezier(.2,.8,.2,1);
+}
+
+.nature-small-image:hover img {
+    transform: scale(1.05);
+}
+
+
+/* =========================
+   SIDE CONTENT
+========================= */
+
+.nature-side-content {
+    padding: 10px 5px 0;
+}
+
+.nature-label {
+    display: block;
+    margin-bottom: 12px;
+
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    color: #75936d;
+}
+
+.nature-side-content h3 {
+    margin: 0 0 15px;
+
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 400;
+
+    color: #315d35;
+}
+
+.nature-side-content p {
+    margin: 0 0 22px;
+
+    font-size: 15px;
+    line-height: 1.7;
+
+    color: #697066;
+}
+
+
+/* =========================
+   LINK
+========================= */
+
+.nature-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+
+    color: #315d35;
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    border-bottom: 1px solid #315d35;
+    padding-bottom: 5px;
+
+    transition: gap .3s ease;
+}
+
+.nature-link span {
+    font-size: 20px;
+    line-height: 1;
+}
+
+.nature-link:hover {
+    gap: 18px;
+}
+
+
+/* =========================
+   DECORATIVE CURVE
+========================= */
+
+.nature-decoration {
+    position: absolute;
+    left: -160px;
+    bottom: -100px;
+
+    width: 520px;
+    height: 300px;
+
+    pointer-events: none;
+    z-index: 1;
+}
+
+.nature-decoration span {
+    position: absolute;
+
+    width: 500px;
+    height: 180px;
+
+    border: 18px solid rgba(255,255,255,.9);
+    border-right: 0;
+    border-bottom: 0;
+
+    border-radius: 50%;
+
+    transform: rotate(-12deg);
+
+    opacity: .8;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 991px) {
+
+    .nature-section {
+        padding: 80px 0;
+    }
+
+    .nature-heading {
+        margin-bottom: 50px;
+    }
+
+    .nature-gallery {
+        grid-template-columns: 1.4fr 1fr;
+        gap: 25px;
+    }
+
+    .nature-main-image {
+        height: 500px;
+    }
+
+    .nature-small-image {
+        height: 280px;
+    }
+
+}
+
+
+@media (max-width: 767px) {
+
+    .nature-section {
+        padding: 70px 0;
+    }
+
+    .nature-section .container {
+        padding: 0 20px;
+    }
+
+    .nature-heading {
+        text-align: left;
+        margin-bottom: 40px;
+    }
+
+    .nature-heading h2 {
+        font-size: 42px;
+        letter-spacing: -1px;
+    }
+
+    .nature-heading h2 em {
+        display: block;
+        margin-left: 0;
+        margin-top: 5px;
+    }
+
+    .nature-heading p {
+        font-size: 15px;
+    }
+
+    .nature-gallery {
+        display: block;
+    }
+
+    .nature-main-image {
+        height: 420px;
+        margin-bottom: 25px;
+    }
+
+    .nature-small-image {
+        height: 300px;
+    }
+
+    .nature-side-content {
+        padding-top: 25px;
+    }
+
+    .nature-decoration {
+        left: -250px;
+    }
+
+}
+
+
+/* =========================
+   FULL WIDTH VIDEO
+========================= */
+
+.full-video-section {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+    background: #1f3d25;
+}
+
+
+/* Video */
+
+.full-video {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    display: block;
+}
+
+
+/* Overlay */
+
+.video-overlay {
+    position: absolute;
+    inset: 0;
+
+    background: rgba(20, 45, 25, 0.28);
+
+    z-index: 1;
+}
+
+
+/* Content */
+
+.video-content {
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 30px;
+
+    color: #fff;
+}
+
+
+.video-content span {
+    font-size: 13px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
+    margin-bottom: 18px;
+}
+
+
+.video-content h2 {
+    margin: 0 0 20px;
+
+    font-size: clamp(42px, 6vw, 78px);
+    line-height: 1.05;
+    font-weight: 400;
+
+    letter-spacing: -2px;
+}
+
+
+.video-content p {
+    max-width: 600px;
+
+    margin: 0 0 30px;
+
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+.video-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+
+    padding: 14px 24px;
+
+    background: #fff;
+    color: #315d35;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    transition: all .3s ease;
+}
+
+
+.video-btn span {
+    margin: 0;
+    font-size: 20px;
+    letter-spacing: 0;
+}
+
+
+.video-btn:hover {
+    gap: 22px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 767px) {
+
+    .full-video-section {
+        height: 600px;
+    }
+
+    .video-content {
+        padding: 25px;
+    }
+
+    .video-content h2 {
+        font-size: 42px;
+    }
+
+    .video-content p {
+        font-size: 14px;
+    }
+
+}
+
+  </style>
+
+</head>
+
+<body>
+  <header class="header-scroll fixed top-5 left-1/2 z-50 mx-auto h-13 w-full max-w-[1440px] -translate-x-1/2">
+    <div data-header-shell class="origin-top">
+      <nav data-block-reveal data-delay="0.1" data-direction="top" class="main-container">
+        <div class="flex items-center justify-between rounded-xl bg-white p-2">
+          <!-- logo  -->
+          <figure class="hidden h-10.5  overflow-hidden lg:block">
+            <a href="index.html">
+              <img src="images/logo/logo-with-text.png" alt="logo" class="size-full" />
+            </a>
+          </figure>
+          <figure class="h-10.5 overflow-hidden lg:hidden">
+            <a href="index.html">
+              <img src="images/logo/logo-small.png" alt="logo" class="size-full" />
+            </a>
+          </figure>
+
+          <!-- links  -->
+          <ul data-nav-tabs class="relative hidden items-center justify-center lg:flex">
+            <div data-nav-indicator class="bg-background-5 pointer-events-none absolute origin-center rounded-md"
+              aria-hidden="true"></div>
+            <a href="index.html" data-route="home">
+              <li data-nav-item
+                class="text-tagline-2 font-inter-tight text-background-1/60 data-[active=true]:text-background-1 hover:text-background-1 relative z-10 rounded-md px-4 py-2 font-normal transition-colors duration-500 ease-out">
+                Home
+              </li>
+            </a>
+            <a href="room.html" data-route="about">
+              <li data-nav-item
+                class="text-tagline-2 font-inter-tight text-background-1/60 data-[active=true]:text-background-1 hover:text-background-1 relative z-10 rounded-md px-4 py-2 font-normal transition-colors duration-500 ease-out">
+                Rooms
+              </li>
+            </a>
+            <a href="booking.html" data-route="services">
+              <li data-nav-item
+                class="text-tagline-2 font-inter-tight text-background-1/60 data-[active=true]:text-background-1 hover:text-background-1 relative z-10 rounded-md px-4 py-2 font-normal transition-colors duration-500 ease-out">
+                Booking
+              </li>
+            </a>
+            <a href="places.html" data-route="projects">
+              <li data-nav-item
+                class="text-tagline-2 font-inter-tight text-background-1/60 data-[active=true]:text-background-1 hover:text-background-1 relative z-10 rounded-md px-4 py-2 font-normal transition-colors duration-500 ease-out">
+                Nearby Places
+              </li>
+            </a>
+            <!-- <a href="team.html" data-route="team">
+              <li data-nav-item
+                class="text-tagline-2 font-inter-tight text-background-1/60 data-[active=true]:text-background-1 hover:text-background-1 relative z-10 rounded-md px-4 py-2 font-normal transition-colors duration-500 ease-out">
+                Team
+              </li>
+            </a> -->
+            <a href="contact.html" data-route="blog">
+              <li data-nav-item
+                class="text-tagline-2 font-inter-tight text-background-1/60 data-[active=true]:text-background-1 hover:text-background-1 relative z-10 rounded-md px-4 py-2 font-normal transition-colors duration-500 ease-out">
+                Contact
+              </li>
+            </a>
+          </ul>
+
+          <!-- right links  -->
+          <div class="hidden items-center gap-x-5 lg:flex">
+            <!-- search logo  -->
+            <!-- <button type="button" data-search-modal-open aria-label="Open search"
+              class="bg-background-1/10 flex h-10.5 w-10.5 cursor-pointer items-center justify-center rounded-xl p-1 transition-opacity duration-300 hover:opacity-80">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                class="stroke-background-1 size-6">
+                <path
+                  d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+                  stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M20.9999 21L16.6499 16.65" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button> -->
+
+            <a href="booking.html" class="inline-block">
+              <button
+                class="bg-background-1 text-tagline-2 font-inter-tight group/button-primary h-10.5 rounded-lg flex items-center gap-x-2.5 rounded-full py-2.5 pr-2 pl-[18px] font-medium text-white transition-transform duration-150 ease-out active:scale-[0.97]">
+                <span class="relative inline-block overflow-hidden text-nowrap">
+                  <span class="invisible">Book Now</span>
+                  <span class="absolute inset-0 perspective-normal">
+                    <span
+                      class="absolute inset-0 origin-top transform-[translate3d(0,0,0)_rotateX(0deg)] [transition:transform_0.55s_var(--button-text-ease)] backface-hidden group-hover/button-primary:transform-[translate3d(0,-100%,0)_rotateX(90deg)] group-focus-visible/button-primary:transform-[translate3d(0,-100%,0)_rotateX(90deg)]">
+                      Book Now</span>
+                    <span
+                      class="absolute inset-0 origin-bottom transform-[translate3d(0,100%,0)_rotateX(-90deg)] [transition:transform_0.55s_var(--button-text-ease)] backface-hidden group-hover/button-primary:transform-[translate3d(0,0,0)_rotateX(0deg)] group-focus-visible/button-primary:transform-[translate3d(0,0,0)_rotateX(0deg)]">
+                      Book Now</span>
+                  </span>
+                </span>
+
+                <span class="relative flex size-8 items-center justify-center">
+                  <span
+                    class="bg-background-5 absolute z-10 size-0 origin-center rounded-full opacity-0 transition-all duration-400 ease-out group-hover/button-primary:size-8 group-hover/button-primary:opacity-100 group-focus-visible/button-primary:size-8 group-focus-visible/button-primary:opacity-100"></span>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                    class="ease-bouncy group-hover/button-primary:stroke-background-1 group-focus-visible/button-primary:stroke-background-1 relative z-20 size-6 rotate-45 stroke-white transition-all duration-400 group-hover/button-primary:rotate-0 group-focus-visible/button-primary:rotate-0">
+                    <path d="M17 17V7H7M17 7L7 17" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+              </button>
+
+            </a>
+          </div>
+
+          <!-- mobile menu toggle -->
+          <div class="flex items-center justify-center lg:hidden">
+            <button type="button" data-mobile-menu-toggle aria-label="Open menu" aria-expanded="false" class="size-7">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                class="stroke-background-1 size-7">
+                <path d="M3 12H21" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M3 6H21" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M3 18H21" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <div data-mobile-menu-overlay
+    class="pointer-events-none fixed inset-0 z-50 bg-black/70 opacity-0 backdrop-blur-sm lg:hidden" aria-hidden="true">
+  </div>
+
+  <aside data-mobile-menu
+    class="pointer-events-none invisible fixed inset-y-0 right-0 z-60 flex w-full max-w-[380px] flex-col opacity-0 lg:hidden"
+    aria-hidden="true" aria-label="Mobile navigation">
+    <div
+      class="flex h-full flex-col overflow-y-auto border-l border-white/10 bg-black/95 p-6 shadow-[-24px_0_80px_rgba(0,0,0,0.45)] backdrop-blur-3xl sm:p-8">
+      <div class="mb-10 flex items-center justify-between">
+        <p data-mobile-menu-item data-reveal-delay="0.05"
+          class="font-inter-tight text-tagline-2 font-medium tracking-[0.2em] text-white/40 uppercase opacity-0">
+          Menu
+        </p>
+
+        <button type="button" data-mobile-menu-close aria-label="Close menu"
+          class="flex size-10 items-center justify-center rounded-xl border border-white/20 bg-white/5">
+          <svg xmlns="http://www.w3.org/2000/svg" class="size-5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M6 6L18 18" stroke="white" stroke-width="1.5" stroke-linecap="round" />
+            <path d="M18 6L6 18" stroke="white" stroke-width="1.5" stroke-linecap="round" />
+          </svg>
+        </button>
+      </div>
+
+      <nav class="flex-1">
+        <ul class="space-y-6 sm:space-y-8">
+          <li>
+            <a href="index.html" data-mobile-menu-link class="group flex items-end">
+              <span data-mobile-menu-item data-reveal-delay="0.1"
+                class="font-instrument-sans text-is-heading-5 font-medium text-white uppercase opacity-0 transition-colors group-hover:text-white/70">Home</span>
+            </a> 
+          </li>
+          <li>
+            <a href="room.html" data-mobile-menu-link class="group flex items-end">
+              <span data-mobile-menu-item data-reveal-delay="0.16"
+                class="font-instrument-sans text-is-heading-5 font-medium text-white uppercase opacity-0 transition-colors group-hover:text-white/70">Rooms</span>
+            </a>
+          </li>
+          <li>
+            <a href="booking.html" data-mobile-menu-link class="group flex items-end">
+              <span data-mobile-menu-item data-reveal-delay="0.22"
+                class="font-instrument-sans text-is-heading-5 font-medium text-white uppercase opacity-0 transition-colors group-hover:text-white/70">Booking</span>
+            </a>
+          </li>
+          <li>
+            <a href="places.html" data-mobile-menu-link class="group flex items-end">
+              <span data-mobile-menu-item data-reveal-delay="0.28"
+                class="font-instrument-sans text-is-heading-5 font-medium text-white uppercase opacity-0 transition-colors group-hover:text-white/70">Nearby Places</span>
+            </a>
+          </li>
+          <!-- <li>
+            <a href="team.html" data-mobile-menu-link class="group flex items-end">
+              <span data-mobile-menu-item data-reveal-delay="0.34"
+                class="font-instrument-sans text-is-heading-5 font-medium text-white uppercase opacity-0 transition-colors group-hover:text-white/70">Team</span>
+            </a>
+          </li> -->
+          <li>
+            <a href="contact.html" data-mobile-menu-link class="group flex items-end">
+              <span data-mobile-menu-item data-reveal-delay="0.4"
+                class="font-instrument-sans text-is-heading-5 font-medium text-white uppercase opacity-0 transition-colors group-hover:text-white/70">Contact</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="mt-10 space-y-4 border-t border-white/10 pt-8">
+        <!-- <p data-mobile-menu-item data-reveal-delay="0.46"
+          class="font-inter-tight text-tagline-2 text-white/60 opacity-0">
+          Ready to build your solar future?
+        </p> -->
+        <a href="booking.html" data-mobile-menu-link class="inline-block">
+          <div data-mobile-menu-item data-reveal-delay="0.52" class="overflow-hidden opacity-0">
+            <button
+              class="bg-background-1 text-tagline-2 font-inter-tight group/button-primary overflow-hidden flex items-center gap-x-2.5 rounded-full py-2.5 pr-2 pl-[18px] font-medium text-white transition-transform duration-150 ease-out active:scale-[0.97]">
+              <span class="relative inline-block overflow-hidden text-nowrap">
+                <span class="invisible">Book Now</span>
+                <span class="absolute inset-0 perspective-normal">
+                  <span
+                    class="absolute inset-0 origin-top transform-[translate3d(0,0,0)_rotateX(0deg)] [transition:transform_0.55s_var(--button-text-ease)] backface-hidden group-hover/button-primary:transform-[translate3d(0,-100%,0)_rotateX(90deg)] group-focus-visible/button-primary:transform-[translate3d(0,-100%,0)_rotateX(90deg)]">
+                    Book Now</span>
+                  <span
+                    class="absolute inset-0 origin-bottom transform-[translate3d(0,100%,0)_rotateX(-90deg)] [transition:transform_0.55s_var(--button-text-ease)] backface-hidden group-hover/button-primary:transform-[translate3d(0,0,0)_rotateX(0deg)] group-focus-visible/button-primary:transform-[translate3d(0,0,0)_rotateX(0deg)]">
+                    Book Now</span>
+                </span>
+              </span>
+
+              <span class="relative flex size-8 items-center justify-center">
+                <span
+                  class="bg-background-5 absolute z-10 size-0 origin-center rounded-full opacity-0 transition-all duration-400 ease-out group-hover/button-primary:size-8 group-hover/button-primary:opacity-100 group-focus-visible/button-primary:size-8 group-focus-visible/button-primary:opacity-100"></span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                  class="ease-bouncy group-hover/button-primary:stroke-background-1 group-focus-visible/button-primary:stroke-background-1 relative z-20 size-6 rotate-45 stroke-white transition-all duration-400 group-hover/button-primary:rotate-0 group-focus-visible/button-primary:rotate-0">
+                  <path d="M17 17V7H7M17 7L7 17" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </span>
+            </button>
+
+          </div>
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <div data-search-modal-root>
+    <div data-search-modal-overlay class="fixed inset-0 z-9999 hidden items-center justify-center p-4"
+      aria-hidden="true">
+      <div data-search-modal-backdrop class="bg-background-1/35 absolute inset-0 z-0 backdrop-blur-[14px]"></div>
+
+      <div data-search-modal-panel
+        class="border-stroke-1/20 relative z-20 w-full max-w-120 rounded-2xl border bg-white p-6">
+        <button type="button" data-search-modal-close data-search-modal-item
+          class="bg-background-1/10 text-background-1 hover:text-background-1/80 absolute top-4 right-4 z-30 flex size-8 cursor-pointer items-center justify-center rounded-full transition-colors duration-300"
+          aria-label="Close search modal">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="size-4 fill-none stroke-current">
+            <path d="M18 6L6 18M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+
+        <!-- <div data-search-modal-item class="mb-6 space-y-3">
+          <label for="search-modal-input"
+            class="text-it-heading-5 font-inter-tight text-background-1 block font-normal">
+            Search anything
+          </label>
+          <input id="search-modal-input" type="search" placeholder="Search blog, projects, services..."
+            class="text-tagline-2 font-inter-tight border-background-1/35 placeholder:text-background-1/40 focus-visible:ring-stroke-1/30 text-background-1 h-12 w-full rounded-lg border bg-white px-5 py-3 focus-visible:ring-2 focus-visible:outline-none" />
+        </div> -->
+
+        <!-- <div data-search-modal-item class="border-background-1/60 border-t pt-4">
+          <p class="text-tagline-3 font-inter-tight text-background-1/80 text-center">
+            Press Enter to search or Esc to close
+          </p>
+        </div> -->
+      </div>
+    </div>
+  </div>
+
+
+  <main class="bg-background-3/40">
+    <section class="relative overflow-hidden pt-[120px] pb-18 lg:pt-[150px] lg:pb-28 xl:pt-[190px]">
+      <!-- left img  -->
+      <figure data-block-reveal data-delay="0" data-instant class="absolute inset-0 bottom-0 left-0 h-full w-1/2">
+        <img src="images/hero-bg-1.jpg" alt="hero-bg-1" class="size-full object-cover" />
+      </figure>
+
+      <!-- right img  -->
+      <figure data-block-reveal data-delay="0.2" data-instant
+        class="absolute inset-0 right-0 bottom-0 left-auto h-full w-1/2 scale-x-[-1]">
+        <img src="images/hero-bg-2.jpg" alt="hero-bg-1" class="size-full object-cover" />
+      </figure>
+      <div class="main-container relative z-10">
+        <div class="space-y-[110px] md:space-y-[150px] xl:space-y-[250px]">
+          <!-- text content + buttons  -->
+          <div class="space-y-14">
+            <!-- text content  -->
+            <div class="space-y-3">
+              <h1 data-text-reveal data-reveal-delay="0.3"
+                class="font-instrument-sans text-is-heading-3 md:text-is-heading-2 lg:text-is-heading-1 text-background-1 mx-auto max-w-[850px] text-center font-medium" style="color: #fff;">
+                Your Escape to Nature
+              </h1>
+              <p data-text-reveal data-reveal-delay="0.4"
+                class="font-inter-tight text-tagline-2 sm:text-tagline-1 text-background-1 text-center" style="color: #fff;">
+                Escape the ordinary and reconnect with nature, where every moment brings peace, comfort, and unforgettable memories.
+              </p>
+            </div>
+
+            <!-- buttons  -->
+            <div class="flex flex-col items-center justify-center gap-x-3 max-md:gap-y-6 md:flex-row">
+              <a data-block-reveal data-delay="0.5" href="projects.html" class="inline-block max-md:w-[232px]">
+                <button
+                  class="bg-background-1 text-tagline-2 font-inter-tight group/button-primary max-md:w-full flex items-center gap-x-2.5 rounded-full py-2.5 pr-2 pl-[18px] font-medium text-white transition-transform duration-150 ease-out active:scale-[0.97]">
+                  <span class="relative inline-block overflow-hidden text-nowrap">
+                    <span class="invisible">Book Via Whatsapp</span>
+                    <span class="absolute inset-0 perspective-normal">
+                      <span
+                        class="absolute inset-0 origin-top transform-[translate3d(0,0,0)_rotateX(0deg)] [transition:transform_0.55s_var(--button-text-ease)] backface-hidden group-hover/button-primary:transform-[translate3d(0,-100%,0)_rotateX(90deg)] group-focus-visible/button-primary:transform-[translate3d(0,-100%,0)_rotateX(90deg)]">
+                        Book Via Whatsapp</span>
+                      <span
+                        class="absolute inset-0 origin-bottom transform-[translate3d(0,100%,0)_rotateX(-90deg)] [transition:transform_0.55s_var(--button-text-ease)] backface-hidden group-hover/button-primary:transform-[translate3d(0,0,0)_rotateX(0deg)] group-focus-visible/button-primary:transform-[translate3d(0,0,0)_rotateX(0deg)]">
+                        Book Via Whatsapp</span>
+                    </span>
+                  </span>
+
+                  <span class="relative flex size-8 items-center justify-center">
+                    <span
+                      class="bg-background-5 absolute z-10 size-0 origin-center rounded-full opacity-0 transition-all duration-400 ease-out group-hover/button-primary:size-8 group-hover/button-primary:opacity-100 group-focus-visible/button-primary:size-8 group-focus-visible/button-primary:opacity-100"></span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                      class="ease-bouncy group-hover/button-primary:stroke-background-1 group-focus-visible/button-primary:stroke-background-1 relative z-20 size-6 rotate-45 stroke-white transition-all duration-400 group-hover/button-primary:rotate-0 group-focus-visible/button-primary:rotate-0">
+                      <path d="M17 17V7H7M17 7L7 17" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </span>
+                </button>
+
+              </a>
+              <a data-block-reveal data-delay="0.6" href="booking.html" class="inline-block">
+                <button
+                  class="text-tagline-2 font-inter-tight group/button-secondary text-background-1 focus-visible:outline-background-1 flex items-center gap-x-2.5 rounded-full bg-white py-2.5 pr-2 pl-[18px] font-medium transition-transform duration-150 ease-out focus-visible:outline-2 active:scale-[0.97]">
+                  <span class="relative inline-block overflow-hidden text-nowrap">
+                    <span class="invisible">Book Now</span>
+                    <span class="absolute inset-0 perspective-normal">
+                      <span
+                        class="absolute inset-0 origin-top transform-[translate3d(0,0,0)_rotateX(0deg)] [transition:transform_0.55s_var(--button-text-ease)] backface-hidden group-hover/button-secondary:transform-[translate3d(0,-100%,0)_rotateX(90deg)] group-focus-visible/button-secondary:transform-[translate3d(0,-100%,0)_rotateX(90deg)]">
+                        Book Now</span>
+                      <span
+                        class="absolute inset-0 origin-bottom transform-[translate3d(0,100%,0)_rotateX(-90deg)] [transition:transform_0.55s_var(--button-text-ease)] backface-hidden group-hover/button-secondary:transform-[translate3d(0,0,0)_rotateX(0deg)] group-focus-visible/button-secondary:transform-[translate3d(0,0,0)_rotateX(0deg)]">
+                        Book Now</span>
+                    </span>
+                  </span>
+
+                  <span class="relative flex size-8 items-center justify-center">
+                    <span
+                      class="bg-background-1 absolute z-10 size-0 origin-center rounded-full opacity-0 transition-all duration-400 ease-out group-hover/button-secondary:size-8 group-hover/button-secondary:opacity-100 group-focus-visible/button-secondary:size-8 group-focus-visible/button-secondary:opacity-100"></span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                      class="ease-bouncy stroke-background-1 relative z-20 size-6 rotate-45 transition-all duration-400 group-hover/button-secondary:rotate-0 group-hover/button-secondary:stroke-white group-focus-visible/button-secondary:rotate-0 group-focus-visible/button-secondary:stroke-white">
+                      <path d="M17 17V7H7M17 7L7 17" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </span>
+                </button>
+
+              </a>
+            </div>
+          </div>
+
+          <!-- bottom text  -->
+
+          <!-- <h2 data-block-reveal data-delay="0.7" data-instant
+            class="font-inter-tight text-it-heading-3 md:text-it-heading-2 lg:text-it-heading-1 text-center font-medium text-white text-shadow-[0_2px_6px_rgba(0,0,0,0.30)]">
+            <span data-counter-trigger data-counter-value="100" data-instant>
+              <number-flow data-counter-number></number-flow>+
+            </span>
+            <span class="font-inter-tight text-tagline-2 font-normal text-white">Trusted by creators</span>
+          </h2> -->
+        </div>
+      </div>
+
+      <!-- bottom gradient  -->
+      <div class="absolute bottom-0 left-0 h-[400px] w-full bg-linear-to-t from-[#e2eadb] to-transparent"></div>
+    </section>
+
+    <section class="relative -mt-1 overflow-hidden py-18 lg:py-28">
+      <!-- svg bg  -->
+      <div class="absolute top-[40%] size-full xl:top-[15%]" data-home-services-svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1201" fill="none" class="size-[1090px] xl:size-full">
+          <path
+            d="M-284.958 758.464C-157.933 487.788 107.103 276.355 454.631 439.445C926.278 660.782 562.132 1089.5 331.379 753.868C22.4885 304.584 804.035 -422.794 1482.83 379.761C1781.54 732.938 1990.34 1132.96 2189.59 1253.63"
+            stroke="url(#paint0_linear_1201_21960)" stroke-width="40" stroke-linecap="round" />
+          <defs>
+            <linearGradient id="paint0_linear_1201_21960" x1="-29.185" y1="213.438" x2="2189.19" y2="1254.49"
+              gradientUnits="userSpaceOnUse">
+              <stop stop-color="white" />
+              <stop offset="1" stop-color="white" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+
+      <div class="main-container relative z-10">
+        <div class="space-y-10 lg:space-y-18">
+          <!-- badge + text content  -->
+          <div class="space-y-6 text-center">
+            <!-- badge  -->
+            <!--   -->
+
+            <!-- text content  -->
+            <h2 data-text-reveal data-reveal-delay="0.2"
+              class="font-instrument-sans text-background-2 text-is-heading-3 lg:text-is-heading-2 font-medium">
+              Embrace Nature,
+              <span class="font-instrument-serif text-background-1 font-normal italic"> Discover You</span>
+            </h2>
+            <p data-text-reveal data-reveal-delay="0.3"
+              class="font-inter-tight text-tagline-2 sm:text-tagline-1 text-background-6/60 mx-auto ">
+              Misty Woods offers a uniquely designed space that blends stunning architecture with natural beauty. Enjoy panoramic hill views and relax in our luxurious, nature-inspired pool that surrounds the club, creating a vibrant and immersive experience.
+
+Enjoy a romantic evening under the stars at Misty woods's poolside restaurant. With stunning hill views, premium liquor, and exquisite multi-cuisine delights, it’s the perfect spot to celebrate love and togetherness. Unwind in a serene setting featuring modern rooms, cozy sit-outs, and top-notch amenities.
+
+
+
+            </p>
+          </div>
+
+          <!-- accordion  -->
+          <div data-service-accordion class="space-y-8">
+            <!-- accordion item  one -->
+            <div data-block-reveal data-delay="0.1" data-service-accordion-item data-default-open="true"
+              class="data-[active=true]:bg-background-3/60 ease-faq group space-y-1 bg-white/50 px-6 backdrop-blur-[25px] transition-all duration-600 data-[active=true]:backdrop-blur-[10px] lg:px-8">
+              <!-- accordion action  -->
+              <h3 data-service-accordion-action class="flex items-center justify-center">
+                <button data-service-accordion-button
+                  class="ease-faq flex w-full items-center justify-between pt-6 pb-6 transition-all duration-600 data-[active=true]:pb-0 lg:pt-8 lg:pb-8">
+                  <!-- <span data-service-accordion-title
+                    class="font-instrument-sans text-is-heading-6 lg:text-is-heading-4 text-background-1 text-left font-medium">Cross-laminated
+                    timber (CLT)</span> -->
+                  <!-- <span data-service-accordion-icon
+                    class="group-data-[active=true]:bg-background-1 bg-background-3 ease-faq flex size-10 shrink-0 items-center justify-center rounded-full transition-all duration-600 group-data-[active=true]:rotate-180 md:size-11 lg:size-13">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path d="M12 5V19" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M19 12L12 19L5 12" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg></span> -->
+                </button>
+              </h3>
+
+              <!-- accordion content  -->
+              <div data-service-accordion-content
+                class="ease-faq group h-0 overflow-hidden transition-all duration-600">
+                <div class="space-y-5 group-data-[active=true]:pb-6 lg:space-y-8 lg:group-data-[active=true]:pb-8">
+                  
+                  <a href="">
+                    <div class="nature-gallery">
+
+            <!-- LARGE IMAGE -->
+            <div class="nature-main-image reveal-image">
+                <img src="images/img-1.jpg" alt="Misty Woods Garden">
+            </div>
+
+
+            <!-- RIGHT COLUMN -->
+            <div class="nature-side">
+
+                <!-- SMALL IMAGE -->
+                <div class="nature-small-image reveal-image">
+                    <img src="images/img-2.jpg"
+                         alt="Misty Woods Resort">
+                </div>
+
+                <!-- Text -->
+                <div class="nature-side-content">
+
+                    <span class="nature-label">
+                        A Peaceful Escape
+                    </span>
+
+                    <h3>
+                        Stay Close to Nature
+                    </h3>
+
+                    <p>
+                        Wake up to lush greenery, fresh mountain air and
+                        beautiful surroundings. Every corner of Misty Woods
+                        is designed to help you slow down and reconnect.
+                    </p>
+
+                    <a href="" class="nature-link">
+                        Discover More
+                        <span>→</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- accordion item  two -->
+            <!-- <div data-block-reveal data-delay="0.2" data-service-accordion-item
+              class="data-[active=true]:bg-background-3/60 ease-faq group space-y-1 bg-white/50 px-6 backdrop-blur-[25px] transition-all duration-600 data-[active=true]:backdrop-blur-[10px] lg:px-8">
+              <h3 data-service-accordion-action class="flex items-center justify-center">
+                <button data-service-accordion-button
+                  class="ease-faq flex w-full items-center justify-between pt-6 pb-6 transition-all duration-600 data-[active=true]:pb-0 lg:pt-8 lg:pb-8">
+                  <span data-service-accordion-title
+                    class="font-instrument-sans text-is-heading-6 lg:text-is-heading-4 text-background-1 text-left font-medium">Hemocyte
+                    & bio-based insulation</span>
+                  <span data-service-accordion-icon
+                    class="group-data-[active=true]:bg-background-1 bg-background-3 ease-faq flex size-10 shrink-0 items-center justify-center rounded-full transition-all duration-600 group-data-[active=true]:rotate-180 md:size-11 lg:size-13">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path d="M12 5V19" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M19 12L12 19L5 12" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg></span>
+                </button>
+              </h3>
+
+              <div data-service-accordion-content
+                class="ease-faq group h-0 overflow-hidden transition-all duration-600">
+                <div class="space-y-5 group-data-[active=true]:pb-6 lg:space-y-8 lg:group-data-[active=true]:pb-8">
+                  <p
+                    class="font-inter-tight text-tagline-2 text-background-1 ease-faq font-normal blur-[5px] transition-all duration-600 group-data-[active=true]:blur-none">
+                    Breathable, carbon-sequestering walls that regulate humidity and cut operational
+                    energy demand year-round.
+                  </p>
+                  <a href="service-details.html">
+                    <div class="flex items-center justify-start gap-x-8">
+                      <figure
+                        class="ease-faq h-[200px] w-[477px] scale-95 overflow-hidden blur-[5px] transition-all duration-600 group-data-[active=true]:scale-100 group-data-[active=true]:blur-none md:h-[330px] lg:h-[400px]">
+                        <img src="images/img-3.jpg" alt="img-1" class="size-full object-cover" />
+                      </figure>
+                      <figure
+                        class="ease-faq h-[200px] w-[477px] scale-95 overflow-hidden blur-[5px] transition-all duration-600 group-data-[active=true]:scale-100 group-data-[active=true]:blur-none md:h-[330px] lg:h-[400px]">
+                        <img src="images/img-4.jpg" alt="img-2" class="size-full object-cover" />
+                      </figure>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div> -->
+
+            <!-- accordion item  three -->
+            <!-- <div data-block-reveal data-delay="0.3" data-service-accordion-item
+              class="data-[active=true]:bg-background-3/60 ease-faq group space-y-1 bg-white/50 px-6 backdrop-blur-[25px] transition-all duration-600 data-[active=true]:backdrop-blur-[10px] lg:px-8">
+              <h3 data-service-accordion-action class="flex items-center justify-center">
+                <button data-service-accordion-button
+                  class="ease-faq flex w-full items-center justify-between pt-6 pb-6 transition-all duration-600 data-[active=true]:pb-0 lg:pt-8 lg:pb-8">
+                  <span data-service-accordion-title
+                    class="font-instrument-sans text-is-heading-6 lg:text-is-heading-4 text-background-1 text-left font-medium">Recycled
+                    structural steel</span>
+                  <span data-service-accordion-icon
+                    class="group-data-[active=true]:bg-background-1 bg-background-3 ease-faq flex size-10 shrink-0 items-center justify-center rounded-full transition-all duration-600 group-data-[active=true]:rotate-180 md:size-11 lg:size-13">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path d="M12 5V19" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M19 12L12 19L5 12" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg></span>
+                </button>
+              </h3>
+
+              <div data-service-accordion-content
+                class="ease-faq group h-0 overflow-hidden transition-all duration-600">
+                <div class="space-y-5 group-data-[active=true]:pb-6 lg:space-y-8 lg:group-data-[active=true]:pb-8">
+                  <p
+                    class="font-inter-tight text-tagline-2 text-background-1 ease-faq font-normal blur-[5px] transition-all duration-600 group-data-[active=true]:blur-none">
+                    Closed-loop steel framing with verified recycled content—durable spans without the
+                    embodied carbon of virgin production.
+                  </p>
+                  <a href="service-details.html">
+                    <div class="flex items-center justify-start gap-x-8">
+                      <figure
+                        class="ease-faq h-[200px] w-[477px] scale-95 overflow-hidden blur-[5px] transition-all duration-600 group-data-[active=true]:scale-100 group-data-[active=true]:blur-none md:h-[330px] lg:h-[400px]">
+                        <img src="images/img-5.jpg" alt="img-1" class="size-full object-cover" />
+                      </figure>
+                      <figure
+                        class="ease-faq h-[200px] w-[477px] scale-95 overflow-hidden blur-[5px] transition-all duration-600 group-data-[active=true]:scale-100 group-data-[active=true]:blur-none md:h-[330px] lg:h-[400px]">
+                        <img src="images/img-6.jpg" alt="img-2" class="size-full object-cover" />
+                      </figure>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div> -->
+
+            <!-- accordion item  four -->
+            <!-- <div data-block-reveal data-delay="0.4" data-service-accordion-item
+              class="data-[active=true]:bg-background-3/60 ease-faq group space-y-1 bg-white/50 px-6 backdrop-blur-[25px] transition-all duration-600 data-[active=true]:backdrop-blur-[10px] lg:px-8">
+              <h3 data-service-accordion-action class="flex items-center justify-center">
+                <button data-service-accordion-button
+                  class="ease-faq flex w-full items-center justify-between pt-6 pb-6 transition-all duration-600 data-[active=true]:pb-0 lg:pt-8 lg:pb-8">
+                  <span data-service-accordion-title
+                    class="font-instrument-sans text-is-heading-6 lg:text-is-heading-4 text-background-1 text-left font-medium">Living
+                    roofs & regenerative facades</span>
+                  <span data-service-accordion-icon
+                    class="group-data-[active=true]:bg-background-1 bg-background-3 ease-faq flex size-10 shrink-0 items-center justify-center rounded-full transition-all duration-600 group-data-[active=true]:rotate-180 md:size-11 lg:size-13">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path d="M12 5V19" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M19 12L12 19L5 12" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg></span>
+                </button>
+              </h3>
+
+              <div data-service-accordion-content
+                class="ease-faq group h-0 overflow-hidden transition-all duration-600">
+                <div class="space-y-5 group-data-[active=true]:pb-6 lg:space-y-8 lg:group-data-[active=true]:pb-8">
+                  <p
+                    class="font-inter-tight text-tagline-2 text-background-1 ease-faq font-normal blur-[5px] transition-all duration-600 group-data-[active=true]:blur-none">
+                    Vegetated envelopes that restore biodiversity, manage stormier, and passively cool
+                    buildings through every season.
+                  </p>
+                  <a href="service-details.html">
+                    <div class="flex items-center justify-start gap-x-8">
+                      <figure
+                        class="ease-faq h-[200px] w-[477px] scale-95 overflow-hidden blur-[5px] transition-all duration-600 group-data-[active=true]:scale-100 group-data-[active=true]:blur-none md:h-[330px] lg:h-[400px]">
+                        <img src="images/img-7.jpg" alt="img-1" class="size-full object-cover" />
+                      </figure>
+                      <figure
+                        class="ease-faq h-[200px] w-[477px] scale-95 overflow-hidden blur-[5px] transition-all duration-600 group-data-[active=true]:scale-100 group-data-[active=true]:blur-none md:h-[330px] lg:h-[400px]">
+                        <img src="images/img-8.jpg" alt="img-2" class="size-full object-cover" />
+                      </figure>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+
+        <!-- <div data-block-reveal data-delay="0.5" class="mt-9 flex items-center justify-center lg:mt-14">
+          <a href="services.html">
+            <button
+              class="bg-background-1 text-tagline-2 font-inter-tight group/button-primary {=$class} flex items-center gap-x-2.5 rounded-full py-2.5 pr-2 pl-[18px] font-medium text-white transition-transform duration-150 ease-out active:scale-[0.97]">
+              <span class="relative inline-block overflow-hidden text-nowrap">
+                <span class="invisible">View all services</span>
+                <span class="absolute inset-0 perspective-normal">
+                  <span
+                    class="absolute inset-0 origin-top transform-[translate3d(0,0,0)_rotateX(0deg)] [transition:transform_0.55s_var(--button-text-ease)] backface-hidden group-hover/button-primary:transform-[translate3d(0,-100%,0)_rotateX(90deg)] group-focus-visible/button-primary:transform-[translate3d(0,-100%,0)_rotateX(90deg)]">View
+                    all services</span>
+                  <span
+                    class="absolute inset-0 origin-bottom transform-[translate3d(0,100%,0)_rotateX(-90deg)] [transition:transform_0.55s_var(--button-text-ease)] backface-hidden group-hover/button-primary:transform-[translate3d(0,0,0)_rotateX(0deg)] group-focus-visible/button-primary:transform-[translate3d(0,0,0)_rotateX(0deg)]">View
+                    all services</span>
+                </span>
+              </span>
+
+              <span class="relative flex size-8 items-center justify-center">
+                <span
+                  class="bg-background-5 absolute z-10 size-0 origin-center rounded-full opacity-0 transition-all duration-400 ease-out group-hover/button-primary:size-8 group-hover/button-primary:opacity-100 group-focus-visible/button-primary:size-8 group-focus-visible/button-primary:opacity-100"></span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                  class="ease-bouncy group-hover/button-primary:stroke-background-1 group-focus-visible/button-primary:stroke-background-1 relative z-20 size-6 rotate-45 stroke-white transition-all duration-400 group-hover/button-primary:rotate-0 group-focus-visible/button-primary:rotate-0">
+                  <path d="M17 17V7H7M17 7L7 17" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </span>
+            </button>
+
+          </a>
+        </div> -->
+      </div>
+    </section>
+
+    <section class="relative overflow-hidden bg-white py-18 lg:py-28">
+      <!-- svg  -->
+      <div class="pointer-events-none absolute top-[20%] size-full select-none md:top-[25%] lg:top-[35%] xl:left-0"
+        data-home-feature-svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1207" fill="none"
+          class="h-[700px] w-[400px] md:h-[907px] md:w-[700px] lg:w-[900px] xl:w-[1500px] 2xl:w-[1920px]">
+          <path
+            d="M1998.89 1276.92C2015.06 978.356 1881.62 666.681 1498.29 645.916C978.051 617.734 1095.99 1167.73 1458.09 981.232C1942.81 731.587 1598.47 -279.018 620.722 106.816C190.45 276.609 -182.778 530.218 -415.405 542.248"
+            stroke="url(#paint0_linear_1201_21964)" stroke-width="40" stroke-linecap="round" />
+          <defs>
+            <linearGradient id="paint0_linear_1201_21964" x1="2031.46" y1="675.742" x2="-415.456" y2="543.189"
+              gradientUnits="userSpaceOnUse">
+              <stop stop-color="#E4EBDF" />
+              <stop offset="1" stop-color="#E4EBDF" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+
+      <div class="main-container relative z-10">
+        <div class="space-y-10 lg:space-y-18">
+          <!-- text content  -->
+          <div class="space-y-5 text-center">
+            <div data-block-reveal data-delay="0.1" class="inline-block">
+              <div
+                class="text-tagline-4 font-pt-mono flex items-center justify-center gap-x-1.5 rounded-sm bg-white px-3 py-1.5 text-black shadow-[0_42px_12px_0_rgba(0,0,0,0.00),0_27px_11px_0_rgba(0,0,0,0.01),0_15px_9px_0_rgba(0,0,0,0.03),0_7px_7px_0_rgba(0,0,0,0.05),0_2px_4px_0_rgba(0,0,0,0.06)] backdrop-blur-[61.14973831176758px]">
+                <span class="size-1.5 shrink-0 bg-black"> </span>
+
+                <span>Rooms</span>
+              </div>
+
+            </div>
+
+            <div class="space-y-3">
+              <h2 data-text-reveal data-reveal-delay="0.2"
+                class="font-instrument-sans text-background-2 text-is-heading-3 lg:text-is-heading-2 mx-auto font-medium md:max-w-[600px] lg:max-w-[650px] xl:max-w-[743px]">
+                Beautiful Spaces 
+                <span class="font-instrument-serif text-background-1 font-normal italic">Made for Your Stay</span>
+              </h2>
+              <p data-text-reveal data-reveal-delay="0.3"
+                class="font-inter-tight text-tagline-2 sm:text-tagline-1 text-background-1 mx-auto max-w-[600px] font-normal">
+                Discover beautifully designed rooms and suites created for peaceful stays, restful nights, and memorable moments.
+              </p>
+            </div>
+          </div>
+
+          <!-- cards  -->
+          <div class="columns-1 items-center space-y-5 gap-x-5 md:columns-2 lg:space-y-8 lg:gap-x-8">
+            <!-- card one  -->
+            <div data-block-reveal data-delay="0.1">
+              <a href="room.html" class="block">
+                <div class="group">
+                  <figure class="h-[359px] w-full overflow-hidden lg:h-[445px]">
+                    <img src="images/img-15.jpg" alt="Feature image"
+                      class="size-full object-cover transition-transform duration-500 ease-out group-hover:scale-105" />
+                  </figure>
+
+                  <div
+                    class="bg-background-3/40 flex items-start justify-start px-6 pt-6 pb-6 backdrop-blur-[5px] lg:px-10.5 lg:pb-10.5">
+                    <div class="space-y-2">
+                      <h3 class="font-instrument-sans text-is-heading-5 text-background-1 font-medium">
+                        Luxury Suite
+                      </h3>
+                      <!-- <p class="font-inter-tight text-tagline-2 text-background-1 font-normal">
+                        Orientation-based design that utilizes natural wind currents and solar paths to
+                        eliminate the need for traditional HVAC.
+                      </p> -->
+                    </div>
+                    <span
+                      class="bg-background-5 group-hover:bg-background-1 icon-slide-track relative size-10.5 shrink-0 overflow-hidden rounded-full transition-colors duration-700 ease-out">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                        class="icon-slide-out stroke-background-1 size-6 group-hover:stroke-white">
+                        <path d="M7 17L17 7" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M7 7H17V17" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                        class="icon-slide-in stroke-background-1 size-6 group-hover:stroke-white">
+                        <path d="M7 17L17 7" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M7 7H17V17" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <!-- card two  -->
+            <div data-block-reveal data-delay="0.2">
+              <a href="room.html" class="block">
+                <div class="group">
+                  <figure class="h-[359px] w-full overflow-hidden lg:h-[445px]">
+                    <img src="images/img-16.jpg" alt="Feature image"
+                      class="size-full object-cover transition-transform duration-500 ease-out group-hover:scale-105" />
+                  </figure>
+
+                  <div
+                    class="bg-background-3/40 flex items-start justify-start px-6 pt-6 pb-6 backdrop-blur-[5px] lg:px-10.5 lg:pb-10.5">
+                    <div class="space-y-2">
+                      <h3 class="font-instrument-sans text-is-heading-5 text-background-1 font-medium">
+                        Double Room
+                      </h3>
+                      <!-- <p class="font-inter-tight text-tagline-2 text-background-1 font-normal">
+                        High-performance building skins that automatically respond to temperature
+                        changes, optimizing insulation and reducing energy demand.
+                      </p> -->
+                    </div>
+                    <span
+                      class="bg-background-5 group-hover:bg-background-1 icon-slide-track relative size-10.5 shrink-0 overflow-hidden rounded-full transition-colors duration-700 ease-out">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                        class="icon-slide-out stroke-background-1 size-6 group-hover:stroke-white">
+                        <path d="M7 17L17 7" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M7 7H17V17" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                        class="icon-slide-in stroke-background-1 size-6 group-hover:stroke-white">
+                        <path d="M7 17L17 7" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M7 7H17V17" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <!-- card three  -->
+            <div data-block-reveal data-delay="0.3" class="md:pt-8 lg:pt-28">
+              <a href="room.html" class="block">
+                <div class="group">
+                  <figure class="h-[359px] w-full overflow-hidden lg:h-[445px]">
+                    <img src="images/img-17.jpg" alt="Feature image"
+                      class="size-full object-cover transition-transform duration-500 ease-out group-hover:scale-105" />
+                  </figure>
+
+                  <div
+                    class="bg-background-3/40 flex items-start justify-start px-6 pt-6 pb-6 backdrop-blur-[5px] lg:px-10.5 lg:pb-10.5">
+                    <div class="space-y-2">
+                      <h3 class="font-instrument-sans text-is-heading-5 text-background-1 font-medium">
+                       Deluxe Suite
+                      </h3>
+                      <!-- <p class="font-inter-tight text-tagline-2 text-background-1 font-normal">
+                        Circadian-sync lighting that mirrors the sun's natural cycle to optimize human
+                        sleep and focus.
+                      </p> -->
+                    </div>
+                    <span
+                      class="bg-background-5 group-hover:bg-background-1 icon-slide-track relative size-10.5 shrink-0 overflow-hidden rounded-full transition-colors duration-700 ease-out">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                        class="icon-slide-out stroke-background-1 size-6 group-hover:stroke-white">
+                        <path d="M7 17L17 7" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M7 7H17V17" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                        class="icon-slide-in stroke-background-1 size-6 group-hover:stroke-white">
+                        <path d="M7 17L17 7" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M7 7H17V17" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <!-- card four  -->
+            <div data-block-reveal data-delay="0.4">
+              <a href="room.html" class="block">
+                <div class="group">
+                  <figure class="h-[359px] w-full overflow-hidden lg:h-[445px]">
+                    <img src="images/img-14.jpg" alt="Feature image"
+                      class="size-full object-cover transition-transform duration-500 ease-out group-hover:scale-105" />
+                  </figure>
+
+                  <div
+                    class="bg-background-3/40 flex items-start justify-start px-6 pt-6 pb-6 backdrop-blur-[5px] lg:px-10.5 lg:pb-10.5">
+                    <div class="space-y-2">
+                      <h3 class="font-instrument-sans text-is-heading-5 text-background-1 font-medium">
+                        Comfort Room
+                      </h3>
+                      <!-- <p class="font-inter-tight text-tagline-2 text-background-1 font-normal">
+                        Built-in "Living Walls" that naturally scrub CO2 and particulate matter from the
+                        air, creating a mountain-fresh atmosphere indoors.
+                      </p> -->
+                    </div>
+                    <span
+                      class="bg-background-5 group-hover:bg-background-1 icon-slide-track relative size-10.5 shrink-0 overflow-hidden rounded-full transition-colors duration-700 ease-out">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                        class="icon-slide-out stroke-background-1 size-6 group-hover:stroke-white">
+                        <path d="M7 17L17 7" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M7 7H17V17" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                        class="icon-slide-in stroke-background-1 size-6 group-hover:stroke-white">
+                        <path d="M7 17L17 7" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M7 7H17V17" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+     FULL WIDTH VIDEO SECTION
+========================= -->
+
+<section class="full-video-section">
+
+    <video
+        class="full-video"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="auto"
+        poster="images/video-poster.jpg"
+    >
+        <source src="images/misty.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Optional dark overlay -->
+    <div class="video-overlay"></div>
+
+    <!-- Content over video -->
+    <div class="video-content">
+
+        <span>Escape Into Nature</span>
+
+        <h2>
+            Where Every Stay<br>
+            Feels Like a Getaway
+        </h2>
+
+        <p>
+            Breathe in the fresh mountain air, slow down and
+            enjoy the beauty of Misty Woods.
+        </p>
+
+        <a href="booking.html" class="video-btn">
+            Book Your Stay
+            <span>→</span>
+        </a>
+
+    </div>
+
+</section>
+
+    <section class="relative overflow-hidden py-18 lg:py-28">
+      <!-- svg  -->
+      <div class="pointer-events-none absolute top-[40%] size-full select-none lg:top-[45%] xl:top-[25%]"
+        data-home-work-svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1880 1032" fill="none"
+          class="h-[600px] w-[800px] md:w-[1000px] xl:h-[1032px] xl:w-[1880px]">
+          <path
+            d="M-349.751 968.396C-273.358 679.319 122.724 356.896 493.876 454.978C997.585 588.09 557.859 1077.76 270.624 788.985C-113.872 402.421 509.601 -389.098 1321.39 278.627C1678.63 572.47 1955.82 928.533 2173.48 1011.49"
+            stroke="url(#paint0_linear_1201_21962)" stroke-width="40" stroke-linecap="round" />
+          <defs>
+            <linearGradient id="paint0_linear_1201_21962" x1="-195.934" y1="386.321" x2="2173.24" y2="1012.41"
+              gradientUnits="userSpaceOnUse">
+              <stop stop-color="#ffffff" />
+              <stop offset="1" stop-color="white" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+
+      <div class="main-container">
+        <div class="space-y-10 lg:space-y-18">
+          <!-- text content  -->
+          <div class="flex flex-col items-center justify-between gap-y-5 md:flex-row md:items-end md:gap-y-0">
+            <div class="space-y-5 text-center md:text-left">
+              <div data-block-reveal data-delay="0.1" class="inline-block">
+                <div
+                  class="text-tagline-4 font-pt-mono flex items-center justify-center gap-x-1.5 rounded-sm bg-white px-3 py-1.5 text-black shadow-[0_42px_12px_0_rgba(0,0,0,0.00),0_27px_11px_0_rgba(0,0,0,0.01),0_15px_9px_0_rgba(0,0,0,0.03),0_7px_7px_0_rgba(0,0,0,0.05),0_2px_4px_0_rgba(0,0,0,0.06)] backdrop-blur-[61.14973831176758px]">
+                  <span class="size-1.5 shrink-0 bg-black"> </span>
+
+                  <span>Nearby Places</span>
+                </div>
+
+              </div>
+              <h2 data-text-reveal data-reveal-delay="0.2"
+                class="font-instrument-sans text-background-2 text-is-heading-3 lg:text-is-heading-2 w-full font-medium md:max-w-[600px] lg:max-w-[550px] xl:max-w-[743px]">
+                Discover the Hidden 
+                <span class="font-instrument-serif text-background-1 font-normal italic">Gems Around Us</span>
+              </h2>
+            </div>
+
+            <a data-block-reveal data-delay="0.3" href="places.html" class="inline-block">
+              <button
+                class="bg-background-1 text-tagline-2 font-inter-tight group/button-primary {=$class} flex items-center gap-x-2.5 rounded-full py-2.5 pr-2 pl-[18px] font-medium text-white transition-transform duration-150 ease-out active:scale-[0.97]">
+                <span class="relative inline-block overflow-hidden text-nowrap">
+                  <span class="invisible">Show more Places</span>
+                  <span class="absolute inset-0 perspective-normal">
+                    <span
+                      class="absolute inset-0 origin-top transform-[translate3d(0,0,0)_rotateX(0deg)] [transition:transform_0.55s_var(--button-text-ease)] backface-hidden group-hover/button-primary:transform-[translate3d(0,-100%,0)_rotateX(90deg)] group-focus-visible/button-primary:transform-[translate3d(0,-100%,0)_rotateX(90deg)]">Show
+                      more Places</span>
+                    <span
+                      class="absolute inset-0 origin-bottom transform-[translate3d(0,100%,0)_rotateX(-90deg)] [transition:transform_0.55s_var(--button-text-ease)] backface-hidden group-hover/button-primary:transform-[translate3d(0,0,0)_rotateX(0deg)] group-focus-visible/button-primary:transform-[translate3d(0,0,0)_rotateX(0deg)]">Show
+                      more Places</span>
+                  </span>
+                </span>
+
+                <span class="relative flex size-8 items-center justify-center">
+                  <span
+                    class="bg-background-5 absolute z-10 size-0 origin-center rounded-full opacity-0 transition-all duration-400 ease-out group-hover/button-primary:size-8 group-hover/button-primary:opacity-100 group-focus-visible/button-primary:size-8 group-focus-visible/button-primary:opacity-100"></span>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                    class="ease-bouncy group-hover/button-primary:stroke-background-1 group-focus-visible/button-primary:stroke-background-1 relative z-20 size-6 rotate-45 stroke-white transition-all duration-400 group-hover/button-primary:rotate-0 group-focus-visible/button-primary:rotate-0">
+                    <path d="M17 17V7H7M17 7L7 17" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+              </button>
+
+            </a>
+          </div>
+
+          <!-- cards  -->
+          <div
+            class="grid grid-cols-12 gap-y-8 *:col-span-12 md:gap-x-6 *:md:col-span-6 lg:gap-x-8 lg:gap-y-10.5 [&>*_[data-project-img]]:h-[350px] [&>*:nth-child(even)]:lg:col-span-5 [&>*:nth-child(even)_[data-project-img]]:lg:h-[400px] [&>*:nth-child(odd)]:lg:col-span-7 [&>*:nth-child(odd)_[data-project-img]]:md:h-[450px] [&>*:nth-child(odd)_[data-project-img]]:lg:h-[500px]">
+            <!-- card one  -->
+            <div>
+              <a href="places.html">
+                <div data-project-reveal class="group/project-card overflow-hidden">
+                  <figure data-project-img class="relative w-full overflow-hidden">
+                    <!-- img overlay  -->
+                    <div
+                      class="absolute inset-0 z-10 size-full bg-black/30 opacity-0 transition-all duration-500 ease-out group-hover/project-card:opacity-100">
+                    </div>
+
+                    <!-- link icon  -->
+                    <div
+                      class="ease-bouncy absolute top-[60%] left-1/2 z-20 flex size-15 -translate-x-1/2 -translate-y-1/2 scale-0 items-center justify-center overflow-hidden rounded-full bg-black/20 opacity-0 backdrop-blur-[10px] transition-all duration-500 group-hover/project-card:top-1/2 group-hover/project-card:scale-100 group-hover/project-card:opacity-100 lg:size-25">
+                      <span class="group icon-slide-track size-14">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56" fill="none"
+                          class="icon-slide-out size-8 stroke-white lg:size-14">
+                          <path d="M39.6665 39.6666V16.3333H16.3332M39.6665 16.3333L16.3332 39.6666" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56" fill="none"
+                          class="icon-slide-in size-8 stroke-white lg:size-14">
+                          <path d="M39.6665 39.6666V16.3333H16.3332M39.6665 16.3333L16.3332 39.6666" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </span>
+                    </div>
+
+                    <img src="images/img-10.jpg" alt="Regenerative residential project"
+                      class="size-full object-cover" />
+                  </figure>
+                  <div data-project-content
+                    class="bg-background-3/40 space-y-1 px-6 pt-6 pb-6 backdrop-blur-[5px] md:pb-10.5">
+                    <h3
+                      class="font-instrument-sans text-is-heading-5 md:text-is-heading-4 text-background-1 font-medium">
+                      Thrissileri Temple
+                    </h3>
+                    <p class="font-inter-tight text-tagline-2 text-background-1 font-normal">3 km</p>
+                  </div>
+                </div>
+
+              </a>
+            </div>
+            <!-- card two  -->
+            <div>
+              <a href="places.html">
+                <div data-project-reveal class="group/project-card overflow-hidden">
+                  <figure data-project-img class="relative w-full overflow-hidden">
+                    <!-- img overlay  -->
+                    <div
+                      class="absolute inset-0 z-10 size-full bg-black/30 opacity-0 transition-all duration-500 ease-out group-hover/project-card:opacity-100">
+                    </div>
+
+                    <!-- link icon  -->
+                    <div
+                      class="ease-bouncy absolute top-[60%] left-1/2 z-20 flex size-15 -translate-x-1/2 -translate-y-1/2 scale-0 items-center justify-center overflow-hidden rounded-full bg-black/20 opacity-0 backdrop-blur-[10px] transition-all duration-500 group-hover/project-card:top-1/2 group-hover/project-card:scale-100 group-hover/project-card:opacity-100 lg:size-25">
+                      <span class="group icon-slide-track size-14">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56" fill="none"
+                          class="icon-slide-out size-8 stroke-white lg:size-14">
+                          <path d="M39.6665 39.6666V16.3333H16.3332M39.6665 16.3333L16.3332 39.6666" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56" fill="none"
+                          class="icon-slide-in size-8 stroke-white lg:size-14">
+                          <path d="M39.6665 39.6666V16.3333H16.3332M39.6665 16.3333L16.3332 39.6666" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </span>
+                    </div>
+
+                    <img src="images/img-11.jpg" alt="Regenerative residential project"
+                      class="size-full object-cover" />
+                  </figure>
+                  <div data-project-content
+                    class="bg-background-3/40 space-y-1 px-6 pt-6 pb-6 backdrop-blur-[5px] md:pb-10.5">
+                    <h3
+                      class="font-instrument-sans text-is-heading-5 md:text-is-heading-4 text-background-1 font-medium">
+                      Pazhassi Tomb
+                    </h3>
+                    <p class="font-inter-tight text-tagline-2 text-background-1 font-normal">6 km</p>
+                  </div>
+                </div>
+
+              </a>
+            </div>
+            <!-- card three  -->
+            <div>
+              <a href="places.html">
+                <div data-project-reveal class="group/project-card overflow-hidden">
+                  <figure data-project-img class="relative w-full overflow-hidden">
+                    <!-- img overlay  -->
+                    <div
+                      class="absolute inset-0 z-10 size-full bg-black/30 opacity-0 transition-all duration-500 ease-out group-hover/project-card:opacity-100">
+                    </div>
+
+                    <!-- link icon  -->
+                    <div
+                      class="ease-bouncy absolute top-[60%] left-1/2 z-20 flex size-15 -translate-x-1/2 -translate-y-1/2 scale-0 items-center justify-center overflow-hidden rounded-full bg-black/20 opacity-0 backdrop-blur-[10px] transition-all duration-500 group-hover/project-card:top-1/2 group-hover/project-card:scale-100 group-hover/project-card:opacity-100 lg:size-25">
+                      <span class="group icon-slide-track size-14">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56" fill="none"
+                          class="icon-slide-out size-8 stroke-white lg:size-14">
+                          <path d="M39.6665 39.6666V16.3333H16.3332M39.6665 16.3333L16.3332 39.6666" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56" fill="none"
+                          class="icon-slide-in size-8 stroke-white lg:size-14">
+                          <path d="M39.6665 39.6666V16.3333H16.3332M39.6665 16.3333L16.3332 39.6666" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </span>
+                    </div>
+
+                    <img src="images/img-12.jpg" alt="Regenerative residential project"
+                      class="size-full object-cover" />
+                  </figure>
+                  <div data-project-content
+                    class="bg-background-3/40 space-y-1 px-6 pt-6 pb-6 backdrop-blur-[5px] md:pb-10.5">
+                    <h3
+                      class="font-instrument-sans text-is-heading-5 md:text-is-heading-4 text-background-1 font-medium">
+                      Kuruva Island
+                    </h3>
+                    <p class="font-inter-tight text-tagline-2 text-background-1 font-normal">10 km</p>
+                  </div>
+                </div>
+
+              </a>
+            </div>
+            <!-- card four  -->
+            <div>
+              <a href="places.html">
+                <div data-project-reveal class="group/project-card overflow-hidden">
+                  <figure data-project-img class="relative w-full overflow-hidden">
+                    <!-- img overlay  -->
+                    <div
+                      class="absolute inset-0 z-10 size-full bg-black/30 opacity-0 transition-all duration-500 ease-out group-hover/project-card:opacity-100">
+                    </div>
+
+                    <!-- link icon  -->
+                    <div
+                      class="ease-bouncy absolute top-[60%] left-1/2 z-20 flex size-15 -translate-x-1/2 -translate-y-1/2 scale-0 items-center justify-center overflow-hidden rounded-full bg-black/20 opacity-0 backdrop-blur-[10px] transition-all duration-500 group-hover/project-card:top-1/2 group-hover/project-card:scale-100 group-hover/project-card:opacity-100 lg:size-25">
+                      <span class="group icon-slide-track size-14">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56" fill="none"
+                          class="icon-slide-out size-8 stroke-white lg:size-14">
+                          <path d="M39.6665 39.6666V16.3333H16.3332M39.6665 16.3333L16.3332 39.6666" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56" fill="none"
+                          class="icon-slide-in size-8 stroke-white lg:size-14">
+                          <path d="M39.6665 39.6666V16.3333H16.3332M39.6665 16.3333L16.3332 39.6666" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </span>
+                    </div>
+
+                    <img src="images/img-13.jpg" alt="Regenerative residential project"
+                      class="size-full object-cover" />
+                  </figure>
+                  <div data-project-content
+                    class="bg-background-3/40 space-y-1 px-6 pt-6 pb-6 backdrop-blur-[5px] md:pb-10.5">
+                    <h3
+                      class="font-instrument-sans text-is-heading-5 md:text-is-heading-4 text-background-1 font-medium">
+                      Bavali River Bank
+                    </h3>
+                    <p class="font-inter-tight text-tagline-2 text-background-1 font-normal">10 km</p>
+                  </div>
+                </div>
+
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="relative bg-white py-18 lg:py-28">
+      <!-- svg  -->
+      <div
+        class="pointer-events-none absolute top-[45%] size-full overflow-hidden select-none max-md:hidden lg:top-[58%] xl:top-[45%] xl:left-0"
+        data-portfolio-svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-[1366px] w-[1500px] 2xl:w-[1880px]" viewBox="0 0 1880 1366"
+          fill="none">
+          <path
+            d="M-265.729 681.484C-120.397 420.181 158.547 227.468 494.041 414.063C949.356 667.3 556.599 1069.97 349.465 719.269C72.1919 249.813 901.893 -422.116 1523.91 425.204C1797.64 798.08 1978.44 1211.51 2168.92 1345.6"
+            stroke="url(#paint0_linear_1201_22124)" stroke-width="40" stroke-linecap="round" />
+          <defs>
+            <linearGradient id="paint0_linear_1201_22124" x1="26.9064" y1="155.331" x2="2168.46" y2="1346.42"
+              gradientUnits="userSpaceOnUse">
+              <stop stop-color="#E4EBDF" />
+              <stop offset="1" stop-color="#E4EBDF" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+
+      <div class="main-container">
+        <div class="grid grid-cols-12 items-start justify-center gap-x-5 lg:gap-x-13.5">
+          <div class="sticky top-30 col-span-12 hidden lg:col-span-6 lg:block">
+            <figure class="h-[450px] w-full overflow-hidden lg:h-[400px]">
+              <img src="images/img-18.jpg" alt="Portfolio image" class="size-full object-cover" />
+            </figure>
+          </div>
+
+          <!-- right side  -->
+          <div class="col-span-12 lg:col-span-6">
+            <div class="space-y-8 lg:space-y-18">
+              <!-- badge + text content  -->
+              <div class="space-y-8">
+                <div class="space-y-5">
+                  <!-- badge  -->
+                  <div data-block-reveal data-delay="0.1" class="inline-block">
+                    <div
+                      class="text-tagline-4 font-pt-mono flex items-center justify-center gap-x-1.5 rounded-sm bg-white px-3 py-1.5 text-black shadow-[0_42px_12px_0_rgba(0,0,0,0.00),0_27px_11px_0_rgba(0,0,0,0.01),0_15px_9px_0_rgba(0,0,0,0.03),0_7px_7px_0_rgba(0,0,0,0.05),0_2px_4px_0_rgba(0,0,0,0.06)] backdrop-blur-[61.14973831176758px]">
+                      <span class="size-1.5 shrink-0 bg-black"> </span>
+
+                      <span>Services</span>
+                    </div>
+
+                  </div>
+                  <!-- text  -->
+                  <h2 data-text-reveal data-reveal-delay="0.2"
+                    class="font-instrument-sans text-background-2 text-is-heading-3 lg:text-is-heading-2 font-medium">
+                    Everything You Need,
+                    <span class="font-instrument-serif text-background-1 font-normal italic"> All in One Place</span>
+                  </h2>
+                </div>
+                <!-- <div data-block-reveal data-delay="0.3">
+                  <a href="projects.html">
+                    <button
+                      class="bg-background-1 text-tagline-2 font-inter-tight group/button-primary {=$class} flex items-center gap-x-2.5 rounded-full py-2.5 pr-2 pl-[18px] font-medium text-white transition-transform duration-150 ease-out active:scale-[0.97]">
+                      <span class="relative inline-block overflow-hidden text-nowrap">
+                        <span class="invisible">View our projects</span>
+                        <span class="absolute inset-0 perspective-normal">
+                          <span
+                            class="absolute inset-0 origin-top transform-[translate3d(0,0,0)_rotateX(0deg)] [transition:transform_0.55s_var(--button-text-ease)] backface-hidden group-hover/button-primary:transform-[translate3d(0,-100%,0)_rotateX(90deg)] group-focus-visible/button-primary:transform-[translate3d(0,-100%,0)_rotateX(90deg)]">View
+                            our projects</span>
+                          <span
+                            class="absolute inset-0 origin-bottom transform-[translate3d(0,100%,0)_rotateX(-90deg)] [transition:transform_0.55s_var(--button-text-ease)] backface-hidden group-hover/button-primary:transform-[translate3d(0,0,0)_rotateX(0deg)] group-focus-visible/button-primary:transform-[translate3d(0,0,0)_rotateX(0deg)]">View
+                            our projects</span>
+                        </span>
+                      </span>
+
+                      <span class="relative flex size-8 items-center justify-center">
+                        <span
+                          class="bg-background-5 absolute z-10 size-0 origin-center rounded-full opacity-0 transition-all duration-400 ease-out group-hover/button-primary:size-8 group-hover/button-primary:opacity-100 group-focus-visible/button-primary:size-8 group-focus-visible/button-primary:opacity-100"></span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                          class="ease-bouncy group-hover/button-primary:stroke-background-1 group-focus-visible/button-primary:stroke-background-1 relative z-20 size-6 rotate-45 stroke-white transition-all duration-400 group-hover/button-primary:rotate-0 group-focus-visible/button-primary:rotate-0">
+                          <path d="M17 17V7H7M17 7L7 17" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </span>
+                    </button>
+
+                  </a>
+                </div> -->
+              </div>
+
+              <div data-stack-card-wrapper
+                class="space-y-6 *:data-stack-card-item:relative [&>[data-stack-card-item]:nth-child(1)]:z-10 [&>[data-stack-card-item]:nth-child(2)]:z-20 [&>[data-stack-card-item]:nth-child(3)]:z-30 [&>[data-stack-card-item]:nth-child(4)]:z-40">
+                <!-- card one  -->
+                <div data-stack-card-item class="flex flex-col items-center bg-white lg:h-[304px] lg:flex-row">
+                  <figure class="h-[350px] w-full lg:h-full lg:w-[352px]">
+                    <img src="images/img-19.jpg" alt="Portfolio image" class="size-full object-cover" />
+                  </figure>
+                  <div
+                    class="bg-background-3/50 flex h-full w-full flex-row items-end justify-between py-6 backdrop-blur-[5px] max-lg:space-y-4 max-lg:px-6 lg:w-[422px] lg:flex-col lg:items-start lg:py-10.5 lg:pr-10.5 lg:pl-6">
+                    <div class="space-y-3">
+                      <span
+                        class="text-background-6/60 font-inter-tight text-tagline-4 inline-block bg-white px-3 py-1 font-normal">Breakfast</span>
+                      <div class="space-y-1">
+                        <h3 class="font-instrument-sans text-is-heading-6 text-background-1 font-medium">
+                         Morning Delights
+                        </h3>
+                        <p class="font-inter-tight text-tagline-2 text-background-1 lg:max-w-[260px]">
+                          Wake up to a refreshing spread of tasty breakfast choices.
+                        </p>
+                      </div>
+                    </div>
+
+                    <!-- <div class="flex items-center justify-center gap-x-2 max-lg:mb-2.5">
+                      <figure class="size-8 shrink-0 overflow-hidden rounded-full">
+                        <img src="images/logo/china-flag.svg" alt="China flag" class="size-full object-cover" />
+                      </figure>
+                      <p class="font-inter-tight text-tagline-2 text-black">Toronto, Canada</p>
+                    </div> -->
+                  </div>
+                </div>
+
+                <!-- card two  -->
+                <div data-stack-card-item class="flex flex-col items-center bg-white lg:h-[304px] lg:flex-row">
+                  <figure class="h-[350px] w-full lg:h-full lg:w-[352px]">
+                    <img src="images/img-29.jpg" alt="The Memory Ridge landscape pavilion"
+                      class="size-full object-cover" />
+                  </figure>
+                  <div
+                    class="bg-background-3/50 flex h-full w-full flex-row items-end justify-between py-6 backdrop-blur-[5px] max-lg:space-y-4 max-lg:px-6 lg:w-[422px] lg:flex-col lg:items-start lg:py-10.5 lg:pr-10.5 lg:pl-6">
+                    <div class="space-y-3">
+                      <span
+                        class="text-background-6/60 font-inter-tight text-tagline-4 inline-block bg-white px-3 py-1 font-normal">Lunch & Dinner</span>
+                      <div class="space-y-1">
+                        <h3 class="font-instrument-sans text-is-heading-6 text-background-1 font-medium">
+                          Delicious Dining
+                        </h3>
+                        <p class="font-inter-tight text-tagline-2 text-background-1 lg:max-w-[260px]">
+                         Delicious meals, fresh flavours, and memorable dining experiences throughout the day.
+                        </p>
+                      </div>
+                    </div>
+
+                    <!-- <div class="flex items-center justify-center gap-x-2 max-lg:mb-2.5">
+                      <figure class="size-8 shrink-0 overflow-hidden rounded-full">
+                        <img src="images/logo/america-flag.svg" alt="United States flag"
+                          class="size-full object-cover" />
+                      </figure>
+                      <p class="font-inter-tight text-tagline-2 text-black">Sedona, USA</p>
+                    </div> -->
+                  </div>
+                </div>
+                <!-- card three  -->
+                <div data-stack-card-item class="flex flex-col items-center bg-white lg:h-[304px] lg:flex-row">
+                  <figure class="h-[350px] w-full lg:h-full lg:w-[352px]">
+                    <img src="images/img-30.jpg" alt="Aurora Transit Hall mobility hub"
+                      class="size-full object-cover" />
+                  </figure>
+                  <div
+                    class="bg-background-3/50 flex h-full w-full flex-row items-end justify-between py-6 backdrop-blur-[5px] max-lg:space-y-4 max-lg:px-6 lg:w-[422px] lg:flex-col lg:items-start lg:py-10.5 lg:pr-10.5 lg:pl-6">
+                    <div class="space-y-3">
+                      <span
+                        class="text-background-6/60 font-inter-tight text-tagline-4 inline-block bg-white px-3 py-1 font-normal">24 Hours Hot Water</span>
+                      <div class="space-y-1">
+                        <h3 class="font-instrument-sans text-is-heading-6 text-background-1 font-medium">
+                          Round-the-Clock Hot Water
+                        </h3>
+                        <p class="font-inter-tight text-tagline-2 text-background-1 lg:max-w-[260px]">
+                         Enjoy hot water anytime for a comfortable and refreshing stay.
+                        </p>
+                      </div>
+                    </div>
+
+                    <!-- <div class="flex items-center justify-center gap-x-2 max-lg:mb-2.5">
+                      <figure class="size-8 shrink-0 overflow-hidden rounded-full">
+                        <img src="images/logo/canada-flag.svg" alt="Canada flag" class="size-full object-cover" />
+                      </figure>
+                      <p class="font-inter-tight text-tagline-2 text-black">Vancouver, Canada</p>
+                    </div> -->
+                  </div>
+                </div>
+
+                <!-- card four  -->
+                <div data-stack-card-item class="flex flex-col items-center bg-white lg:h-[304px] lg:flex-row">
+                  <figure class="h-[350px] w-full lg:h-full lg:w-[352px]">
+                    <img src="images/img-31.jpg" alt="Solara Frame House coastal retreat"
+                      class="size-full object-cover" />
+                  </figure>
+                  <div
+                    class="bg-background-3/50 flex h-full w-full flex-row items-end justify-between py-6 backdrop-blur-[5px] max-lg:space-y-4 max-lg:px-6 lg:w-[422px] lg:flex-col lg:items-start lg:py-10.5 lg:pr-10.5 lg:pl-6">
+                    <div class="space-y-3">
+                      <span
+                        class="text-background-6/60 font-inter-tight text-tagline-4 inline-block bg-white px-3 py-1 font-normal">Ample Parking Space</span>
+                      <div class="space-y-1">
+                        <h3 class="font-instrument-sans text-is-heading-6 text-background-1 font-medium">
+                          Easy Parking
+                        </h3>
+                        <p class="font-inter-tight text-tagline-2 text-background-1 lg:max-w-[260px]">
+                         Enjoy convenient and spacious parking for a hassle-free stay.
+                        </p>
+                      </div>
+                    </div>
+
+                    <!-- <div class="flex items-center justify-center gap-x-2 max-lg:mb-2.5">
+                      <figure class="size-8 shrink-0 overflow-hidden rounded-full">
+                        <img src="images/logo/egypt-flag.svg" alt="Egypt flag" class="size-full object-cover" />
+                      </figure>
+                      <p class="font-inter-tight text-tagline-2 text-black">Marsa Alam, Egypt</p>
+                    </div> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-18 lg:py-28">
+      <div class="main-container">
+        <div class="space-y-8 lg:space-y-18">
+          <!-- text content  -->
+          <div class="flex flex-col items-center max-md:gap-y-5 md:flex-row md:items-end md:justify-between">
+            <div class="max-w-[700px] space-y-5 max-md:text-center xl:max-w-[620px]">
+              <div data-block-reveal data-delay="0.1" class="inline-block">
+                <div
+                  class="text-tagline-4 font-pt-mono flex items-center justify-center gap-x-1.5 rounded-sm bg-white px-3 py-1.5 text-black shadow-[0_42px_12px_0_rgba(0,0,0,0.00),0_27px_11px_0_rgba(0,0,0,0.01),0_15px_9px_0_rgba(0,0,0,0.03),0_7px_7px_0_rgba(0,0,0,0.05),0_2px_4px_0_rgba(0,0,0,0.06)] backdrop-blur-[61.14973831176758px]">
+                  <span class="size-1.5 shrink-0 bg-black"> </span>
+
+                  <span>Facilities</span>
+                </div>
+
+              </div>
+              <h2 data-text-reveal data-reveal-delay="0.2"
+                class="font-instrument-sans text-background-2 text-is-heading-3 lg:text-is-heading-2 w-full font-medium md:max-w-[600px] lg:max-w-[550px] xl:max-w-[743px]">
+                Experience Comfort 
+                <span class="font-instrument-serif text-background-1 font-normal italic">Beyond Your Room.</span>
+              </h2>
+            </div>
+            <p data-text-reveal data-reveal-delay="0.3"
+              class="text-tagline-2 sm:text-tagline-1 text-background-1 font-inter-tight max-w-[350px] text-center font-normal md:text-right lg:max-w-[450px] xl:max-w-[550px]">
+              Enjoy a range of thoughtful facilities designed to make your stay comfortable, convenient, and relaxing. From essential amenities to added comforts, we have everything you need for a pleasant and memorable experience.
+            </p>
+          </div>
+
+          <!-- tab  -->
+
+          <div class="space-y-8">
+            <!-- tab items  -->
+            <div data-process-tabs
+              class="border-b-background-1 relative flex items-center max-md:flex-wrap md:border-b">
+              <div data-process-indicator class="bg-background-1 pointer-events-none absolute" aria-hidden="true"></div>
+
+              <button type="button" data-process-tab data-active="true"
+                class="font-inter-tight text-tagline-2 text-background-1/60 data-[active=true]:data-[force-inactive=true]:text-background-1/60 relative z-10 w-full px-2 py-5 text-center font-normal text-nowrap transition-all duration-600 ease-out data-[active=true]:text-white data-[item-hover=true]:text-white lg:px-6 lg:text-left">
+               Two Comfortable Bedrooms
+              </button>
+              <button type="button" data-process-tab
+                class="font-inter-tight text-tagline-2 text-background-1/60 data-[active=true]:data-[force-inactive=true]:text-background-1/60 relative z-10 w-full px-2 py-5 text-center font-normal text-nowrap transition-all duration-600 ease-out data-[active=true]:text-white data-[item-hover=true]:text-white lg:px-6 lg:text-left">
+                Fully Equipped Kitchen
+              </button>
+              <button type="button" data-process-tab
+                class="font-inter-tight text-tagline-2 text-background-1/60 data-[active=true]:data-[force-inactive=true]:text-background-1/60 relative z-10 w-full px-2 py-5 text-center font-normal text-nowrap transition-all duration-600 ease-out data-[active=true]:text-white data-[item-hover=true]:text-white lg:px-6 lg:text-left">
+                Recreation Room
+              </button>
+              <button type="button" data-process-tab
+                class="font-inter-tight text-tagline-2 text-background-1/60 data-[active=true]:data-[force-inactive=true]:text-background-1/60 relative z-10 w-full px-2 py-5 text-center font-normal text-nowrap transition-all duration-600 ease-out data-[active=true]:text-white data-[item-hover=true]:text-white lg:px-6 lg:text-left">
+                Ideal for Families, Couples & Small Groups
+              </button>
+            </div>
+
+            <!-- tab content  -->
+            <div data-process-content class="relative h-[750px] w-full md:h-[500px] xl:h-[592px]">
+              <!-- panel 1  -->
+              <div data-process-panel data-active="true"
+                class="absolute inset-0 flex flex-col items-center justify-center md:flex-row">
+                <figure class="h-full w-full overflow-hidden md:w-1/2">
+                  <img data-process-img src="images/img-20.jpg" alt="Site energy audit"
+                    class="size-full object-cover" />
+                </figure>
+                <div class="flex h-full w-full flex-col items-start justify-between bg-white p-6 md:w-1/2 lg:p-10.5">
+                  <div class="space-y-2">
+                    <h3 data-process-reveal
+                      class="font-instrument-sans text-is-heading-5 lg:text-is-heading-4 text-background-1 font-normal">
+                      Two Comfortable Bedrooms
+                    </h3>
+                    <p data-process-reveal
+                      class="font-inter-tight text-tagline-3 md:text-tagline-2 text-background-1 font-normal">
+                      Enjoy a peaceful stay in thoughtfully designed bedrooms, offering a cozy atmosphere, comfortable furnishings, and everything you need to relax and unwind.
+                    </p>
+                  </div>
+
+                  <div data-process-reveal class="flex w-full items-center justify-between max-md:mt-9">
+                    <ul class="w-1/2 space-y-2">
+                      <li class="font-inter-tight text-tagline-3 text-background-6/60 flex items-start gap-x-3 py-0.5">
+                        <span class="bg-background-1 inline-block h-[25px] w-px"></span> Comfortable beds
+                      </li>
+                      <li class="font-inter-tight text-tagline-3 text-background-6/60 flex items-start gap-x-3 py-0.5">
+                        <span class="bg-background-1 inline-block h-[25px] w-px"></span>Fresh & clean linens
+                      </li>
+                      <li class="font-inter-tight text-tagline-3 text-background-6/60 flex items-start gap-x-3 py-0.5">
+                        <span class="bg-background-1 inline-block h-[25px] w-px"></span> Spacious interiors
+                      </li>
+                      <li class="font-inter-tight text-tagline-3 text-background-6/60 flex items-start gap-x-3 py-0.5">
+                        <span class="bg-background-1 inline-block h-[25px] w-px"></span> Natural lighting
+                      </li>
+                      <li class="font-inter-tight text-tagline-3 text-background-6/60 flex items-start gap-x-3 py-0.5">
+                        <span class="bg-background-1 inline-block h-[25px] w-px"></span> Bedside tables
+                      </li>
+                    </ul>
+                    <ul class="w-1/2 space-y-2">
+                      <li class="font-inter-tight text-tagline-3 text-background-6/60 flex items-start gap-x-3 py-0.5">
+                        <span class="bg-background-1 inline-block h-[25px] w-px"></span> Ample storage
+                        
+                      </li>
+                      <li class="font-inter-tight text-tagline-3 text-background-6/60 flex items-start gap-x-3 py-0.5">
+                        <span class="bg-background-1 inline-block h-[25px] w-px"></span>Cozy ambience
+                      </li>
+                      <li class="font-inter-tight text-tagline-3 text-background-6/60 flex items-start gap-x-3 py-0.5">
+                        <span class="bg-background-1 inline-block h-[25px] w-px"></span> Peaceful surroundings
+                      </li>
+                      <li class="font-inter-tight text-tagline-3 text-background-6/60 flex items-start gap-x-3 py-0.5">
+                        <span class="bg-background-1 inline-block h-[25px] w-px"></span>Private accommodation
+                      </li>
+                      <li class="font-inter-tight text-tagline-3 text-background-6/60 flex items-start gap-x-3 py-0.5">
+                        <span class="bg-background-1 inline-block h-[25px] w-px"></span>Ideal for families
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- panel 2  -->
+              <div data-process-panel class="absolute inset-0 flex flex-col items-center justify-center md:flex-row">
+                <figure class="h-full w-full overflow-hidden md:w-1/2">
+                  <img data-process-img src="images/img-21.jpg" alt="Life cycle assessment"
+                    class="size-full object-cover" />
+                </figure>
+                <div class="flex h-full w-full flex-col items-start justify-between bg-white p-6 md:w-1/2 lg:p-10.5">
+                  <div class="space-y-2">
+                    <h3 data-process-reveal
+                      class="font-instrument-sans text-is-heading-5 lg:text-is-heading-4 text-background-1 font-normal">
+                      Fully Equipped Kitchen
+                    </h3>
+                    <p data-process-reveal
+                      class="font-inter-tight text-tagline-3 md:text-tagline-2 text-background-1 font-normal">
+                      Enjoy the convenience of a well-equipped kitchen with all the essential cooking facilities, utensils, and appliances for a comfortable stay.
+                    </p>
+                  </div>
+
+                  <div data-process-reveal class="flex w-full items-center justify-between max-md:mt-9">
+                    <ul class="w-1/2 space-y-2">
+                      <li class="font-inter-tight text-tagline-3 text-background-6/60 flex items-start gap-x-3 py-0.5">
+                        <span class="bg-background-1 inline-block h-[25px] w-px"></span>Essential Cooking Utensils
+                      </li>
+                      <li class="font-inter-tight text-tagline-3 text-background-6/60 flex items-start gap-x-3 py-0.5">
+                        <span class="bg-background-1 inline-block h-[25px] w-px"></span>Gas Stove / Induction Cooktop
+                      </li>
+                      <li class="font-inter-tight text-tagline-3 text-background-6/60 flex items-start gap-x-3 py-0.5">
+                        <span class="bg-background-1 inline-block h-[25px] w-px"></span> Refrigerator
+                      </li>
+                      <li class="font-inter-tight text-tagline-3 text-background-6/60 flex items-start gap-x-3 py-0.5">
+                        <span class="bg-background-1 inline-block h-[25px] w-px"></span> Microwave Oven
+                      </li>
+                      <li class="font-inter-tight text-tagline-3 text-background-6/60 flex items-start gap-x-3 py-0.5">
+                        <span class="bg-background-1 inline-block h-[25px] w-px"></span> Electric Kettle
+                      </li>
+                    </ul>
+                    <ul class="w-1/2 space-y-2">
+                      <li class="font-inter-tight text-tagline-3 text-background-6/60 flex items-start gap-x-3 py-0.5">
+                        <span class="bg-background-1 inline-block h-[25px] w-px"></span> Dining & Serving Essentials
+                      </li>
+                      <li class="font-inter-tight text-tagline-3 text-background-6/60 flex items-start gap-x-3 py-0.5">
+                        <span class="bg-background-1 inline-block h-[25px] w-px"></span> Plates, Cups & Cutlery
+                      </li>
+                      <li class="font-inter-tight text-tagline-3 text-background-6/60 flex items-start gap-x-3 py-0.5">
+                        <span class="bg-background-1 inline-block h-[25px] w-px"></span> Pots & Pans
+                      </li>
+                      <li class="font-inter-tight text-tagline-3 text-background-6/60 flex items-start gap-x-3 py-0.5">
+                        <span class="bg-background-1 inline-block h-[25px] w-px"></span> Basic Cooking Ingredients
+                      </li>
+                      <li class="font-inter-tight text-tagline-3 text-background-6/60 flex items-start gap-x-3 py-0.5">
+                        <span class="bg-background-1 inline-block h-[25px] w-px"></span> Tea & Coffee Facilities
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- panel 3  -->
+              <div data-process-panel class="absolute inset-0 flex flex-col items-center justify-center md:flex-row">
+                <figure class="h-full w-full overflow-hidden md:w-1/2">
+                  <img data-process-img src="images/img-22.jpg" alt="Biophilic integration"
+                    class="size-full object-cover" />
+                </figure>
+                <div class="flex h-full w-full flex-col items-start justify-between bg-white p-6 md:w-1/2 lg:p-10.5">
+                  <div class="space-y-2">
+                    <h3 data-process-reveal
+                      class="font-instrument-sans text-is-heading-5 lg:text-is-heading-4 text-background-1 font-normal">
+                      Recreation Room
+                    </h3>
+                    <p data-process-reveal
+                      class="font-inter-tight text-tagline-3 md:text-tagline-2 text-background-1 font-normal">
+                      Unwind and enjoy quality time together in our comfortable recreation room, thoughtfully designed for indoor fun, relaxation, and entertainment.
+                    </p>
+                  </div>
+
+                  <div data-process-reveal class="flex w-full items-center justify-between max-md:mt-9">
+                    <ul class="w-1/2 space-y-2">
+                      <li class="font-inter-tight text-tagline-3 text-background-6/60 flex items-start gap-x-3 py-0.5">
+                        <span class="bg-background-1 inline-block h-[25px] w-px"></span> Indoor Games & Entertainment
+                      </li>
+                      <li class="font-inter-tight text-tagline-3 text-background-6/60 flex items-start gap-x-3 py-0.5">
+                        <span class="bg-background-1 inline-block h-[25px] w-px"></span> Comfortable Seating Area
+                      </li>
+                      <li class="font-inter-tight text-tagline-3 text-background-6/60 flex items-start gap-x-3 py-0.5">
+                        <span class="bg-background-1 inline-block h-[25px] w-px"></span>Board Games & Playing Cards
+                      </li>
+                      <li class="font-inter-tight text-tagline-3 text-background-6/60 flex items-start gap-x-3 py-0.5">
+                        <span class="bg-background-1 inline-block h-[25px] w-px"></span> Family-Friendly Activities
+                      </li>
+                      <li class="font-inter-tight text-tagline-3 text-background-6/60 flex items-start gap-x-3 py-0.5">
+                        <span class="bg-background-1 inline-block h-[25px] w-px"></span>Entertainment Facilities
+                      </li>
+                    </ul>
+                    <ul class="w-1/2 space-y-2">
+                      <li class="font-inter-tight text-tagline-3 text-background-6/60 flex items-start gap-x-3 py-0.5">
+                        <span class="bg-background-1 inline-block h-[25px] w-px"></span>Relaxing Indoor Space
+                      </li>
+                      <li class="font-inter-tight text-tagline-3 text-background-6/60 flex items-start gap-x-3 py-0.5">
+                        <span class="bg-background-1 inline-block h-[25px] w-px"></span> Fun for All Ages
+                      </li>
+                      <li class="font-inter-tight text-tagline-3 text-background-6/60 flex items-start gap-x-3 py-0.5">
+                        <span class="bg-background-1 inline-block h-[25px] w-px"></span>Perfect for Family Time
+                      </li>
+                      <li class="font-inter-tight text-tagline-3 text-background-6/60 flex items-start gap-x-3 py-0.5">
+                        <span class="bg-background-1 inline-block h-[25px] w-px"></span> Spacious Recreation Area
+                      </li>
+                      <li class="font-inter-tight text-tagline-3 text-background-6/60 flex items-start gap-x-3 py-0.5">
+                        <span class="bg-background-1 inline-block h-[25px] w-px"></span> Ideal for Leisure & Relaxation
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- panel 4  -->
+              <div data-process-panel class="absolute inset-0 flex flex-col items-center justify-center md:flex-row">
+                <figure class="h-full w-full overflow-hidden md:w-1/2">
+                  <img data-process-img src="images/img-23.jpg" alt="Operational performance"
+                    class="size-full object-cover" />
+                </figure>
+                <div class="flex h-full w-full flex-col items-start justify-between bg-white p-6 md:w-1/2 lg:p-10.5">
+                  <div class="space-y-2">
+                    <h3 data-process-reveal
+                      class="font-instrument-sans text-is-heading-5 lg:text-is-heading-4 text-background-1 font-normal">
+                      Ideal for Families, Couples & Small Groups
+                    </h3>
+                    <p data-process-reveal
+                      class="font-inter-tight text-tagline-3 md:text-tagline-2 text-background-1 font-normal">
+                      A peaceful and comfortable stay designed for families, couples, and small groups looking to relax, reconnect, and enjoy quality time together.
+                    </p>
+                  </div>
+
+                  <div data-process-reveal class="flex w-full items-center justify-between max-md:mt-9">
+                    <ul class="w-1/2 space-y-2">
+                      <li class="font-inter-tight text-tagline-3 text-background-6/60 flex items-start gap-x-3 py-0.5">
+                        <span class="bg-background-1 inline-block h-[25px] w-px"></span>Comfortable Family-Friendly Stay
+                      </li>
+                      <li class="font-inter-tight text-tagline-3 text-background-6/60 flex items-start gap-x-3 py-0.5">
+                        <span class="bg-background-1 inline-block h-[25px] w-px"></span> Perfect for Couples
+                      </li>
+                      <li class="font-inter-tight text-tagline-3 text-background-6/60 flex items-start gap-x-3 py-0.5">
+                        <span class="bg-background-1 inline-block h-[25px] w-px"></span> Ideal for Small Groups
+                      </li>
+                      <li class="font-inter-tight text-tagline-3 text-background-6/60 flex items-start gap-x-3 py-0.5">
+                        <span class="bg-background-1 inline-block h-[25px] w-px"></span> Spacious Living Areas
+                      </li>
+                      <li class="font-inter-tight text-tagline-3 text-background-6/60 flex items-start gap-x-3 py-0.5">
+                        <span class="bg-background-1 inline-block h-[25px] w-px"></span> Cozy & Private Bedrooms
+                      </li>
+                    </ul>
+                    <ul class="w-1/2 space-y-2">
+                      <li class="font-inter-tight text-tagline-3 text-background-6/60 flex items-start gap-x-3 py-0.5">
+                        <span class="bg-background-1 inline-block h-[25px] w-px"></span> Relaxing Common Spaces
+                      </li>
+                      <li class="font-inter-tight text-tagline-3 text-background-6/60 flex items-start gap-x-3 py-0.5">
+                        <span class="bg-background-1 inline-block h-[25px] w-px"></span>Convenient Kitchen Facilities
+                      </li>
+                      <li class="font-inter-tight text-tagline-3 text-background-6/60 flex items-start gap-x-3 py-0.5">
+                        <span class="bg-background-1 inline-block h-[25px] w-px"></span> Peaceful Natural Surroundings
+                      </li>
+                      <li class="font-inter-tight text-tagline-3 text-background-6/60 flex items-start gap-x-3 py-0.5">
+                        <span class="bg-background-1 inline-block h-[25px] w-px"></span>
+                       Suitable for Short & Long Stays
+                      </li>
+                      <li class="font-inter-tight text-tagline-3 text-background-6/60 flex items-start gap-x-3 py-0.5">
+                        <span class="bg-background-1 inline-block h-[25px] w-px"></span>Perfect for Quality Time Together
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="py-18 lg:py-28">
+      <div class="main-container">
+        <div class="grid grid-cols-12 items-start gap-y-8 lg:gap-x-10.5">
+          <div class="col-span-12 lg:col-span-6">
+            <div class="space-y-14">
+              <div class="space-y-5">
+                <div data-block-reveal data-delay="0.1" class="inline-block">
+                  <div
+                    class="text-tagline-4 font-pt-mono flex items-center justify-center gap-x-1.5 rounded-sm bg-white px-3 py-1.5 text-black shadow-[0_42px_12px_0_rgba(0,0,0,0.00),0_27px_11px_0_rgba(0,0,0,0.01),0_15px_9px_0_rgba(0,0,0,0.03),0_7px_7px_0_rgba(0,0,0,0.05),0_2px_4px_0_rgba(0,0,0,0.06)] backdrop-blur-[61.14973831176758px]">
+                    <span class="size-1.5 shrink-0 bg-black"> </span>
+
+                    <span>FAQ</span>
+                  </div>
+
+                </div>
+                <div class="space-y-3">
+                  <h2 data-text-reveal data-reveal-delay="0.2"
+                    class="font-instrument-sans text-background-2 text-is-heading-3 lg:text-is-heading-2 w-full font-medium md:max-w-[600px] lg:max-w-[550px] xl:max-w-[743px]">
+                    The compassionate
+                    <span class="font-instrument-serif text-background-1 font-normal italic">inquiry hub.</span>
+                  </h2>
+
+                  <p data-text-reveal data-reveal-delay="0.3"
+                    class="font-inter-tight text-tagline-2 sm:text-tagline-1 text-background-1 font-normal">
+                    Clear answers on sustainable design, green materials, and how we deliver resilient
+                    architecture built for long-term environmental performance.
+                  </p>
+                </div>
+              </div>
+
+              <figure data-block-reveal data-delay="0.4" class="h-[350px] w-full overflow-hidden md:h-[465px]">
+                <img src="images/img-24.jpg" alt="faq-img" class="size-full object-cover" />
+              </figure>
+            </div>
+          </div>
+
+          <div data-block-reveal data-delay="0.3" class="col-span-12 lg:col-span-6">
+            <div data-faq-accordion class="space-y-3">
+              <div data-faq-item data-default-open="true" class="group/faq-heading bg-white">
+                <h3 class="text-is-heading-6 text-background-1 font-instrument-sans relative w-full">
+                  <div
+                    class="bg-background-1 focus-within:outline-background-1 absolute bottom-0 left-1/2 h-px w-0 -translate-x-1/2 opacity-0 transition-all delay-100 duration-500 group-data-[expend=true]/faq-heading:w-[90%] group-data-[expend=true]/faq-heading:opacity-100 focus-within:outline-1">
+                  </div>
+                  <button type="button" data-faq-action
+                    class="flex w-full items-center justify-between px-5 py-5 text-left md:px-8 md:py-8">
+                    Is timber architecture safe for high-rise buildings?
+
+                    <span data-faq-icon
+                      class="data-[expend=true]:bg-background-1 bg-background-5 ease-faq group flex size-6 shrink-0 items-center justify-center rounded-full transition-all duration-600 data-[expend=true]:rotate-180">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none"
+                        class="stroke-background-1 ease-faq size-4 transition-all duration-500 group-data-[expend=true]:stroke-white">
+                        <path d="M13 6L8 11L3 6" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </span>
+                  </button>
+                </h3>
+
+                <div data-faq-content class="ease-faq h-0 overflow-hidden">
+                  <div data-faq-text-reveal
+                    class="font-inter-tight text-tagline-2 text-background-1/60 px-5 py-6 font-normal md:px-8 lg:py-8">
+                    Absolutely. Our Cross-Laminated Timber (CLT) is engineered to be more fire-resistant
+                    than steel and offers superior seismic performance in earthquake zones.
+                  </div>
+                </div>
+              </div>
+
+              <div data-faq-item class="group/faq-heading bg-white">
+                <h3 class="text-is-heading-6 text-background-1 font-instrument-sans relative w-full">
+                  <div
+                    class="bg-background-1 focus-within:outline-background-1 absolute bottom-0 left-1/2 h-px w-0 -translate-x-1/2 opacity-0 transition-all delay-100 duration-500 group-data-[expend=true]/faq-heading:w-[90%] group-data-[expend=true]/faq-heading:opacity-100 focus-within:outline-1">
+                  </div>
+                  <button type="button" data-faq-action
+                    class="flex w-full items-center justify-between px-5 py-5 text-left md:px-8 md:py-8">
+                    What green building certifications do you pursue?
+
+                    <span data-faq-icon
+                      class="data-[expend=true]:bg-background-1 bg-background-5 ease-faq group flex size-6 shrink-0 items-center justify-center rounded-full transition-all duration-600 data-[expend=true]:rotate-180">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none"
+                        class="stroke-background-1 ease-faq size-4 transition-all duration-500 group-data-[expend=true]:stroke-white">
+                        <path d="M13 6L8 11L3 6" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </span>
+                  </button>
+                </h3>
+
+                <div data-faq-content class="ease-faq h-0 overflow-hidden">
+                  <div data-faq-text-reveal
+                    class="font-inter-tight text-tagline-2 text-background-1/60 px-5 py-6 font-normal md:px-8 lg:py-8">
+                    We align projects with LEED, WELL, and Passive House standards where appropriate,
+                    documenting energy use, material health, and indoor environmental quality from
+                    design through occupancy.
+                  </div>
+                </div>
+              </div>
+
+              <div data-faq-item class="group/faq-heading bg-white">
+                <h3 class="text-is-heading-6 text-background-1 font-instrument-sans relative w-full">
+                  <div
+                    class="bg-background-1 focus-within:outline-background-1 absolute bottom-0 left-1/2 h-px w-0 -translate-x-1/2 opacity-0 transition-all delay-100 duration-500 group-data-[expend=true]/faq-heading:w-[90%] group-data-[expend=true]/faq-heading:opacity-100 focus-within:outline-1">
+                  </div>
+                  <button type="button" data-faq-action
+                    class="flex w-full items-center justify-between px-5 py-5 text-left md:px-8 md:py-8">
+                    How does biophilic design improve building performance?
+
+                    <span data-faq-icon
+                      class="data-[expend=true]:bg-background-1 bg-background-5 ease-faq group flex size-6 shrink-0 items-center justify-center rounded-full transition-all duration-600 data-[expend=true]:rotate-180">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none"
+                        class="stroke-background-1 ease-faq size-4 transition-all duration-500 group-data-[expend=true]:stroke-white">
+                        <path d="M13 6L8 11L3 6" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </span>
+                  </button>
+                </h3>
+
+                <div data-faq-content class="ease-faq h-0 overflow-hidden">
+                  <div data-faq-text-reveal
+                    class="font-inter-tight text-tagline-2 text-background-1/60 px-5 py-6 font-normal md:px-8 lg:py-8">
+                    Integrating natural light, living systems, and organic materials improves air
+                    quality, thermal comfort, and occupant wellbeing while reducing reliance on
+                    mechanical cooling and artificial lighting.
+                  </div>
+                </div>
+              </div>
+
+              <div data-faq-item class="group/faq-heading bg-white">
+                <h3 class="text-is-heading-6 text-background-1 font-instrument-sans relative w-full">
+                  <div
+                    class="bg-background-1 focus-within:outline-background-1 absolute bottom-0 left-1/2 h-px w-0 -translate-x-1/2 opacity-0 transition-all delay-100 duration-500 group-data-[expend=true]/faq-heading:w-[90%] group-data-[expend=true]/faq-heading:opacity-100 focus-within:outline-1">
+                  </div>
+                  <button type="button" data-faq-action
+                    class="flex w-full items-center justify-between px-5 py-5 text-left md:px-8 md:py-8">
+                    What is included in a life cycle assessment?
+
+                    <span data-faq-icon
+                      class="data-[expend=true]:bg-background-1 bg-background-5 ease-faq group flex size-6 shrink-0 items-center justify-center rounded-full transition-all duration-600 data-[expend=true]:rotate-180">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none"
+                        class="stroke-background-1 ease-faq size-4 transition-all duration-500 group-data-[expend=true]:stroke-white">
+                        <path d="M13 6L8 11L3 6" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </span>
+                  </button>
+                </h3>
+
+                <div data-faq-content class="ease-faq h-0 overflow-hidden">
+                  <div data-faq-text-reveal
+                    class="font-inter-tight text-tagline-2 text-background-1/60 px-5 py-6 font-normal md:px-8 lg:py-8">
+                    Our LCA covers embodied carbon, material sourcing, construction impact, operational
+                    energy use, and end-of-life planning — giving a full picture of environmental impact
+                    across a building's lifespan.
+                  </div>
+                </div>
+              </div>
+
+              <div data-faq-item class="group/faq-heading bg-white">
+                <h3 class="text-is-heading-6 text-background-1 font-instrument-sans relative w-full">
+                  <div
+                    class="bg-background-1 focus-within:outline-background-1 absolute bottom-0 left-1/2 h-px w-0 -translate-x-1/2 opacity-0 transition-all delay-100 duration-500 group-data-[expend=true]/faq-heading:w-[90%] group-data-[expend=true]/faq-heading:opacity-100 focus-within:outline-1">
+                  </div>
+                  <button type="button" data-faq-action
+                    class="flex w-full items-center justify-between px-5 py-5 text-left md:px-8 md:py-8">
+                    Do net-zero buildings cost more to build upfront?
+
+                    <span data-faq-icon
+                      class="data-[expend=true]:bg-background-1 bg-background-5 ease-faq group flex size-6 shrink-0 items-center justify-center rounded-full transition-all duration-600 data-[expend=true]:rotate-180">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none"
+                        class="stroke-background-1 ease-faq size-4 transition-all duration-500 group-data-[expend=true]:stroke-white">
+                        <path d="M13 6L8 11L3 6" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </span>
+                  </button>
+                </h3>
+
+                <div data-faq-content class="ease-faq h-0 overflow-hidden">
+                  <div data-faq-text-reveal
+                    class="font-inter-tight text-tagline-2 text-background-1/60 px-5 py-6 font-normal md:px-8 lg:py-8">
+                    Initial costs can be higher, but integrated passive design, efficient envelopes, and
+                    renewable systems typically reduce long-term operating expenses and deliver strong
+                    lifecycle returns.
+                  </div>
+                </div>
+              </div>
+
+              <div data-faq-item class="group/faq-heading bg-white">
+                <h3 class="text-is-heading-6 text-background-1 font-instrument-sans relative w-full">
+                  <div
+                    class="bg-background-1 focus-within:outline-background-1 absolute bottom-0 left-1/2 h-px w-0 -translate-x-1/2 opacity-0 transition-all delay-100 duration-500 group-data-[expend=true]/faq-heading:w-[90%] group-data-[expend=true]/faq-heading:opacity-100 focus-within:outline-1">
+                  </div>
+                  <button type="button" data-faq-action
+                    class="flex w-full items-center justify-between px-5 py-5 text-left md:px-8 md:py-8">
+                    Do you monitor buildings after completion?
+
+                    <span data-faq-icon
+                      class="data-[expend=true]:bg-background-1 bg-background-5 ease-faq group flex size-6 shrink-0 items-center justify-center rounded-full transition-all duration-600 data-[expend=true]:rotate-180">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none"
+                        class="stroke-background-1 ease-faq size-4 transition-all duration-500 group-data-[expend=true]:stroke-white">
+                        <path d="M13 6L8 11L3 6" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </span>
+                  </button>
+                </h3>
+
+                <div data-faq-content class="ease-faq h-0 overflow-hidden">
+                  <div data-faq-text-reveal
+                    class="font-inter-tight text-tagline-2 text-background-1/60 px-5 py-6 font-normal md:px-8 lg:py-8">
+                    Yes. We provide ongoing performance monitoring, energy dashboards, and optimization
+                    support to ensure buildings meet their sustainability targets and adapt to changing
+                    occupancy patterns over time.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>  -->
+
+    <section class="relative overflow-hidden bg-white py-18 lg:py-28">
+      <!-- svg  -->
+      <div
+        class="pointer-events-none absolute left-[-10%] size-full overflow-hidden select-none max-md:top-[-3%] md:left-[5%] xl:left-[20%]"
+        data-blog-svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 802 2224" fill="none"
+          class="h-[2900px] w-[500px] sm:h-[2224px] md:w-[600px] lg:w-[802px]">
+          <path
+            d="M19.9999 -282.512C318.965 -277.956 787.273 213.821 781.424 597.669C773.485 1118.61 47.921 998.082 122.518 597.667C196.935 198.216 1093.93 587.554 641.268 1536.21C442.065 1953.68 458.734 2265.84 430.612 2497.08"
+            stroke="url(#paint0_linear_1201_22436)" stroke-width="40" stroke-linecap="round" />
+          <defs>
+            <linearGradient id="paint0_linear_1201_22436" x1="467.015" y1="46.8849" x2="429.677" y2="2497.1"
+              gradientUnits="userSpaceOnUse">
+              <stop stop-color="#E4EBDF" />
+              <stop offset="1" stop-color="#E4EBDF" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+
+      <div class="main-container">
+        <div class="space-y-21">
+          <div class="space-y-5 text-center">
+            <div data-block-reveal data-delay="0.1" class="inline-block">
+              <div
+                class="text-tagline-4 font-pt-mono flex items-center justify-center gap-x-1.5 rounded-sm bg-white px-3 py-1.5 text-black shadow-[0_42px_12px_0_rgba(0,0,0,0.00),0_27px_11px_0_rgba(0,0,0,0.01),0_15px_9px_0_rgba(0,0,0,0.03),0_7px_7px_0_rgba(0,0,0,0.05),0_2px_4px_0_rgba(0,0,0,0.06)] backdrop-blur-[61.14973831176758px]">
+                <span class="size-1.5 shrink-0 bg-black"> </span>
+
+                <span>The Exotic Aura</span>
+              </div>
+
+            </div>
+            <h2 data-text-reveal data-reveal-delay="0.2"
+              class="font-instrument-sans text-background-2 text-is-heading-3 lg:text-is-heading-2 mx-auto w-full text-center font-medium md:max-w-[600px] lg:max-w-[550px]">
+              A Warm, Exquisite, Practical 
+
+              <span class="font-instrument-serif text-background-1 font-normal italic">And Urban Space.</span>
+            </h2>
+          </div>
+
+          <!-- blog cards  -->
+          <div class="grid grid-cols-12 items-start gap-y-6 lg:gap-8">
+            <!-- card one  -->
+            <div data-block-reveal data-delay="0.3" class="col-span-12">
+              <a href="">
+                <div class="group">
+                  <figure class="h-[320px] w-full overflow-hidden md:h-[400px] lg:h-[450px] xl:h-[577px]">
+                    <img src="images/img-25.jpg" alt="Mass timber structure in a sustainable building"
+                      class="size-full object-cover" />
+                  </figure>
+                  <!-- <div
+                    class="bg-background-3/50 flex flex-col items-start gap-x-6 gap-y-5 px-6 pt-6 pb-10.5 backdrop-blur-[10px] xl:flex-row xl:gap-y-0 xl:px-10.5">
+                    <div class="text-nowrap">
+                      <p class="font-inter-tight text-tagline-2 text-background-1 font-normal">Green Materials</p>
+                      <p class="font-inter-tight text-tagline-3 text-background-1/60 font-normal">Mar 14, 2026</p>
+                    </div>
+                    <div class="flex w-full items-end justify-between">
+                      <div class="space-y-2">
+                        <h3 class="font-instrument-sans text-is-heading-5 text-background-1 font-medium">
+                          Why Wood is the New Concrete.
+                        </h3>
+                        <p class="font-inter-tight text-tagline-2 text-background-1 line-clamp-2 font-normal">
+                          Mass timber and engineered wood are reshaping low-carbon construction without sacrificing
+                          strength or design freedom.
+                        </p>
+                      </div>
+                      <span
+                        class="bg-background-1 icon-slide-track ease-bouncy relative ml-10 size-13 shrink-0 overflow-hidden rounded-full transition-all duration-500 group-hover:scale-110">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                          class="icon-slide-out size-6 stroke-white">
+                          <path d="M7 17L17 7" stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M7 7H17V17" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                          class="icon-slide-in size-6 stroke-white">
+                          <path d="M7 17L17 7" stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M7 7H17V17" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </span>
+                    </div>
+                  </div> -->
+                </div>
+
+              </a>
+            </div>
+
+            <!-- card two  -->
+            <!-- <div data-block-reveal data-delay="0.4" class="col-span-12 lg:col-span-6">
+              <a href="blog-details.html">
+                <div class="group">
+                  <figure class="h-[320px] w-full overflow-hidden md:h-[400px] lg:h-[450px] xl:h-[577px]">
+                    <img src="images/img-26.jpg" alt="Passive cooling design in a tropical green building"
+                      class="size-full object-cover" />
+                  </figure>
+                  <div
+                    class="bg-background-3/50 flex flex-col items-start gap-x-6 gap-y-5 px-6 pt-6 pb-10.5 backdrop-blur-[10px] xl:flex-row xl:gap-y-0 xl:px-10.5">
+                    <div class="text-nowrap">
+                      <p class="font-inter-tight text-tagline-2 text-background-1 font-normal">Sustainable Design</p>
+                      <p class="font-inter-tight text-tagline-3 text-background-1/60 font-normal">Feb 28, 2026</p>
+                    </div>
+                    <div class="flex w-full items-end justify-between">
+                      <div class="space-y-2">
+                        <h3 class="font-instrument-sans text-is-heading-5 text-background-1 font-medium">
+                          Passive Cooling in Tropical Climates.
+                        </h3>
+                        <p class="font-inter-tight text-tagline-2 text-background-1 line-clamp-2 font-normal">
+                          Orientation, cross-ventilation, and shading strategies that cut energy use while keeping
+                          interiors naturally comfortable.
+                        </p>
+                      </div>
+                      <span
+                        class="bg-background-1 icon-slide-track ease-bouncy relative ml-10 size-13 shrink-0 overflow-hidden rounded-full transition-all duration-500 group-hover:scale-110">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                          class="icon-slide-out size-6 stroke-white">
+                          <path d="M7 17L17 7" stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M7 7H17V17" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                          class="icon-slide-in size-6 stroke-white">
+                          <path d="M7 17L17 7" stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M7 7H17V17" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+              </a>
+            </div> -->
+
+            <!-- card three  -->
+            <!-- <div data-block-reveal data-delay="0.5" class="col-span-12 lg:col-span-6">
+              <a href="blog-details.html">
+                <div class="group">
+                  <figure class="h-[320px] w-full overflow-hidden md:h-[400px] lg:h-[450px] xl:h-[577px]">
+                    <img src="images/img-27.jpg" alt="Net-zero residential project with solar and green roof"
+                      class="size-full object-cover" />
+                  </figure>
+                  <div
+                    class="bg-background-3/50 flex flex-col items-start gap-x-6 gap-y-5 px-6 pt-6 pb-10.5 backdrop-blur-[10px] xl:flex-row xl:gap-y-0 xl:px-10.5">
+                    <div class="text-nowrap">
+                      <p class="font-inter-tight text-tagline-2 text-background-1 font-normal">Case Study</p>
+                      <p class="font-inter-tight text-tagline-3 text-background-1/60 font-normal">Jan 22, 2026</p>
+                    </div>
+                    <div class="flex w-full items-end justify-between">
+                      <div class="space-y-2">
+                        <h3 class="font-instrument-sans text-is-heading-5 text-background-1 font-medium">
+                          Designing for Net-Zero Living & Sustainability.
+                        </h3>
+                        <p class="font-inter-tight text-tagline-2 text-background-1 line-clamp-2 font-normal">
+                          How integrated solar, rainwater harvesting, and recycled materials deliver buildings that
+                          generate more than they consume.
+                        </p>
+                      </div>
+                      <span
+                        class="bg-background-1 icon-slide-track ease-bouncy relative ml-10 size-13 shrink-0 overflow-hidden rounded-full transition-all duration-500 group-hover:scale-110">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                          class="icon-slide-out size-6 stroke-white">
+                          <path d="M7 17L17 7" stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M7 7H17V17" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                          class="icon-slide-in size-6 stroke-white">
+                          <path d="M7 17L17 7" stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M7 7H17V17" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+              </a>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer class="relative overflow-hidden pt-18 pb-10 md:pt-20 xl:pt-39">
+    <!-- background img  -->
+    <figure class="pointer-events-none absolute inset-0 -z-10 select-none">
+      <img src="images/img-28.png" alt="footer-bg" class="size-full object-cover" />
+    </figure>
+
+    <!-- bg overlay  -->
+    <div
+      class="pointer-events-auto absolute inset-0 z-1 size-full bg-linear-to-b from-[#040E04] to-black/0 select-none">
+    </div>
+
+    <div class="main-container relative z-20">
+      <div class="space-y-5 md:space-y-16">
+        <div class="grid grid-cols-12 xl:gap-x-28">
+          <!-- footer heading  -->
+          <div class="col-span-12 lg:col-span-6">
+            <div class="space-y-6 lg:space-y-14">
+              <h2 data-text-reveal data-reveal-delay="0.2"
+                class="font-instrument-sans text-is-heading-4 lg:text-is-heading-3 xl:text-is-heading-2 font-medium text-white max-lg:max-w-[550px]">
+               Experience tranquil luxury nestled in the heart of 
+                <span
+                  class="font-instrument-serif text-isf-heading-4 lg:text-isf-heading-3 xl:text-isf-heading-2 text-white/60 italic">
+                  Wayanad's pristine wilderness
+                </span>
+              </h2>
+
+              <div data-block-reveal data-delay="0.3" class="inline-block">
+                <a href="booking.html">
+                  <button
+                    class="text-tagline-2 font-inter-tight group/button-secondary text-background-1 focus-visible:outline-background-1 flex items-center gap-x-2.5 rounded-full bg-white py-2.5 pr-2 pl-[18px] font-medium transition-transform duration-150 ease-out focus-visible:outline-2 active:scale-[0.97]">
+                    <span class="relative inline-block overflow-hidden text-nowrap">
+                      <span class="invisible">Book Now</span>
+                      <span class="absolute inset-0 perspective-normal">
+                        <span
+                          class="absolute inset-0 origin-top transform-[translate3d(0,0,0)_rotateX(0deg)] [transition:transform_0.55s_var(--button-text-ease)] backface-hidden group-hover/button-secondary:transform-[translate3d(0,-100%,0)_rotateX(90deg)] group-focus-visible/button-secondary:transform-[translate3d(0,-100%,0)_rotateX(90deg)]">
+                          Book Now</span>
+                        <span
+                          class="absolute inset-0 origin-bottom transform-[translate3d(0,100%,0)_rotateX(-90deg)] [transition:transform_0.55s_var(--button-text-ease)] backface-hidden group-hover/button-secondary:transform-[translate3d(0,0,0)_rotateX(0deg)] group-focus-visible/button-secondary:transform-[translate3d(0,0,0)_rotateX(0deg)]">
+                          Book Now</span>
+                      </span>
+                    </span>
+
+                    <span class="relative flex size-8 items-center justify-center">
+                      <span
+                        class="bg-background-1 absolute z-10 size-0 origin-center rounded-full opacity-0 transition-all duration-400 ease-out group-hover/button-secondary:size-8 group-hover/button-secondary:opacity-100 group-focus-visible/button-secondary:size-8 group-focus-visible/button-secondary:opacity-100"></span>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                        class="ease-bouncy stroke-background-1 relative z-20 size-6 rotate-45 transition-all duration-400 group-hover/button-secondary:rotate-0 group-hover/button-secondary:stroke-white group-focus-visible/button-secondary:rotate-0 group-focus-visible/button-secondary:stroke-white">
+                        <path d="M17 17V7H7M17 7L7 17" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </span>
+                  </button>
+
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- footer links  -->
+          <div class="col-span-12 grid grid-cols-1 items-start gap-6 lg:col-span-6 lg:grid-cols-3">
+            <!-- services  -->
+            <div data-block-reveal data-delay="0.4" class="w-full space-y-3 max-sm:py-6 sm:p-6">
+              <p class="font-inter-tight text-tagline-2 font-normal text-white">Quick Links</p>
+              <ul class="space-y-2">
+                <li>
+                  <a href="index.html"
+                    class="font-inter-tight text-tagline-2 footer-link font-normal text-white/60">HOME</a>
+                </li>
+                <li>
+                  <a href="room.html"
+                    class="font-inter-tight text-tagline-2 footer-link font-normal text-white/60">ROOMS</a>
+                </li>
+                <li>
+                  <a href="booking.html"
+                    class="font-inter-tight text-tagline-2 footer-link font-normal text-white/60">BOOKING</a>
+                </li>
+                <li>
+                  <a href="places.html"
+                    class="font-inter-tight text-tagline-2 footer-link font-normal text-white/60">NEARBY PLACES</a>
+                </li>
+                <li>
+                  <a href="contact.html"
+                    class="font-inter-tight text-tagline-2 footer-link font-normal text-white/60">CONTACT</a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Company  -->
+            <div data-block-reveal data-delay="0.5" class="w-full space-y-3 p-6 ">
+              <p class="font-inter-tight text-tagline-2 font-normal text-white">MISTY WOODS</p>
+              <div class="space-y-2">
+                <p class="font-inter-tight text-tagline-2 font-normal text-white/60">
+                  Muthumari Thrissilery
+                </p>
+
+                <p class="font-inter-tight text-tagline-2 font-normal text-white/60">
+                  (po.) 670646
+                </p>
+                <p>
+                  <a href="tel:+91 9447438787"
+                    class="footer-link fint-inter-tight font-normal text-white/60">+91 9447438787</a>
+                </p>
+                <p class="font-inter-tight text-tagline-2 font-normal text-white/60">
+                  <a href="mailto:hello@arcion.com" class="footer-link">drajayan67@gmail.com</a>
+                </p>
+              </div>
+            </div>
+
+            <!-- Contact Us  -->
+            <div data-block-reveal data-delay="0.6" class="w-full space-y-3 p-6">
+              <p class="font-inter-tight text-tagline-2 font-normal text-white">MISTY HILLS</p>
+              <div class="space-y-2">
+                <p class="font-inter-tight text-tagline-2 font-normal text-white/60">
+                  54th mile Thrissilery
+                </p>
+
+                <p class="font-inter-tight text-tagline-2 font-normal text-white/60">
+                  Aanapara road Kattikulam 670646
+                </p>
+                <p>
+                  <a href="tel:+91 9447438787"
+                    class="footer-link fint-inter-tight font-normal text-white/60">+91 9447438787</a>
+                </p>
+                <p class="font-inter-tight text-tagline-2 font-normal text-white/60">
+                  <a href="mailto:hello@arcion.com" class="footer-link">drajayan67@gmail.com</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- bottom text  -->
+        <!-- <div data-block-reveal data-delay="0.2" class="w-full">
+          <h3 data-kinetic-text
+            class="font-instrument-sans text-is-heading-1 to-background-3/0 pointer-events-auto flex w-full flex-nowrap justify-center bg-linear-to-b from-white bg-clip-text text-center text-[130px] font-normal whitespace-nowrap text-transparent max-[376px]:text-[120px] md:text-[250px] lg:text-[350px] xl:text-[450px] 2xl:text-[480px]">
+            Misty Woods
+          </h3>
+        </div> -->
+      </div>
+    </div>
+
+    <script src="vendor/swiper.min.js"></script>
+    <script src="vendor/lenis.min.js"></script>
+    <script src="vendor/gsap.min.js"></script>
+    <script src="vendor/scroll-trigger.min.js"></script>
+    <script src="vendor/split-text.min.js"></script>
+    <script src="vendor/draw-svg.min.js"></script>
+    <script src="vendor/springer.min.js"></script>
+    <script src="vendor/custom-ease.min.js"></script>
+    <script src="vendor/number-flow.min.js"></script>
+
+    <script src="assets/main.js"></script>
+
+    <script>
+gsap.from(".video-content span", {
+    y: 30,
+    opacity: 0,
+    duration: 0.8,
+    scrollTrigger: {
+        trigger: ".full-video-section",
+        start: "top 75%",
+        once: true
+    }
+});
+
+gsap.from(".video-content h2", {
+    y: 50,
+    opacity: 0,
+    duration: 1,
+    delay: 0.15,
+    ease: "power4.out",
+    scrollTrigger: {
+        trigger: ".full-video-section",
+        start: "top 75%",
+        once: true
+    }
+});
+
+gsap.from(".video-content p, .video-btn", {
+    y: 30,
+    opacity: 0,
+    duration: 0.8,
+    delay: 0.35,
+    stagger: 0.15,
+    scrollTrigger: {
+        trigger: ".full-video-section",
+        start: "top 75%",
+        once: true
+    }
+});
+</script>
+
+  </footer>
+
+</body>
+
+<!-- Mirrored from arcion-tailwind.pixels71.workers.dev/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 10 Sep 2026 06:27:32 GMT -->
+
+</html>

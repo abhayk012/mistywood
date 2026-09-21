@@ -1,0 +1,1747 @@
+<!doctype html>
+<html lang="en">
+
+<!-- Mirrored from arcion-tailwind.pixels71.workers.dev/contact by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 10 Sep 2026 06:28:05 GMT -->
+
+<head>
+    <!-- =========================
+Head links
+===========================-->
+    <meta charset="UTF-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="" />
+    <meta property="og:site_name" content="" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="" />
+    <meta property="twitter:url" content="" />
+    <meta property="twitter:title" content="" />
+    <meta property="twitter:description" content="" />
+
+    <!-- Additional SEO Meta Tags -->
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="theme-color" content="#335c30" />
+    <meta name="msapplication-TileColor" content="#335c30" />
+    <!-- <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="shortcut icon" href="favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png" />
+  <link rel="manifest" href="site.webmanifest" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300..600&amp;display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=PT+Mono&amp;display=swap" rel="stylesheet" />
+
+    <title>Nearby Places || MISTY WOODS</title>
+
+    <link rel="stylesheet" href="assets/main.css">
+
+    <style>
+        /* =========================
+   SECTION
+========================= */
+
+        .nearby-section {
+            padding: 100px 20px;
+            background: #f7f7f4;
+            overflow: hidden;
+        }
+
+        .nearby-container {
+            max-width: 1250px;
+            margin: auto;
+        }
+
+
+        /* =========================
+   HEADING
+========================= */
+
+        .nearby-heading {
+            max-width: 650px;
+            margin-bottom: 55px;
+        }
+
+        .nearby-heading span {
+            font-size: 12px;
+            letter-spacing: 3px;
+            font-weight: 600;
+            color: #9b7b45;
+        }
+
+        .nearby-heading h2 {
+            font-size: clamp(40px, 5vw, 65px);
+            font-weight: 400;
+            margin: 12px 0 15px;
+            color: #20241f;
+        }
+
+        .nearby-heading p {
+            color: #777;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+
+        /* =========================
+   MAIN LAYOUT
+========================= */
+
+        .nearby-layout {
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 45px;
+            align-items: stretch;
+        }
+
+
+        /* =========================
+   MAP
+========================= */
+
+        .map-area {
+            min-height: 650px;
+            border-radius: 25px;
+            overflow: hidden;
+        }
+
+        .map-bg {
+            height: 100%;
+            min-height: 650px;
+            position: relative;
+
+            background:
+                linear-gradient(135deg,
+                    #e9e4d4,
+                    #dce5d8);
+
+            overflow: hidden;
+        }
+
+
+        /* MAP TEXTURE */
+
+        .map-bg::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+
+            background-image:
+                linear-gradient(35deg,
+                    transparent 48%,
+                    rgba(255, 255, 255, .7) 49%,
+                    rgba(255, 255, 255, .7) 51%,
+                    transparent 52%);
+
+            background-size: 140px 140px;
+
+            opacity: .7;
+        }
+
+
+        /* =========================
+   ROADS
+========================= */
+
+        .road {
+            position: absolute;
+
+            height: 5px;
+
+            background: rgba(255, 255, 255, .9);
+
+            border-radius: 50px;
+        }
+
+        .road-1 {
+            width: 90%;
+            top: 48%;
+            left: 5%;
+
+            transform: rotate(-18deg);
+        }
+
+        .road-2 {
+            width: 80%;
+            top: 65%;
+            left: 15%;
+
+            transform: rotate(25deg);
+        }
+
+        .road-3 {
+            width: 75%;
+            top: 30%;
+            left: 10%;
+
+            transform: rotate(70deg);
+        }
+
+
+        /* =========================
+   LOCATION
+========================= */
+
+        .map-location {
+            position: absolute;
+
+            z-index: 5;
+
+            text-align: center;
+
+            text-decoration: none;
+
+            cursor: pointer;
+        }
+
+
+        .location-pin {
+            width: 48px;
+            height: 48px;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 50%;
+
+            background: #ffffff;
+
+            color: #9b7b45;
+
+            box-shadow:
+                0 10px 30px rgba(0, 0, 0, .12);
+
+            margin: auto;
+
+            transition: .3s ease;
+        }
+
+
+        .map-location:hover .location-pin {
+            transform: translateY(-7px) scale(1.1);
+        }
+
+
+        .main-pin {
+            width: 65px;
+            height: 65px;
+
+            background: #9b7b45;
+
+            color: white;
+
+            border: 6px solid rgba(255, 255, 255, .7);
+        }
+
+
+        /* =========================
+   LOCATION LABEL
+========================= */
+
+        .location-label {
+            margin-top: 9px;
+
+            background: rgba(255, 255, 255, .92);
+
+            padding: 8px 14px;
+
+            border-radius: 8px;
+
+            box-shadow:
+                0 5px 20px rgba(0, 0, 0, .08);
+
+            white-space: nowrap;
+        }
+
+        .location-label strong {
+            display: block;
+
+            font-size: 13px;
+
+            color: #333;
+        }
+
+        .location-label small {
+            display: block;
+
+            margin-top: 3px;
+
+            color: #999;
+        }
+
+
+        /* =========================
+   LOCATION POSITIONS
+========================= */
+
+        .resort-location {
+            left: 45%;
+            top: 45%;
+        }
+
+        .beach-location {
+            left: 15%;
+            top: 18%;
+        }
+
+        .fort-location {
+            right: 12%;
+            top: 20%;
+        }
+
+        .waterfall-location {
+            right: 15%;
+            bottom: 15%;
+        }
+
+        .market-location {
+            left: 12%;
+            bottom: 18%;
+        }
+
+
+        /* =========================
+   PLACES
+========================= */
+
+        .places-area {
+            display: flex;
+
+            flex-direction: column;
+
+            gap: 18px;
+        }
+
+
+        .places-top {
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+            margin-bottom: 5px;
+        }
+
+
+        .places-top h3 {
+            font-size: 25px;
+
+            font-weight: 500;
+
+            margin: 0;
+        }
+
+
+        .explore-btn {
+            border: 0;
+
+            background: transparent;
+
+            color: #9b7b45;
+
+            font-size: 13px;
+
+            font-weight: 600;
+
+            cursor: pointer;
+
+            text-decoration: none;
+        }
+
+        .explore-btn i {
+            margin-left: 7px;
+        }
+
+
+        /* =========================
+   PLACE CARD
+========================= */
+
+        .place-card {
+            display: flex;
+
+            background: white;
+
+            border-radius: 16px;
+
+            overflow: hidden;
+
+            box-shadow:
+                0 8px 30px rgba(0, 0, 0, .05);
+
+            transition: .4s ease;
+        }
+
+
+        .place-card:hover {
+            transform: translateY(-5px);
+
+            box-shadow:
+                0 15px 40px rgba(0, 0, 0, .10);
+        }
+
+
+        /* =========================
+   IMAGE
+========================= */
+
+        .place-image {
+            width: 165px;
+
+            min-width: 165px;
+
+            position: relative;
+
+            overflow: hidden;
+        }
+
+
+        .place-image img {
+            width: 100%;
+
+            height: 100%;
+
+            object-fit: cover;
+
+            display: block;
+
+            transition:
+                transform .6s ease;
+        }
+
+
+        .place-card:hover .place-image img {
+            transform: scale(1.1);
+        }
+
+
+        /* =========================
+   DISTANCE
+========================= */
+
+        .distance {
+            position: absolute;
+
+            top: 12px;
+
+            left: 12px;
+
+            background: white;
+
+            padding: 6px 9px;
+
+            border-radius: 20px;
+
+            font-size: 11px;
+
+            font-weight: 600;
+
+            color: #555;
+        }
+
+        .distance i {
+            color: #9b7b45;
+        }
+
+
+        /* =========================
+   CONTENT
+========================= */
+
+        .place-content {
+            padding: 20px 22px;
+        }
+
+
+        .place-category {
+            font-size: 10px;
+
+            letter-spacing: 2px;
+
+            color: #9b7b45;
+
+            font-weight: 600;
+        }
+
+
+        .place-content h4 {
+            margin: 7px 0;
+
+            font-size: 19px;
+
+            font-weight: 500;
+
+            color: #252525;
+        }
+
+
+        .place-content p {
+            font-size: 13px;
+
+            line-height: 1.6;
+
+            color: #888;
+
+            margin: 0 0 10px;
+        }
+
+
+        .place-content a {
+            font-size: 12px;
+
+            font-weight: 600;
+
+            color: #333;
+
+            text-decoration: none;
+        }
+
+
+        .place-content a i {
+            margin-left: 5px;
+
+            transition: .3s;
+        }
+
+
+        .place-content a:hover i {
+            transform: translateX(5px);
+        }
+
+
+        /* =========================
+   RESPONSIVE
+========================= */
+
+        @media (max-width: 992px) {
+
+            .nearby-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .map-area {
+                min-height: 500px;
+            }
+
+            .map-bg {
+                min-height: 500px;
+            }
+
+        }
+
+
+        @media (max-width: 600px) {
+
+            .nearby-section {
+                padding: 70px 15px;
+            }
+
+            .nearby-heading {
+                margin-bottom: 35px;
+            }
+
+            .nearby-heading h2 {
+                font-size: 42px;
+            }
+
+            .map-area,
+            .map-bg {
+                min-height: 420px;
+            }
+
+            .location-pin {
+                width: 40px;
+                height: 40px;
+            }
+
+            .main-pin {
+                width: 52px;
+                height: 52px;
+            }
+
+            .location-label {
+                padding: 6px 9px;
+            }
+
+            .location-label strong {
+                font-size: 10px;
+            }
+
+            .location-label small {
+                font-size: 9px;
+            }
+
+            .place-card {
+                display: block;
+            }
+
+            .place-image {
+                width: 100%;
+                height: 180px;
+            }
+
+            .place-content {
+                padding: 18px;
+            }
+
+        }
+
+
+
+        .whatsapp-book-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+
+            padding: 15px 28px;
+
+            background: #25D366;
+            color: #fff;
+
+            border-radius: 4px;
+
+            text-decoration: none;
+
+            font-size: 15px;
+            font-weight: 600;
+
+            transition: all 0.3s ease;
+        }
+
+        .whatsapp-book-btn:hover {
+            background: #1ebe5d;
+            color: #fff;
+            transform: translateY(-3px);
+        }
+
+        .whatsapp-book-btn i {
+            font-size: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="header-scroll fixed top-5 left-1/2 z-50 mx-auto h-13 w-full max-w-[1440px] -translate-x-1/2">
+        <div data-header-shell class="origin-top">
+            <nav data-block-reveal data-delay="0.1" data-direction="top" class="main-container">
+                <div class="flex items-center justify-between rounded-xl bg-white p-2">
+                    <!-- logo  -->
+                    <figure class="hidden h-10.5  overflow-hidden lg:block">
+                        <a href="index.html">
+                            <img src="images/logo/logo-with-text.png" alt="logo" class="size-full" />
+                        </a>
+                    </figure>
+                    <figure class="h-10.5 overflow-hidden lg:hidden">
+                        <a href="index.html">
+                            <img src="images/logo/logo-small.png" alt="logo" class="size-full" />
+                        </a>
+                    </figure>
+
+                    <!-- links  -->
+                    <ul data-nav-tabs class="relative hidden items-center justify-center lg:flex">
+                        <div data-nav-indicator
+                            class="bg-background-5 pointer-events-none absolute origin-center rounded-md"
+                            aria-hidden="true"></div>
+                        <a href="index.html" data-route="home">
+                            <li data-nav-item
+                                class="text-tagline-2 font-inter-tight text-background-1/60 data-[active=true]:text-background-1 hover:text-background-1 relative z-10 rounded-md px-4 py-2 font-normal transition-colors duration-500 ease-out">
+                                Home
+                            </li>
+                        </a>
+                        <a href="room.html" data-route="about">
+                            <li data-nav-item
+                                class="text-tagline-2 font-inter-tight text-background-1/60 data-[active=true]:text-background-1 hover:text-background-1 relative z-10 rounded-md px-4 py-2 font-normal transition-colors duration-500 ease-out">
+                                Rooms
+                            </li>
+                        </a>
+                        <a href="booking.html" data-route="services">
+                            <li data-nav-item
+                                class="text-tagline-2 font-inter-tight text-background-1/60 data-[active=true]:text-background-1 hover:text-background-1 relative z-10 rounded-md px-4 py-2 font-normal transition-colors duration-500 ease-out">
+                                Booking
+                            </li>
+                        </a>
+                        <a href="places.html" data-route="projects">
+                            <li data-nav-item
+                                class="text-tagline-2 font-inter-tight text-background-1/60 data-[active=true]:text-background-1 hover:text-background-1 relative z-10 rounded-md px-4 py-2 font-normal transition-colors duration-500 ease-out">
+                                Nearby Places
+                            </li>
+                        </a>
+                        <!-- <a href="team.html" data-route="team">
+              <li data-nav-item
+                class="text-tagline-2 font-inter-tight text-background-1/60 data-[active=true]:text-background-1 hover:text-background-1 relative z-10 rounded-md px-4 py-2 font-normal transition-colors duration-500 ease-out">
+                Team
+              </li>
+            </a> -->
+                        <a href="contact.html" data-route="blog">
+                            <li data-nav-item
+                                class="text-tagline-2 font-inter-tight text-background-1/60 data-[active=true]:text-background-1 hover:text-background-1 relative z-10 rounded-md px-4 py-2 font-normal transition-colors duration-500 ease-out">
+                                Contact
+                            </li>
+                        </a>
+                    </ul>
+
+                    <!-- right links  -->
+                    <div class="hidden items-center gap-x-5 lg:flex">
+                        <!-- search logo  -->
+                        <!-- <button type="button" data-search-modal-open aria-label="Open search"
+              class="bg-background-1/10 flex h-10.5 w-10.5 cursor-pointer items-center justify-center rounded-xl p-1 transition-opacity duration-300 hover:opacity-80">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                class="stroke-background-1 size-6">
+                <path
+                  d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+                  stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M20.9999 21L16.6499 16.65" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button> -->
+
+                        <a href="booking.html" class="inline-block">
+                            <button
+                                class="bg-background-1 text-tagline-2 font-inter-tight group/button-primary h-10.5 rounded-lg flex items-center gap-x-2.5 rounded-full py-2.5 pr-2 pl-[18px] font-medium text-white transition-transform duration-150 ease-out active:scale-[0.97]">
+                                <span class="relative inline-block overflow-hidden text-nowrap">
+                                    <span class="invisible">Book Now</span>
+                                    <span class="absolute inset-0 perspective-normal">
+                                        <span
+                                            class="absolute inset-0 origin-top transform-[translate3d(0,0,0)_rotateX(0deg)] [transition:transform_0.55s_var(--button-text-ease)] backface-hidden group-hover/button-primary:transform-[translate3d(0,-100%,0)_rotateX(90deg)] group-focus-visible/button-primary:transform-[translate3d(0,-100%,0)_rotateX(90deg)]">
+                                            Book Now</span>
+                                        <span
+                                            class="absolute inset-0 origin-bottom transform-[translate3d(0,100%,0)_rotateX(-90deg)] [transition:transform_0.55s_var(--button-text-ease)] backface-hidden group-hover/button-primary:transform-[translate3d(0,0,0)_rotateX(0deg)] group-focus-visible/button-primary:transform-[translate3d(0,0,0)_rotateX(0deg)]">
+                                            Book Now</span>
+                                    </span>
+                                </span>
+
+                                <span class="relative flex size-8 items-center justify-center">
+                                    <span
+                                        class="bg-background-5 absolute z-10 size-0 origin-center rounded-full opacity-0 transition-all duration-400 ease-out group-hover/button-primary:size-8 group-hover/button-primary:opacity-100 group-focus-visible/button-primary:size-8 group-focus-visible/button-primary:opacity-100"></span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                        class="ease-bouncy group-hover/button-primary:stroke-background-1 group-focus-visible/button-primary:stroke-background-1 relative z-20 size-6 rotate-45 stroke-white transition-all duration-400 group-hover/button-primary:rotate-0 group-focus-visible/button-primary:rotate-0">
+                                        <path d="M17 17V7H7M17 7L7 17" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                            </button>
+
+                        </a>
+                    </div>
+
+                    <!-- mobile menu toggle -->
+                    <div class="flex items-center justify-center lg:hidden">
+                        <button type="button" data-mobile-menu-toggle aria-label="Open menu" aria-expanded="false"
+                            class="size-7">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                class="stroke-background-1 size-7">
+                                <path d="M3 12H21" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M3 6H21" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M3 18H21" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div data-mobile-menu-overlay
+        class="pointer-events-none fixed inset-0 z-50 bg-black/70 opacity-0 backdrop-blur-sm lg:hidden"
+        aria-hidden="true">
+    </div>
+
+    <aside data-mobile-menu
+        class="pointer-events-none invisible fixed inset-y-0 right-0 z-60 flex w-full max-w-[380px] flex-col opacity-0 lg:hidden"
+        aria-hidden="true" aria-label="Mobile navigation">
+        <div
+            class="flex h-full flex-col overflow-y-auto border-l border-white/10 bg-black/95 p-6 shadow-[-24px_0_80px_rgba(0,0,0,0.45)] backdrop-blur-3xl sm:p-8">
+            <div class="mb-10 flex items-center justify-between">
+                <p data-mobile-menu-item data-reveal-delay="0.05"
+                    class="font-inter-tight text-tagline-2 font-medium tracking-[0.2em] text-white/40 uppercase opacity-0">
+                    Menu
+                </p>
+
+                <button type="button" data-mobile-menu-close aria-label="Close menu"
+                    class="flex size-10 items-center justify-center rounded-xl border border-white/20 bg-white/5">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="size-5" viewBox="0 0 24 24" fill="none"
+                        aria-hidden="true">
+                        <path d="M6 6L18 18" stroke="white" stroke-width="1.5" stroke-linecap="round" />
+                        <path d="M18 6L6 18" stroke="white" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+                </button>
+            </div>
+
+            <nav class="flex-1">
+                <ul class="space-y-6 sm:space-y-8">
+                    <li>
+                        <a href="index.html" data-mobile-menu-link class="group flex items-end">
+                            <span data-mobile-menu-item data-reveal-delay="0.1"
+                                class="font-instrument-sans text-is-heading-5 font-medium text-white uppercase opacity-0 transition-colors group-hover:text-white/70">Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="room.html" data-mobile-menu-link class="group flex items-end">
+                            <span data-mobile-menu-item data-reveal-delay="0.16"
+                                class="font-instrument-sans text-is-heading-5 font-medium text-white uppercase opacity-0 transition-colors group-hover:text-white/70">Rooms</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="booking.html" data-mobile-menu-link class="group flex items-end">
+                            <span data-mobile-menu-item data-reveal-delay="0.22"
+                                class="font-instrument-sans text-is-heading-5 font-medium text-white uppercase opacity-0 transition-colors group-hover:text-white/70">Booking</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="places.html" data-mobile-menu-link class="group flex items-end">
+                            <span data-mobile-menu-item data-reveal-delay="0.28"
+                                class="font-instrument-sans text-is-heading-5 font-medium text-white uppercase opacity-0 transition-colors group-hover:text-white/70">Nearby
+                                Places</span>
+                        </a>
+                    </li>
+                    <!-- <li>
+            <a href="team.html" data-mobile-menu-link class="group flex items-end">
+              <span data-mobile-menu-item data-reveal-delay="0.34"
+                class="font-instrument-sans text-is-heading-5 font-medium text-white uppercase opacity-0 transition-colors group-hover:text-white/70">Team</span>
+            </a>
+          </li> -->
+                    <li>
+                        <a href="contact.html" data-mobile-menu-link class="group flex items-end">
+                            <span data-mobile-menu-item data-reveal-delay="0.4"
+                                class="font-instrument-sans text-is-heading-5 font-medium text-white uppercase opacity-0 transition-colors group-hover:text-white/70">Contact</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="mt-10 space-y-4 border-t border-white/10 pt-8">
+                <!-- <p data-mobile-menu-item data-reveal-delay="0.46"
+          class="font-inter-tight text-tagline-2 text-white/60 opacity-0">
+          Ready to build your solar future?
+        </p> -->
+                <a href="booking.html" data-mobile-menu-link class="inline-block">
+                    <div data-mobile-menu-item data-reveal-delay="0.52" class="overflow-hidden opacity-0">
+                        <button
+                            class="bg-background-1 text-tagline-2 font-inter-tight group/button-primary overflow-hidden flex items-center gap-x-2.5 rounded-full py-2.5 pr-2 pl-[18px] font-medium text-white transition-transform duration-150 ease-out active:scale-[0.97]">
+                            <span class="relative inline-block overflow-hidden text-nowrap">
+                                <span class="invisible">Book Now</span>
+                                <span class="absolute inset-0 perspective-normal">
+                                    <span
+                                        class="absolute inset-0 origin-top transform-[translate3d(0,0,0)_rotateX(0deg)] [transition:transform_0.55s_var(--button-text-ease)] backface-hidden group-hover/button-primary:transform-[translate3d(0,-100%,0)_rotateX(90deg)] group-focus-visible/button-primary:transform-[translate3d(0,-100%,0)_rotateX(90deg)]">
+                                        Book Now</span>
+                                    <span
+                                        class="absolute inset-0 origin-bottom transform-[translate3d(0,100%,0)_rotateX(-90deg)] [transition:transform_0.55s_var(--button-text-ease)] backface-hidden group-hover/button-primary:transform-[translate3d(0,0,0)_rotateX(0deg)] group-focus-visible/button-primary:transform-[translate3d(0,0,0)_rotateX(0deg)]">
+                                        Book Now</span>
+                                </span>
+                            </span>
+
+                            <span class="relative flex size-8 items-center justify-center">
+                                <span
+                                    class="bg-background-5 absolute z-10 size-0 origin-center rounded-full opacity-0 transition-all duration-400 ease-out group-hover/button-primary:size-8 group-hover/button-primary:opacity-100 group-focus-visible/button-primary:size-8 group-focus-visible/button-primary:opacity-100"></span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    class="ease-bouncy group-hover/button-primary:stroke-background-1 group-focus-visible/button-primary:stroke-background-1 relative z-20 size-6 rotate-45 stroke-white transition-all duration-400 group-hover/button-primary:rotate-0 group-focus-visible/button-primary:rotate-0">
+                                    <path d="M17 17V7H7M17 7L7 17" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                        </button>
+
+                    </div>
+                </a>
+            </div>
+        </div>
+    </aside>
+
+    <div data-search-modal-root>
+        <div data-search-modal-overlay class="fixed inset-0 z-9999 hidden items-center justify-center p-4"
+            aria-hidden="true">
+            <div data-search-modal-backdrop class="bg-background-1/35 absolute inset-0 z-0 backdrop-blur-[14px]"></div>
+
+            <div data-search-modal-panel
+                class="border-stroke-1/20 relative z-20 w-full max-w-120 rounded-2xl border bg-white p-6">
+                <button type="button" data-search-modal-close data-search-modal-item
+                    class="bg-background-1/10 text-background-1 hover:text-background-1/80 absolute top-4 right-4 z-30 flex size-8 cursor-pointer items-center justify-center rounded-full transition-colors duration-300"
+                    aria-label="Close search modal">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="size-4 fill-none stroke-current">
+                        <path d="M18 6L6 18M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+
+                <!-- <div data-search-modal-item class="mb-6 space-y-3">
+          <label for="search-modal-input"
+            class="text-it-heading-5 font-inter-tight text-background-1 block font-normal">
+            Search anything
+          </label>
+          <input id="search-modal-input" type="search" placeholder="Search blog, projects, services..."
+            class="text-tagline-2 font-inter-tight border-background-1/35 placeholder:text-background-1/40 focus-visible:ring-stroke-1/30 text-background-1 h-12 w-full rounded-lg border bg-white px-5 py-3 focus-visible:ring-2 focus-visible:outline-none" />
+        </div> -->
+
+                <!-- <div data-search-modal-item class="border-background-1/60 border-t pt-4">
+          <p class="text-tagline-3 font-inter-tight text-background-1/80 text-center">
+            Press Enter to search or Esc to close
+          </p>
+        </div> -->
+            </div>
+        </div>
+    </div>
+
+
+    <main class="bg-background-3/40">
+
+        <section class="pt-[120px]  xl:pt-[196px] ">
+      <div class="main-container space-y-11 md:space-y-14 lg:space-y-18 xl:space-y-21">
+        <div class="text-center">
+          <div class="mb-6 inline-block" data-block-reveal data-delay="0.2">
+            <div
+              class="text-tagline-4 font-pt-mono flex items-center justify-center gap-x-1.5 rounded-sm bg-white px-3 py-1.5 text-black shadow-[0_42px_12px_0_rgba(0,0,0,0.00),0_27px_11px_0_rgba(0,0,0,0.01),0_15px_9px_0_rgba(0,0,0,0.03),0_7px_7px_0_rgba(0,0,0,0.05),0_2px_4px_0_rgba(0,0,0,0.06)] backdrop-blur-[61.14973831176758px]">
+              <span class="size-1.5 shrink-0 bg-black"> </span>
+
+              <span>Nearby Places</span>
+            </div>
+
+          </div>
+          <h2 data-text-reveal data-reveal-delay="0.1"
+                class="font-instrument-sans text-background-2 text-is-heading-3 lg:text-is-heading-2 font-medium">
+               Explore The 
+                <span class="font-instrument-serif text-background-1 font-normal italic">
+                  Surroundings.</span>
+              </h2>
+          <p data-text-reveal data-reveal-delay="0.2"
+            class="text-tagline-1 text-background-6/60 mx-auto max-w-[640px] font-normal">
+            Discover beautiful destinations, attractions and experiences just a short distance from our
+                            resort.
+          </p>
+
+          <!-- <div class="mt-7 md:mt-9" data-block-reveal data-delay="0.5">
+            <a href="projects.html" class="inline-block">
+              <button
+                class="text-tagline-2 font-inter-tight group/button-secondary text-background-1 focus-visible:outline-background-1 flex items-center gap-x-2.5 rounded-full bg-white py-2.5 pr-2 pl-[18px] font-medium transition-transform duration-150 ease-out focus-visible:outline-2 active:scale-[0.97]">
+                <span class="relative inline-block overflow-hidden text-nowrap">
+                  <span class="invisible">Discover how we build</span>
+                  <span class="absolute inset-0 perspective-normal">
+                    <span
+                      class="absolute inset-0 origin-top transform-[translate3d(0,0,0)_rotateX(0deg)] [transition:transform_0.55s_var(--button-text-ease)] backface-hidden group-hover/button-secondary:transform-[translate3d(0,-100%,0)_rotateX(90deg)] group-focus-visible/button-secondary:transform-[translate3d(0,-100%,0)_rotateX(90deg)]">Discover
+                      how we build</span>
+                    <span
+                      class="absolute inset-0 origin-bottom transform-[translate3d(0,100%,0)_rotateX(-90deg)] [transition:transform_0.55s_var(--button-text-ease)] backface-hidden group-hover/button-secondary:transform-[translate3d(0,0,0)_rotateX(0deg)] group-focus-visible/button-secondary:transform-[translate3d(0,0,0)_rotateX(0deg)]">Discover
+                      how we build</span>
+                  </span>
+                </span>
+
+                <span class="relative flex size-8 items-center justify-center">
+                  <span
+                    class="bg-background-1 absolute z-10 size-0 origin-center rounded-full opacity-0 transition-all duration-400 ease-out group-hover/button-secondary:size-8 group-hover/button-secondary:opacity-100 group-focus-visible/button-secondary:size-8 group-focus-visible/button-secondary:opacity-100"></span>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                    class="ease-bouncy stroke-background-1 relative z-20 size-6 rotate-45 transition-all duration-400 group-hover/button-secondary:rotate-0 group-hover/button-secondary:stroke-white group-focus-visible/button-secondary:rotate-0 group-focus-visible/button-secondary:stroke-white">
+                    <path d="M17 17V7H7M17 7L7 17" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+              </button>
+
+            </a>
+          </div> -->
+        </div>
+
+        
+      </div>
+    </section>
+
+        <!-- ========================== Contact Us Section =========================== -->
+        <section class="overflow-hidden pt-[120px] pb-20 md:pb-24 lg:pb-28 xl:pt-[30px]">
+            <!-- <section class="nearby-section"> -->
+
+            <div class="nearby-container" data-block-reveal data-delay="0.2">
+
+                <!-- Section Heading -->
+                <!--<div class="nearby-heading">-->
+                <!-- <div class="row justify-center text-center">
+                    <div class="col-xl-6 col-lg-8 col-md-10" data-split='lines' data-anim="split-lines delay-1">
+                        <div class="text-15 uppercase mb-30 sm:mb-10">
+                            EXPLORE THE SURROUNDINGS
+                        </div>
+                        <h2 class="text-64 md:text-40 lh-11">
+                            Nearby Places
+                        </h2>
+                        <p class="mt-40">
+                            Discover beautiful destinations, attractions and experiences just a short distance from our
+                            resort.
+                        </p>
+                    </div>
+                </div> -->
+                <!--</div>-->
+
+
+                <div class="nearby-layout pt-100 sm:pt-50">
+
+                    <!-- ================= MAP AREA ================= -->
+
+                    <div class="map-area" data-block-reveal data-delay="0.2">
+
+                        <div class="map-bg">
+
+                            <div class="road road-1"></div>
+                            <div class="road road-2"></div>
+                            <div class="road road-3"></div>
+
+
+                            <!-- RESORT -->
+                            <div class="map-location resort-location">
+
+                                <div class="location-pin main-pin">
+                                    <i class="fa-solid fa-hotel"></i>
+                                </div>
+
+                                <div class="location-label">
+                                    <strong>Our Resorts</strong>
+                                    <small>You are here</small>
+                                </div>
+
+                            </div>
+
+
+                            <!-- BEACH -->
+                            <a href="https://www.google.com/maps/place/11%C2%B051'05.4%22N+76%C2%B000'59.7%22E/@11.851498,76.01659,14z/data=!4m4!3m3!8m2!3d11.851498!4d76.01659?hl=en&entry=ttu&g_ep=EgoyMDI2MDkwMi4wIKXMDSoASAFQAw%3D%3D"
+                                target="_blank" class="map-location beach-location">
+
+                                <div class="location-pin">
+                                    <i class="fa-solid fa-umbrella-beach"></i>
+                                </div>
+
+                                <div class="location-label">
+                                    <strong>Thrissileri Temple</strong>
+                                    <small>3 km</small>
+                                </div>
+
+                            </a>
+
+
+                            <!-- FORT -->
+                            <a href="https://www.google.com/maps/place/Pazhassi+Tomb/data=!4m2!3m1!1s0x3ba5deae26482d5b:0xc28f37c9a77e83eb?sa=X&ved=1t:155783&ictx=111"
+                                target="_blank" class="map-location fort-location">
+
+                                <div class="location-pin">
+                                    <i class="fa-solid fa-landmark"></i>
+                                </div>
+
+                                <div class="location-label">
+                                    <strong>Pazhassi Tomb</strong>
+                                    <small>6 km</small>
+                                </div>
+
+                            </a>
+
+
+                            <!-- WATERFALL -->
+                            <a href="https://www.google.com/maps/place/Kuruva+Island/data=!4m2!3m1!1s0x3ba5e753ef935e3b:0xab46e33b236052a0?sa=X&ved=1t:155783&ictx=111"
+                                target="_blank" class="map-location waterfall-location">
+
+                                <div class="location-pin">
+                                    <i class="fa-solid fa-water"></i>
+                                </div>
+
+                                <div class="location-label">
+                                    <strong>Kuruva Island</strong>
+                                    <small>10 km</small>
+                                </div>
+
+                            </a>
+
+
+                            <!-- MARKET -->
+                            <a href="https://www.google.com/maps/search/Bavali+River+Bank/@11.9137129,75.7987976,11z?entry=s&sa=X&ved=1t%3A199789"
+                                target="_blank" class="map-location market-location">
+
+                                <div class="location-pin">
+                                    <i class="fa-solid fa-shop"></i>
+                                </div>
+
+                                <div class="location-label">
+                                    <strong>Bavali River Bank</strong>
+                                    <small>10 km</small>
+                                </div>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ================= PLACES ================= -->
+
+                    <div class="places-area" data-block-reveal data-delay="0.2">
+
+                        <div class="places-top">
+
+                            <!-- <h3>Places to Explore</h3> -->
+
+                            <!--<a href="https://www.google.com/maps/search/?api=1&query=places+near+me"-->
+                            <!--   target="_blank"-->
+                            <!--   class="explore-btn">-->
+
+                            <!--    View All-->
+                            <!--    <i class="fa-solid fa-arrow-right"></i>-->
+
+                            <!--</a>-->
+
+                        </div>
+
+
+                        <!-- ================= BEACH ================= -->
+
+                        <div class="place-card">
+
+                            <div class="place-image">
+
+                                <img src="images/nearby-thrissileri-temple-DMk6bXue.jpg" alt="">
+
+                                <span class="distance">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    3 km
+                                </span>
+
+                            </div>
+
+
+                            <div class="place-content">
+
+                                <!--<span class="place-category">-->
+                                <!--    BEACH-->
+                                <!--</span>-->
+
+                                <h4>Thrissileri Temple</h4>
+
+                                <p>
+                                    An ancient Shiva temple over a thousand years old, traditionally visited along with
+                                    Thirunelli for ancestral rites.
+                                </p>
+
+                                <a href="https://www.google.com/maps/place/11%C2%B051'05.4%22N+76%C2%B000'59.7%22E/@11.851498,76.01659,14z/data=!4m4!3m3!8m2!3d11.851498!4d76.01659?hl=en&entry=ttu&g_ep=EgoyMDI2MDkwMi4wIKXMDSoASAFQAw%3D%3D"
+                                    target="_blank">
+
+                                    Explore Place
+
+                                    <i class="fa-solid fa-arrow-right"></i>
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- ================= FORT ================= -->
+
+                        <div class="place-card">
+
+                            <div class="place-image">
+
+                                <img src="images/nearby-pazhassi-tomb-B1Cn4D89.jpg" alt="Historical Fort">
+
+                                <span class="distance">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    6 km
+                                </span>
+
+                            </div>
+
+
+                            <div class="place-content">
+
+                                <!--<span class="place-category">-->
+                                <!--    HERITAGE-->
+                                <!--</span>-->
+
+                                <h4>Pazhassi Tomb</h4>
+
+                                <p>
+                                    Memorial of the legendary Pazhassi Raja, the "Lion of Kerala", with a small museum
+                                    of historic relics.
+
+
+                                </p>
+
+                                <a href="https://www.google.com/maps/place/Pazhassi+Tomb/data=!4m2!3m1!1s0x3ba5deae26482d5b:0xc28f37c9a77e83eb?sa=X&ved=1t:155783&ictx=111"
+                                    target="_blank">
+
+                                    Explore Place
+
+                                    <i class="fa-solid fa-arrow-right"></i>
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- ================= WATERFALL ================= -->
+
+                        <div class="place-card">
+
+                            <div class="place-image">
+
+                                <img src="images/nearby-kuruva-island-DW5stgC0.jpg" alt="">
+
+                                <span class="distance">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    10 km
+                                </span>
+
+                            </div>
+
+
+                            <div class="place-content">
+
+                                <!--<span class="place-category">-->
+                                <!--    NATURE-->
+                                <!--</span>-->
+
+                                <h4>Kuruva Island</h4>
+
+                                <p>
+                                    A 950-acre protected river delta of evergreen forest, rare birds and orchids on the
+                                    Kabini river.
+                                </p>
+
+                                <a href="https://www.google.com/maps/place/Kuruva+Island/data=!4m2!3m1!1s0x3ba5e753ef935e3b:0xab46e33b236052a0?sa=X&ved=1t:155783&ictx=111"
+                                    target="_blank">
+
+                                    Explore Place
+
+                                    <i class="fa-solid fa-arrow-right"></i>
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- ================= MARKET ================= -->
+
+                        <div class="place-card">
+
+                            <div class="place-image">
+
+                                <img src="images/nearby-bavali-river-C3uwpviR.jpg" alt="">
+
+                                <span class="distance">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    10 km
+                                </span>
+
+                            </div>
+
+
+                            <div class="place-content">
+
+                                <!--<span class="place-category">-->
+                                <!--    SHOPPING-->
+                                <!--</span>-->
+
+                                <h4>Bavali River Bank</h4>
+
+                                <p>
+                                    A calm riverside spot on the Kerala–Karnataka border, ideal for a quiet dip and
+                                    sunset views.
+                                </p>
+
+                                <a href="https://www.google.com/maps/search/Bavali+River+Bank/@11.9137129,75.7987976,11z?entry=s&sa=X&ved=1t%3A199789"
+                                    target="_blank">
+
+                                    Explore Place
+
+                                    <i class="fa-solid fa-arrow-right"></i>
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="nearby-layout pt-100 sm:pt-50" style="margin-top: 50px;">
+
+                    <!-- ================= PLACES ================= -->
+
+                    <div class="places-area" data-block-reveal data-delay="0.2">
+
+                        <div class="places-top">
+
+                            <!--<h3>Places to Explore</h3>-->
+
+                            <!--<a href="https://www.google.com/maps/search/?api=1&query=places+near+me"-->
+                            <!--   target="_blank"-->
+                            <!--   class="explore-btn">-->
+
+                            <!--    View All-->
+                            <!--    <i class="fa-solid fa-arrow-right"></i>-->
+
+                            <!--</a>-->
+
+                        </div>
+
+
+                        <!-- ================= BEACH ================= -->
+
+                        <div class="place-card " >
+
+                            <div class="place-image">
+
+                                <img src="images/nearby-begur-forest-C7IXvlML.jpg" alt="">
+
+                                <span class="distance">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    15 km
+                                </span>
+
+                            </div>
+
+
+                            <div class="place-content">
+
+                                <!--<span class="place-category">-->
+                                <!--    BEACH-->
+                                <!--</span>-->
+
+                                <h4>Begur Reserve Forest</h4>
+
+                                <p>
+                                    Dense reserve forest known for elephant herds, deer and a scenic drive through
+                                    untouched wilderness.
+                                </p>
+
+                                <a href="google.com/maps/place/Begur+reserve+forest+road/data=!4m2!3m1!1s0x0:0x3bbc1709eaeba379?sa=X&ved=1t:2428&ictx=111"
+                                    target="_blank">
+
+                                    Explore Place
+
+                                    <i class="fa-solid fa-arrow-right"></i>
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- ================= FORT ================= -->
+
+                        <div class="place-card">
+
+                            <div class="place-image">
+
+                                <img src="images/banasura-dam-Ct5zFxFY.jpg" alt="Historical Fort">
+
+                                <span class="distance">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    18 km
+                                </span>
+
+                            </div>
+
+
+                            <div class="place-content">
+
+                                <!--<span class="place-category">-->
+                                <!--    HERITAGE-->
+                                <!--</span>-->
+
+                                <h4>Banasura Sagar Dam</h4>
+
+                                <p>
+                                    The largest earthen dam in India, offering boating and scenic views of the
+                                    surrounding hills.
+
+
+                                </p>
+
+                                <a href="https://www.google.com/maps/place/Banasura+Sagar+Dam,+Padinjarathara,+Kerala+673575/@11.67,75.9552031,17z/data=!3m1!4b1!4m6!3m5!1s0x3ba676fa0af8b59f:0x337d2cd14699bb74!8m2!3d11.67!4d75.957778!16s%2Fm%2F0261_cy?entry=ttu&g_ep=EgoyMDI2MDkwMi4wIKXMDSoASAFQAw%3D%3D"
+                                    target="_blank">
+
+                                    Explore Place
+
+                                    <i class="fa-solid fa-arrow-right"></i>
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- ================= WATERFALL ================= -->
+
+                        <div class="place-card">
+
+                            <div class="place-image">
+
+                                <img src="images/nearby-tholpetty-BsYwewZv.jpg" alt="">
+
+                                <span class="distance">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    18 km
+                                </span>
+
+                            </div>
+
+
+                            <div class="place-content">
+
+                                <!--<span class="place-category">-->
+                                <!--    NATURE-->
+                                <!--</span>-->
+
+                                <h4>Tholpetty Wildlife Sanctuary</h4>
+
+                                <p>
+                                    Part of the Wayanad Wildlife Sanctuary with jeep safaris through habitat of
+                                    elephants, gaur and deer.
+                                </p>
+
+                                <a href="https://www.google.com/maps/place/Tholpetty+Wildlife+Sanctuary/data=!4m2!3m1!1s0x3ba5c28b7a436863:0x694dd35cedb03cb8?sa=X&ved=1t:155783&ictx=111"
+                                    target="_blank">
+
+                                    Explore Place
+
+                                    <i class="fa-solid fa-arrow-right"></i>
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- ================= MARKET ================= -->
+
+                        <div class="place-card">
+
+                            <div class="place-image">
+
+                                <img src="images/nearby-thirunelli-temple-nzoogSPP.jpg" alt="">
+
+                                <span class="distance">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    20 km
+                                </span>
+
+                            </div>
+
+
+                            <div class="place-content">
+
+                                <!--<span class="place-category">-->
+                                <!--    SHOPPING-->
+                                <!--</span>-->
+
+                                <h4>Thirunelli Temple</h4>
+
+                                <p>
+                                    Ancient Maha Vishnu temple set amid the Brahmagiri hills, beside the sacred
+                                    Papanasini stream.
+                                </p>
+
+                                <a href="https://www.google.com/maps/place/Thirunelli+Temple/data=!4m2!3m1!1s0x3ba5c3577907fad3:0xb8789ffdf9be766e?sa=X&ved=1t:155783&ictx=111"
+                                    target="_blank">
+
+                                    Explore Place
+
+                                    <i class="fa-solid fa-arrow-right"></i>
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- ================= MAP AREA ================= -->
+
+                    <div class="map-area" data-block-reveal data-delay="0.2">
+
+                        <div class="map-bg">
+
+                            <div class="road road-1"></div>
+                            <div class="road road-2"></div>
+                            <div class="road road-3"></div>
+
+
+                            <!-- RESORT -->
+                            <div class="map-location resort-location">
+
+                                <div class="location-pin main-pin">
+                                    <i class="fa-solid fa-hotel"></i>
+                                </div>
+
+                                <div class="location-label">
+                                    <strong>Our Resorts</strong>
+                                    <small>You are here</small>
+                                </div>
+
+                            </div>
+
+
+                            <!-- BEACH -->
+                            <a href="google.com/maps/place/Begur+reserve+forest+road/data=!4m2!3m1!1s0x0:0x3bbc1709eaeba379?sa=X&ved=1t:2428&ictx=111"
+                                target="_blank" class="map-location beach-location">
+
+                                <div class="location-pin">
+                                    <i class="fa-solid fa-umbrella-beach"></i>
+                                </div>
+
+                                <div class="location-label">
+                                    <strong>Begur Reserve Forest</strong>
+                                    <small>15 km</small>
+                                </div>
+
+                            </a>
+
+
+                            <!-- FORT -->
+                            <a href="https://www.google.com/maps/place/Banasura+Sagar+Dam,+Padinjarathara,+Kerala+673575/@11.67,75.9552031,17z/data=!3m1!4b1!4m6!3m5!1s0x3ba676fa0af8b59f:0x337d2cd14699bb74!8m2!3d11.67!4d75.957778!16s%2Fm%2F0261_cy?entry=ttu&g_ep=EgoyMDI2MDkwMi4wIKXMDSoASAFQAw%3D%3D"
+                                target="_blank" class="map-location fort-location">
+
+                                <div class="location-pin">
+                                    <i class="fa-solid fa-landmark"></i>
+                                </div>
+
+                                <div class="location-label">
+                                    <strong>Banasura Sagar Dam</strong>
+                                    <small>18 km</small>
+                                </div>
+
+                            </a>
+
+
+                            <!-- WATERFALL -->
+                            <a href="https://www.google.com/maps/place/Tholpetty+Wildlife+Sanctuary/data=!4m2!3m1!1s0x3ba5c28b7a436863:0x694dd35cedb03cb8?sa=X&ved=1t:155783&ictx=111"
+                                target="_blank" class="map-location waterfall-location">
+
+                                <div class="location-pin">
+                                    <i class="fa-solid fa-water"></i>
+                                </div>
+
+                                <div class="location-label">
+                                    <strong>Tholpetty Wildlife Sanctuary</strong>
+                                    <small>18 km</small>
+                                </div>
+
+                            </a>
+
+
+                            <!-- MARKET -->
+                            <a href="https://www.google.com/maps/place/Thirunelli+Temple/data=!4m2!3m1!1s0x3ba5c3577907fad3:0xb8789ffdf9be766e?sa=X&ved=1t:155783&ictx=111"
+                                target="_blank" class="map-location market-location">
+
+                                <div class="location-pin">
+                                    <i class="fa-solid fa-shop"></i>
+                                </div>
+
+                                <div class="location-label">
+                                    <strong>Thirunelli Temple</strong>
+                                    <small>20 km</small>
+                                </div>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+
+
+                </div>
+
+            </div>
+
+            <!-- </section> -->
+        </section>
+
+    </main>
+    <footer class="relative overflow-hidden pt-18 pb-10 md:pt-20 xl:pt-39">
+        <!-- background img  -->
+        <figure class="pointer-events-none absolute inset-0 -z-10 select-none">
+            <img src="images/img-28.png" alt="footer-bg" class="size-full object-cover" />
+        </figure>
+
+        <!-- bg overlay  -->
+        <div
+            class="pointer-events-auto absolute inset-0 z-1 size-full bg-linear-to-b from-[#040E04] to-black/0 select-none">
+        </div>
+
+        <div class="main-container relative z-20">
+            <div class="space-y-5 md:space-y-16">
+                <div class="grid grid-cols-12 xl:gap-x-28">
+                    <!-- footer heading  -->
+                    <div class="col-span-12 lg:col-span-6">
+                        <div class="space-y-6 lg:space-y-14">
+                            <h2 data-text-reveal data-reveal-delay="0.2"
+                                class="font-instrument-sans text-is-heading-4 lg:text-is-heading-3 xl:text-is-heading-2 font-medium text-white max-lg:max-w-[550px]">
+                                Experience tranquil luxury nestled in the heart of
+                                <span
+                                    class="font-instrument-serif text-isf-heading-4 lg:text-isf-heading-3 xl:text-isf-heading-2 text-white/60 italic">
+                                    Wayanad's pristine wilderness
+                                </span>
+                            </h2>
+
+                            <div data-block-reveal data-delay="0.3" class="inline-block">
+                                <a href="projects.html">
+                                    <button
+                                        class="text-tagline-2 font-inter-tight group/button-secondary text-background-1 focus-visible:outline-background-1 flex items-center gap-x-2.5 rounded-full bg-white py-2.5 pr-2 pl-[18px] font-medium transition-transform duration-150 ease-out focus-visible:outline-2 active:scale-[0.97]">
+                                        <span class="relative inline-block overflow-hidden text-nowrap">
+                                            <span class="invisible">Book Now</span>
+                                            <span class="absolute inset-0 perspective-normal">
+                                                <span
+                                                    class="absolute inset-0 origin-top transform-[translate3d(0,0,0)_rotateX(0deg)] [transition:transform_0.55s_var(--button-text-ease)] backface-hidden group-hover/button-secondary:transform-[translate3d(0,-100%,0)_rotateX(90deg)] group-focus-visible/button-secondary:transform-[translate3d(0,-100%,0)_rotateX(90deg)]">
+                                                    Book Now</span>
+                                                <span
+                                                    class="absolute inset-0 origin-bottom transform-[translate3d(0,100%,0)_rotateX(-90deg)] [transition:transform_0.55s_var(--button-text-ease)] backface-hidden group-hover/button-secondary:transform-[translate3d(0,0,0)_rotateX(0deg)] group-focus-visible/button-secondary:transform-[translate3d(0,0,0)_rotateX(0deg)]">
+                                                    Book Now</span>
+                                            </span>
+                                        </span>
+
+                                        <span class="relative flex size-8 items-center justify-center">
+                                            <span
+                                                class="bg-background-1 absolute z-10 size-0 origin-center rounded-full opacity-0 transition-all duration-400 ease-out group-hover/button-secondary:size-8 group-hover/button-secondary:opacity-100 group-focus-visible/button-secondary:size-8 group-focus-visible/button-secondary:opacity-100"></span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                                class="ease-bouncy stroke-background-1 relative z-20 size-6 rotate-45 transition-all duration-400 group-hover/button-secondary:rotate-0 group-hover/button-secondary:stroke-white group-focus-visible/button-secondary:rotate-0 group-focus-visible/button-secondary:stroke-white">
+                                                <path d="M17 17V7H7M17 7L7 17" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                        </span>
+                                    </button>
+
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- footer links  -->
+                    <div class="col-span-12 grid grid-cols-1 items-start gap-6 lg:col-span-6 lg:grid-cols-3">
+                        <!-- services  -->
+                        <div data-block-reveal data-delay="0.4" class="w-full space-y-3 max-sm:py-6 sm:p-6">
+                            <p class="font-inter-tight text-tagline-2 font-normal text-white">Quick Links</p>
+                            <ul class="space-y-2">
+                                <li>
+                                    <a href="index.html"
+                                        class="font-inter-tight text-tagline-2 footer-link font-normal text-white/60">HOME</a>
+                                </li>
+                                <li>
+                                    <a href=""
+                                        class="font-inter-tight text-tagline-2 footer-link font-normal text-white/60">ROOMS</a>
+                                </li>
+                                <li>
+                                    <a href="booking.html"
+                                        class="font-inter-tight text-tagline-2 footer-link font-normal text-white/60">BOOKING</a>
+                                </li>
+                                <li>
+                                    <a href="places.html"
+                                        class="font-inter-tight text-tagline-2 footer-link font-normal text-white/60">NEARBY
+                                        PLACES</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html"
+                                        class="font-inter-tight text-tagline-2 footer-link font-normal text-white/60">CONTACT</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Company  -->
+                        <div data-block-reveal data-delay="0.5" class="w-full space-y-3 p-6 ">
+                            <p class="font-inter-tight text-tagline-2 font-normal text-white">MISTY WOODS</p>
+                            <div class="space-y-2">
+                                <p class="font-inter-tight text-tagline-2 font-normal text-white/60">
+                                    Muthumari Thrissilery
+                                </p>
+
+                                <p class="font-inter-tight text-tagline-2 font-normal text-white/60">
+                                    (po.) 670646
+                                </p>
+                                <p>
+                                    <a href="tel:+91 9447438787"
+                                        class="footer-link fint-inter-tight font-normal text-white/60">+91
+                                        9447438787</a>
+                                </p>
+                                <p class="font-inter-tight text-tagline-2 font-normal text-white/60">
+                                    <a href="mailto:hello@arcion.com" class="footer-link">drajayan67@gmail.com</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Contact Us  -->
+                        <div data-block-reveal data-delay="0.6" class="w-full space-y-3 p-6">
+                            <p class="font-inter-tight text-tagline-2 font-normal text-white">MISTY HILLS</p>
+                            <div class="space-y-2">
+                                <p class="font-inter-tight text-tagline-2 font-normal text-white/60">
+                                    54th mile Thrissilery
+                                </p>
+
+                                <p class="font-inter-tight text-tagline-2 font-normal text-white/60">
+                                    Aanapara road Kattikulam 670646
+                                </p>
+                                <p>
+                                    <a href="tel:+91 9447438787"
+                                        class="footer-link fint-inter-tight font-normal text-white/60">+91
+                                        9447438787</a>
+                                </p>
+                                <p class="font-inter-tight text-tagline-2 font-normal text-white/60">
+                                    <a href="mailto:hello@arcion.com" class="footer-link">drajayan67@gmail.com</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- bottom text  -->
+                <!-- <div data-block-reveal data-delay="0.2" class="w-full">
+          <h3 data-kinetic-text
+            class="font-instrument-sans text-is-heading-1 to-background-3/0 pointer-events-auto flex w-full flex-nowrap justify-center bg-linear-to-b from-white bg-clip-text text-center text-[130px] font-normal whitespace-nowrap text-transparent max-[376px]:text-[120px] md:text-[250px] lg:text-[350px] xl:text-[450px] 2xl:text-[480px]">
+            Misty Woods
+          </h3>
+        </div> -->
+            </div>
+        </div>
+
+        <script src="vendor/swiper.min.js"></script>
+        <script src="vendor/lenis.min.js"></script>
+        <script src="vendor/gsap.min.js"></script>
+        <script src="vendor/scroll-trigger.min.js"></script>
+        <script src="vendor/split-text.min.js"></script>
+        <script src="vendor/draw-svg.min.js"></script>
+        <script src="vendor/springer.min.js"></script>
+        <script src="vendor/custom-ease.min.js"></script>
+        <script src="vendor/number-flow.min.js"></script>
+
+        <script src="assets/main.js"></script>
+
+
+
+    </footer>
+
+</body>
+
+<!-- Mirrored from arcion-tailwind.pixels71.workers.dev/contact by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 10 Sep 2026 06:28:05 GMT -->
+
+</html>
