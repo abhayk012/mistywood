@@ -8,18 +8,15 @@
 Head links
 ===========================-->
   <meta charset="UTF-8" />
-  <meta name="description"
-    content="" />
-  <meta name="keywords"
-    content="" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
   <meta name="author" content="" />
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="" />
   <meta property="og:title" content="" />
-  <meta property="og:description"
-    content="" />
+  <meta property="og:description" content="" />
   <meta property="og:image" content="" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
@@ -30,8 +27,7 @@ Head links
   <meta property="twitter:card" content="" />
   <meta property="twitter:url" content="" />
   <meta property="twitter:title" content="" />
-  <meta property="twitter:description"
-    content="" />
+  <meta property="twitter:description" content="" />
   <meta property="twitter:image" content="" />
 
   <!-- Additional SEO Meta Tags -->
@@ -51,8 +47,7 @@ Head links
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Manrope:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet"
-  />
+    rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=PT+Mono&amp;display=swap" rel="stylesheet" />
 
 
@@ -61,414 +56,412 @@ Head links
   <link rel="stylesheet" href="assets/main.css">
 
   <style>
-
     .nature-gallery {
-    display: grid;
-    grid-template-columns: 1.65fr 0.85fr;
-    gap: 35px;
-    align-items: start;
-}
+      display: grid;
+      grid-template-columns: 1.65fr 0.85fr;
+      gap: 35px;
+      align-items: start;
+    }
 
 
-/* =========================
+    /* =========================
    LARGE IMAGE
 ========================= */
 
-.nature-main-image {
-    height: 610px;
-    overflow: hidden;
-    position: relative;
-}
+    .nature-main-image {
+      height: 610px;
+      overflow: hidden;
+      position: relative;
+    }
 
-.nature-main-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
+    .nature-main-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
 
-    transform: scale(1.12);
+      transform: scale(1.12);
 
-    transition:
-        transform 1.2s cubic-bezier(.2,.8,.2,1);
-}
+      transition:
+        transform 1.2s cubic-bezier(.2, .8, .2, 1);
+    }
 
-.nature-main-image:hover img {
-    transform: scale(1.05);
-}
+    .nature-main-image:hover img {
+      transform: scale(1.05);
+    }
 
 
-/* =========================
+    /* =========================
    RIGHT COLUMN
 ========================= */
 
-.nature-side {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
+    .nature-side {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
 
 
-/* =========================
+    /* =========================
    SMALL IMAGE
 ========================= */
 
-.nature-small-image {
-    height: 350px;
-    overflow: hidden;
-    position: relative;
-}
+    .nature-small-image {
+      height: 350px;
+      overflow: hidden;
+      position: relative;
+    }
 
-.nature-small-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
+    .nature-small-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
 
-    transform: scale(1.12);
+      transform: scale(1.12);
 
-    transition:
-        transform 1.2s cubic-bezier(.2,.8,.2,1);
-}
+      transition:
+        transform 1.2s cubic-bezier(.2, .8, .2, 1);
+    }
 
-.nature-small-image:hover img {
-    transform: scale(1.05);
-}
+    .nature-small-image:hover img {
+      transform: scale(1.05);
+    }
 
 
-/* =========================
+    /* =========================
    SIDE CONTENT
 ========================= */
 
-.nature-side-content {
-    padding: 10px 5px 0;
-}
+    .nature-side-content {
+      padding: 10px 5px 0;
+    }
 
-.nature-label {
-    display: block;
-    margin-bottom: 12px;
+    .nature-label {
+      display: block;
+      margin-bottom: 12px;
 
-    font-size: 12px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
 
-    color: #75936d;
-}
+      color: #75936d;
+    }
 
-.nature-side-content h3 {
-    margin: 0 0 15px;
+    .nature-side-content h3 {
+      margin: 0 0 15px;
 
-    font-size: 30px;
-    line-height: 1.2;
-    font-weight: 400;
+      font-size: 30px;
+      line-height: 1.2;
+      font-weight: 400;
 
-    color: #315d35;
-}
+      color: #315d35;
+    }
 
-.nature-side-content p {
-    margin: 0 0 22px;
+    .nature-side-content p {
+      margin: 0 0 22px;
 
-    font-size: 15px;
-    line-height: 1.7;
+      font-size: 15px;
+      line-height: 1.7;
 
-    color: #697066;
-}
+      color: #697066;
+    }
 
 
-/* =========================
+    /* =========================
    LINK
 ========================= */
 
-.nature-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 12px;
+    .nature-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
 
-    color: #315d35;
-    text-decoration: none;
+      color: #315d35;
+      text-decoration: none;
 
-    font-size: 14px;
-    font-weight: 500;
+      font-size: 14px;
+      font-weight: 500;
 
-    border-bottom: 1px solid #315d35;
-    padding-bottom: 5px;
+      border-bottom: 1px solid #315d35;
+      padding-bottom: 5px;
 
-    transition: gap .3s ease;
-}
+      transition: gap .3s ease;
+    }
 
-.nature-link span {
-    font-size: 20px;
-    line-height: 1;
-}
+    .nature-link span {
+      font-size: 20px;
+      line-height: 1;
+    }
 
-.nature-link:hover {
-    gap: 18px;
-}
+    .nature-link:hover {
+      gap: 18px;
+    }
 
 
-/* =========================
+    /* =========================
    DECORATIVE CURVE
 ========================= */
 
-.nature-decoration {
-    position: absolute;
-    left: -160px;
-    bottom: -100px;
+    .nature-decoration {
+      position: absolute;
+      left: -160px;
+      bottom: -100px;
 
-    width: 520px;
-    height: 300px;
+      width: 520px;
+      height: 300px;
 
-    pointer-events: none;
-    z-index: 1;
-}
+      pointer-events: none;
+      z-index: 1;
+    }
 
-.nature-decoration span {
-    position: absolute;
+    .nature-decoration span {
+      position: absolute;
 
-    width: 500px;
-    height: 180px;
+      width: 500px;
+      height: 180px;
 
-    border: 18px solid rgba(255,255,255,.9);
-    border-right: 0;
-    border-bottom: 0;
+      border: 18px solid rgba(255, 255, 255, .9);
+      border-right: 0;
+      border-bottom: 0;
 
-    border-radius: 50%;
+      border-radius: 50%;
 
-    transform: rotate(-12deg);
+      transform: rotate(-12deg);
 
-    opacity: .8;
-}
+      opacity: .8;
+    }
 
 
-/* =========================
+    /* =========================
    RESPONSIVE
 ========================= */
 
-@media (max-width: 991px) {
+    @media (max-width: 991px) {
 
-    .nature-section {
+      .nature-section {
         padding: 80px 0;
-    }
+      }
 
-    .nature-heading {
+      .nature-heading {
         margin-bottom: 50px;
-    }
+      }
 
-    .nature-gallery {
+      .nature-gallery {
         grid-template-columns: 1.4fr 1fr;
         gap: 25px;
-    }
+      }
 
-    .nature-main-image {
+      .nature-main-image {
         height: 500px;
-    }
+      }
 
-    .nature-small-image {
+      .nature-small-image {
         height: 280px;
+      }
+
     }
 
-}
 
+    @media (max-width: 767px) {
 
-@media (max-width: 767px) {
-
-    .nature-section {
+      .nature-section {
         padding: 70px 0;
-    }
+      }
 
-    .nature-section .container {
+      .nature-section .container {
         padding: 0 20px;
-    }
+      }
 
-    .nature-heading {
+      .nature-heading {
         text-align: left;
         margin-bottom: 40px;
-    }
+      }
 
-    .nature-heading h2 {
+      .nature-heading h2 {
         font-size: 42px;
         letter-spacing: -1px;
-    }
+      }
 
-    .nature-heading h2 em {
+      .nature-heading h2 em {
         display: block;
         margin-left: 0;
         margin-top: 5px;
-    }
+      }
 
-    .nature-heading p {
+      .nature-heading p {
         font-size: 15px;
-    }
+      }
 
-    .nature-gallery {
+      .nature-gallery {
         display: block;
-    }
+      }
 
-    .nature-main-image {
+      .nature-main-image {
         height: 420px;
         margin-bottom: 25px;
-    }
+      }
 
-    .nature-small-image {
+      .nature-small-image {
         height: 300px;
-    }
+      }
 
-    .nature-side-content {
+      .nature-side-content {
         padding-top: 25px;
-    }
+      }
 
-    .nature-decoration {
+      .nature-decoration {
         left: -250px;
+      }
+
     }
 
-}
 
-
-/* =========================
+    /* =========================
    FULL WIDTH VIDEO
 ========================= */
 
-.full-video-section {
-    position: relative;
-    width: 100%;
-    height: 700px;
-    overflow: hidden;
-    background: #1f3d25;
-}
+    .full-video-section {
+      position: relative;
+      width: 100%;
+      height: 700px;
+      overflow: hidden;
+      background: #1f3d25;
+    }
 
 
-/* Video */
+    /* Video */
 
-.full-video {
-    position: absolute;
-    inset: 0;
+    .full-video {
+      position: absolute;
+      inset: 0;
 
-    width: 100%;
-    height: 100%;
+      width: 100%;
+      height: 100%;
 
-    object-fit: cover;
-    display: block;
-}
-
-
-/* Overlay */
-
-.video-overlay {
-    position: absolute;
-    inset: 0;
-
-    background: rgba(20, 45, 25, 0.28);
-
-    z-index: 1;
-}
+      object-fit: cover;
+      display: block;
+    }
 
 
-/* Content */
+    /* Overlay */
 
-.video-content {
-    position: relative;
-    z-index: 2;
+    .video-overlay {
+      position: absolute;
+      inset: 0;
 
-    width: 100%;
-    height: 100%;
+      background: rgba(20, 45, 25, 0.28);
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    text-align: center;
-
-    padding: 30px;
-
-    color: #fff;
-}
+      z-index: 1;
+    }
 
 
-.video-content span {
-    font-size: 13px;
-    letter-spacing: 3px;
-    text-transform: uppercase;
+    /* Content */
 
-    margin-bottom: 18px;
-}
+    .video-content {
+      position: relative;
+      z-index: 2;
 
+      width: 100%;
+      height: 100%;
 
-.video-content h2 {
-    margin: 0 0 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
 
-    font-size: clamp(42px, 6vw, 78px);
-    line-height: 1.05;
-    font-weight: 400;
+      text-align: center;
 
-    letter-spacing: -2px;
-}
+      padding: 30px;
 
-
-.video-content p {
-    max-width: 600px;
-
-    margin: 0 0 30px;
-
-    font-size: 16px;
-    line-height: 1.7;
-}
+      color: #fff;
+    }
 
 
-.video-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 15px;
+    .video-content span {
+      font-size: 13px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
 
-    padding: 14px 24px;
-
-    background: #fff;
-    color: #315d35;
-
-    text-decoration: none;
-
-    font-size: 14px;
-    font-weight: 500;
-
-    transition: all .3s ease;
-}
+      margin-bottom: 18px;
+    }
 
 
-.video-btn span {
-    margin: 0;
-    font-size: 20px;
-    letter-spacing: 0;
-}
+    .video-content h2 {
+      margin: 0 0 20px;
+
+      font-size: clamp(42px, 6vw, 78px);
+      line-height: 1.05;
+      font-weight: 400;
+
+      letter-spacing: -2px;
+    }
 
 
-.video-btn:hover {
-    gap: 22px;
-}
+    .video-content p {
+      max-width: 600px;
+
+      margin: 0 0 30px;
+
+      font-size: 16px;
+      line-height: 1.7;
+    }
 
 
-/* =========================
+    .video-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 15px;
+
+      padding: 14px 24px;
+
+      background: #fff;
+      color: #315d35;
+
+      text-decoration: none;
+
+      font-size: 14px;
+      font-weight: 500;
+
+      transition: all .3s ease;
+    }
+
+
+    .video-btn span {
+      margin: 0;
+      font-size: 20px;
+      letter-spacing: 0;
+    }
+
+
+    .video-btn:hover {
+      gap: 22px;
+    }
+
+
+    /* =========================
    MOBILE
 ========================= */
 
-@media (max-width: 767px) {
+    @media (max-width: 767px) {
 
-    .full-video-section {
+      .full-video-section {
         height: 600px;
-    }
+      }
 
-    .video-content {
+      .video-content {
         padding: 25px;
-    }
+      }
 
-    .video-content h2 {
+      .video-content h2 {
         font-size: 42px;
-    }
+      }
 
-    .video-content p {
+      .video-content p {
         font-size: 14px;
+      }
+
     }
-
-}
-
   </style>
 
 </head>
@@ -620,7 +613,7 @@ Head links
             <a href="index.html" data-mobile-menu-link class="group flex items-end">
               <span data-mobile-menu-item data-reveal-delay="0.1"
                 class="font-instrument-sans text-is-heading-5 font-medium text-white uppercase opacity-0 transition-colors group-hover:text-white/70">Home</span>
-            </a> 
+            </a>
           </li>
           <li>
             <a href="room.html" data-mobile-menu-link class="group flex items-end">
@@ -637,7 +630,8 @@ Head links
           <li>
             <a href="places.html" data-mobile-menu-link class="group flex items-end">
               <span data-mobile-menu-item data-reveal-delay="0.28"
-                class="font-instrument-sans text-is-heading-5 font-medium text-white uppercase opacity-0 transition-colors group-hover:text-white/70">Nearby Places</span>
+                class="font-instrument-sans text-is-heading-5 font-medium text-white uppercase opacity-0 transition-colors group-hover:text-white/70">Nearby
+                Places</span>
             </a>
           </li>
           <!-- <li>
@@ -730,13 +724,14 @@ Head links
     <section class="relative overflow-hidden pt-[120px] pb-18 lg:pt-[150px] lg:pb-28 xl:pt-[190px]">
       <!-- left img  -->
       <figure data-block-reveal data-delay="0" data-instant class="absolute inset-0 bottom-0 left-0 h-full w-1/2">
-        <img src="images/hero-bg-1.jpg" alt="hero-bg-1" class="size-full object-cover" />
+        <img src="images/hero1.png" alt="hero-bg-1" class="size-full object-cover" />
       </figure>
 
       <!-- right img  -->
       <figure data-block-reveal data-delay="0.2" data-instant
-        class="absolute inset-0 right-0 bottom-0 left-auto h-full w-1/2 scale-x-[-1]">
-        <img src="images/hero-bg-2.jpg" alt="hero-bg-1" class="size-full object-cover" />
+        class="absolute inset-0 right-0 bottom-0 left-auto h-full w-1/2 scale-x-[-1]"
+        >
+        <img src="images/herotest2.png" alt="hero-bg-1" class="size-full object-cover" />
       </figure>
       <div class="main-container relative z-10">
         <div class="space-y-[110px] md:space-y-[150px] xl:space-y-[250px]">
@@ -745,12 +740,14 @@ Head links
             <!-- text content  -->
             <div class="space-y-3">
               <h1 data-text-reveal data-reveal-delay="0.3"
-                class="font-display text-is-heading-3 md:text-is-heading-2 lg:text-is-heading-1 text-background-1 mx-auto max-w-[850px] text-center font-medium" style="color: #fff;">
+                class="font-display text-is-heading-3 md:text-is-heading-2 lg:text-is-heading-1 text-background-1 mx-auto max-w-[850px] text-center font-medium"
+                style="color: #fff;">
                 Your Escape <span class="italic font-light">to Nature</span>
               </h1>
               <p data-text-reveal data-reveal-delay="0.4"
                 class="font-sans text-tagline-2 sm:text-tagline-1 text-background-1 text-center" style="color: #fff;">
-                Escape the ordinary and reconnect with nature, where every moment brings peace, comfort, and unforgettable memories.
+                Escape the ordinary and reconnect with nature, <br/> where every moment brings peace, comfort, and
+                unforgettable memories.
               </p>
             </div>
 
@@ -823,7 +820,7 @@ Head links
         </div>
       </div>
 
-      <div class="absolute bottom-0 left-0 h-full w-full bg-black/80"></div>
+      <div class="absolute bottom-0 left-0 h-full w-full" style="background-color: rgba(0, 0, 0, 0.5);"></div>
 
       <!-- bottom gradient  -->
       <div class="absolute bottom-0 left-0 h-[400px] w-full bg-linear-to-t from-[#e2eadb] to-transparent"></div>
@@ -861,9 +858,13 @@ Head links
             </h2>
             <p data-text-reveal data-reveal-delay="0.3"
               class="font-inter-tight text-tagline-2 sm:text-tagline-1 text-background-6/60 mx-auto ">
-              Misty Woods offers a uniquely designed space that blends stunning architecture with natural beauty. Enjoy panoramic hill views and relax in our luxurious, nature-inspired pool that surrounds the club, creating a vibrant and immersive experience.
+              Misty Woods offers a uniquely designed space that blends stunning architecture with natural beauty. Enjoy
+              panoramic hill views and relax in our luxurious, nature-inspired pool that surrounds the club, creating a
+              vibrant and immersive experience.
 
-Enjoy a romantic evening under the stars at Misty woods's poolside restaurant. With stunning hill views, premium liquor, and exquisite multi-cuisine delights, it’s the perfect spot to celebrate love and togetherness. Unwind in a serene setting featuring modern rooms, cozy sit-outs, and top-notch amenities.
+              Enjoy a romantic evening under the stars at Misty woods's poolside restaurant. With stunning hill views,
+              premium liquor, and exquisite multi-cuisine delights, it’s the perfect spot to celebrate love and
+              togetherness. Unwind in a serene setting featuring modern rooms, cozy sit-outs, and top-notch amenities.
 
 
 
@@ -895,52 +896,51 @@ Enjoy a romantic evening under the stars at Misty woods's poolside restaurant. W
               <div data-service-accordion-content
                 class="ease-faq group h-0 overflow-hidden transition-all duration-600">
                 <div class="space-y-5 group-data-[active=true]:pb-6 lg:space-y-8 lg:group-data-[active=true]:pb-8">
-                  
+
                   <a href="">
                     <div class="nature-gallery">
 
-            <!-- LARGE IMAGE -->
-            <div class="nature-main-image reveal-image">
-                <img src="images/img-1.jpg" alt="Misty Woods Garden">
-            </div>
+                      <!-- LARGE IMAGE -->
+                      <div class="nature-main-image reveal-image">
+                        <img src="images/img-1.jpg" alt="Misty Woods Garden">
+                      </div>
 
 
-            <!-- RIGHT COLUMN -->
-            <div class="nature-side">
+                      <!-- RIGHT COLUMN -->
+                      <div class="nature-side">
 
-                <!-- SMALL IMAGE -->
-                <div class="nature-small-image reveal-image">
-                    <img src="images/img-2.jpg"
-                         alt="Misty Woods Resort">
-                </div>
+                        <!-- SMALL IMAGE -->
+                        <div class="nature-small-image reveal-image">
+                          <img src="images/img-2.jpg" alt="Misty Woods Resort">
+                        </div>
 
-                <!-- Text -->
-                <div class="nature-side-content">
+                        <!-- Text -->
+                        <div class="nature-side-content">
 
-                    <span class="nature-label">
-                        A Peaceful Escape
-                    </span>
+                          <span class="nature-label">
+                            A Peaceful Escape
+                          </span>
 
-                    <h3>
-                        Stay Close to Nature
-                    </h3>
+                          <h3>
+                            Stay Close to Nature
+                          </h3>
 
-                    <p>
-                        Wake up to lush greenery, fresh mountain air and
-                        beautiful surroundings. Every corner of Misty Woods
-                        is designed to help you slow down and reconnect.
-                    </p>
+                          <p>
+                            Wake up to lush greenery, fresh mountain air and
+                            beautiful surroundings. Every corner of Misty Woods
+                            is designed to help you slow down and reconnect.
+                          </p>
 
-                    <a href="" class="nature-link">
-                        Discover More
-                        <span>→</span>
-                    </a>
+                          <a href="" class="nature-link">
+                            Discover More
+                            <span>→</span>
+                          </a>
 
-                </div>
+                        </div>
 
-            </div>
+                      </div>
 
-        </div>
+                    </div>
                   </a>
                 </div>
               </div>
@@ -1141,12 +1141,13 @@ Enjoy a romantic evening under the stars at Misty woods's poolside restaurant. W
             <div class="space-y-3">
               <h2 data-text-reveal data-reveal-delay="0.2"
                 class="font-instrument-sans text-background-2 text-is-heading-3 lg:text-is-heading-2 mx-auto font-medium md:max-w-[600px] lg:max-w-[650px] xl:max-w-[743px]">
-                Beautiful Spaces 
+                Beautiful Spaces
                 <span class="font-instrument-serif text-background-1 font-normal italic">Made for Your Stay</span>
               </h2>
               <p data-text-reveal data-reveal-delay="0.3"
                 class="font-inter-tight text-tagline-2 sm:text-tagline-1 text-background-1 mx-auto max-w-[600px] font-normal">
-                Discover beautifully designed rooms and suites created for peaceful stays, restful nights, and memorable moments.
+                Discover beautifully designed rooms and suites created for peaceful stays, restful nights, and memorable
+                moments.
               </p>
             </div>
           </div>
@@ -1242,7 +1243,7 @@ Enjoy a romantic evening under the stars at Misty woods's poolside restaurant. W
                     class="bg-background-3/40 flex items-start justify-start px-6 pt-6 pb-6 backdrop-blur-[5px] lg:px-10.5 lg:pb-10.5">
                     <div class="space-y-2">
                       <h3 class="font-instrument-sans text-is-heading-5 text-background-1 font-medium">
-                       Deluxe Suite
+                        Deluxe Suite
                       </h3>
                       <!-- <p class="font-inter-tight text-tagline-2 text-background-1 font-normal">
                         Circadian-sync lighting that mirrors the sun's natural cycle to optimize human
@@ -1313,47 +1314,39 @@ Enjoy a romantic evening under the stars at Misty woods's poolside restaurant. W
      FULL WIDTH VIDEO SECTION
 ========================= -->
 
-<section class="full-video-section">
+    <section class="full-video-section">
 
-    <video
-        class="full-video"
-        autoplay
-        muted
-        loop
-        playsinline
-        preload="auto"
-        poster="images/video-poster.jpg"
-    >
+      <video class="full-video" autoplay muted loop playsinline preload="auto" poster="images/video-poster.jpg">
         <source src="images/misty.mp4" type="video/mp4">
         Your browser does not support the video tag.
-    </video>
+      </video>
 
-    <!-- Optional dark overlay -->
-    <div class="video-overlay"></div>
+      <!-- Optional dark overlay -->
+      <div class="video-overlay"></div>
 
-    <!-- Content over video -->
-    <div class="video-content">
+      <!-- Content over video -->
+      <div class="video-content">
 
         <span>Escape Into Nature</span>
 
         <h2>
-            Where Every Stay<br>
-            Feels Like a Getaway
+          Where Every Stay<br>
+          Feels Like a Getaway
         </h2>
 
         <p>
-            Breathe in the fresh mountain air, slow down and
-            enjoy the beauty of Misty Woods.
+          Breathe in the fresh mountain air, slow down and
+          enjoy the beauty of Misty Woods.
         </p>
 
         <a href="booking.html" class="video-btn">
-            Book Your Stay
-            <span>→</span>
+          Book Your Stay
+          <span>→</span>
         </a>
 
-    </div>
+      </div>
 
-</section>
+    </section>
 
     <section class="relative overflow-hidden py-18 lg:py-28">
       <!-- svg  -->
@@ -1390,7 +1383,7 @@ Enjoy a romantic evening under the stars at Misty woods's poolside restaurant. W
               </div>
               <h2 data-text-reveal data-reveal-delay="0.2"
                 class="font-instrument-sans text-background-2 text-is-heading-3 lg:text-is-heading-2 w-full font-medium md:max-w-[600px] lg:max-w-[550px] xl:max-w-[743px]">
-                Discover the Hidden 
+                Discover the Hidden
                 <span class="font-instrument-serif text-background-1 font-normal italic">Gems Around Us</span>
               </h2>
             </div>
@@ -1694,7 +1687,7 @@ Enjoy a romantic evening under the stars at Misty woods's poolside restaurant. W
                         class="text-background-6/60 font-inter-tight text-tagline-4 inline-block bg-white px-3 py-1 font-normal">Breakfast</span>
                       <div class="space-y-1">
                         <h3 class="font-instrument-sans text-is-heading-6 text-background-1 font-medium">
-                         Morning Delights
+                          Morning Delights
                         </h3>
                         <p class="font-inter-tight text-tagline-2 text-background-1 lg:max-w-[260px]">
                           Wake up to a refreshing spread of tasty breakfast choices.
@@ -1721,13 +1714,14 @@ Enjoy a romantic evening under the stars at Misty woods's poolside restaurant. W
                     class="bg-background-3/50 flex h-full w-full flex-row items-end justify-between py-6 backdrop-blur-[5px] max-lg:space-y-4 max-lg:px-6 lg:w-[422px] lg:flex-col lg:items-start lg:py-10.5 lg:pr-10.5 lg:pl-6">
                     <div class="space-y-3">
                       <span
-                        class="text-background-6/60 font-inter-tight text-tagline-4 inline-block bg-white px-3 py-1 font-normal">Lunch & Dinner</span>
+                        class="text-background-6/60 font-inter-tight text-tagline-4 inline-block bg-white px-3 py-1 font-normal">Lunch
+                        & Dinner</span>
                       <div class="space-y-1">
                         <h3 class="font-instrument-sans text-is-heading-6 text-background-1 font-medium">
                           Delicious Dining
                         </h3>
                         <p class="font-inter-tight text-tagline-2 text-background-1 lg:max-w-[260px]">
-                         Delicious meals, fresh flavours, and memorable dining experiences throughout the day.
+                          Delicious meals, fresh flavours, and memorable dining experiences throughout the day.
                         </p>
                       </div>
                     </div>
@@ -1751,13 +1745,14 @@ Enjoy a romantic evening under the stars at Misty woods's poolside restaurant. W
                     class="bg-background-3/50 flex h-full w-full flex-row items-end justify-between py-6 backdrop-blur-[5px] max-lg:space-y-4 max-lg:px-6 lg:w-[422px] lg:flex-col lg:items-start lg:py-10.5 lg:pr-10.5 lg:pl-6">
                     <div class="space-y-3">
                       <span
-                        class="text-background-6/60 font-inter-tight text-tagline-4 inline-block bg-white px-3 py-1 font-normal">24 Hours Hot Water</span>
+                        class="text-background-6/60 font-inter-tight text-tagline-4 inline-block bg-white px-3 py-1 font-normal">24
+                        Hours Hot Water</span>
                       <div class="space-y-1">
                         <h3 class="font-instrument-sans text-is-heading-6 text-background-1 font-medium">
                           Round-the-Clock Hot Water
                         </h3>
                         <p class="font-inter-tight text-tagline-2 text-background-1 lg:max-w-[260px]">
-                         Enjoy hot water anytime for a comfortable and refreshing stay.
+                          Enjoy hot water anytime for a comfortable and refreshing stay.
                         </p>
                       </div>
                     </div>
@@ -1781,13 +1776,14 @@ Enjoy a romantic evening under the stars at Misty woods's poolside restaurant. W
                     class="bg-background-3/50 flex h-full w-full flex-row items-end justify-between py-6 backdrop-blur-[5px] max-lg:space-y-4 max-lg:px-6 lg:w-[422px] lg:flex-col lg:items-start lg:py-10.5 lg:pr-10.5 lg:pl-6">
                     <div class="space-y-3">
                       <span
-                        class="text-background-6/60 font-inter-tight text-tagline-4 inline-block bg-white px-3 py-1 font-normal">Ample Parking Space</span>
+                        class="text-background-6/60 font-inter-tight text-tagline-4 inline-block bg-white px-3 py-1 font-normal">Ample
+                        Parking Space</span>
                       <div class="space-y-1">
                         <h3 class="font-instrument-sans text-is-heading-6 text-background-1 font-medium">
                           Easy Parking
                         </h3>
                         <p class="font-inter-tight text-tagline-2 text-background-1 lg:max-w-[260px]">
-                         Enjoy convenient and spacious parking for a hassle-free stay.
+                          Enjoy convenient and spacious parking for a hassle-free stay.
                         </p>
                       </div>
                     </div>
@@ -1824,13 +1820,15 @@ Enjoy a romantic evening under the stars at Misty woods's poolside restaurant. W
               </div>
               <h2 data-text-reveal data-reveal-delay="0.2"
                 class="font-instrument-sans text-background-2 text-is-heading-3 lg:text-is-heading-2 w-full font-medium md:max-w-[600px] lg:max-w-[550px] xl:max-w-[743px]">
-                Experience Comfort 
+                Experience Comfort
                 <span class="font-instrument-serif text-background-1 font-normal italic">Beyond Your Room.</span>
               </h2>
             </div>
             <p data-text-reveal data-reveal-delay="0.3"
               class="text-tagline-2 sm:text-tagline-1 text-background-1 font-inter-tight max-w-[350px] text-center font-normal md:text-right lg:max-w-[450px] xl:max-w-[550px]">
-              Enjoy a range of thoughtful facilities designed to make your stay comfortable, convenient, and relaxing. From essential amenities to added comforts, we have everything you need for a pleasant and memorable experience.
+              Enjoy a range of thoughtful facilities designed to make your stay comfortable, convenient, and relaxing.
+              From essential amenities to added comforts, we have everything you need for a pleasant and memorable
+              experience.
             </p>
           </div>
 
@@ -1844,7 +1842,7 @@ Enjoy a romantic evening under the stars at Misty woods's poolside restaurant. W
 
               <button type="button" data-process-tab data-active="true"
                 class="font-inter-tight text-tagline-2 text-background-1/60 data-[active=true]:data-[force-inactive=true]:text-background-1/60 relative z-10 w-full px-2 py-5 text-center font-normal text-nowrap transition-all duration-600 ease-out data-[active=true]:text-white data-[item-hover=true]:text-white lg:px-6 lg:text-left">
-               Two Comfortable Bedrooms
+                Two Comfortable Bedrooms
               </button>
               <button type="button" data-process-tab
                 class="font-inter-tight text-tagline-2 text-background-1/60 data-[active=true]:data-[force-inactive=true]:text-background-1/60 relative z-10 w-full px-2 py-5 text-center font-normal text-nowrap transition-all duration-600 ease-out data-[active=true]:text-white data-[item-hover=true]:text-white lg:px-6 lg:text-left">
@@ -1877,7 +1875,8 @@ Enjoy a romantic evening under the stars at Misty woods's poolside restaurant. W
                     </h3>
                     <p data-process-reveal
                       class="font-inter-tight text-tagline-3 md:text-tagline-2 text-background-1 font-normal">
-                      Enjoy a peaceful stay in thoughtfully designed bedrooms, offering a cozy atmosphere, comfortable furnishings, and everything you need to relax and unwind.
+                      Enjoy a peaceful stay in thoughtfully designed bedrooms, offering a cozy atmosphere, comfortable
+                      furnishings, and everything you need to relax and unwind.
                     </p>
                   </div>
 
@@ -1902,7 +1901,7 @@ Enjoy a romantic evening under the stars at Misty woods's poolside restaurant. W
                     <ul class="w-1/2 space-y-2">
                       <li class="font-inter-tight text-tagline-3 text-background-6/60 flex items-start gap-x-3 py-0.5">
                         <span class="bg-background-1 inline-block h-[25px] w-px"></span> Ample storage
-                        
+
                       </li>
                       <li class="font-inter-tight text-tagline-3 text-background-6/60 flex items-start gap-x-3 py-0.5">
                         <span class="bg-background-1 inline-block h-[25px] w-px"></span>Cozy ambience
@@ -1935,7 +1934,8 @@ Enjoy a romantic evening under the stars at Misty woods's poolside restaurant. W
                     </h3>
                     <p data-process-reveal
                       class="font-inter-tight text-tagline-3 md:text-tagline-2 text-background-1 font-normal">
-                      Enjoy the convenience of a well-equipped kitchen with all the essential cooking facilities, utensils, and appliances for a comfortable stay.
+                      Enjoy the convenience of a well-equipped kitchen with all the essential cooking facilities,
+                      utensils, and appliances for a comfortable stay.
                     </p>
                   </div>
 
@@ -1992,7 +1992,8 @@ Enjoy a romantic evening under the stars at Misty woods's poolside restaurant. W
                     </h3>
                     <p data-process-reveal
                       class="font-inter-tight text-tagline-3 md:text-tagline-2 text-background-1 font-normal">
-                      Unwind and enjoy quality time together in our comfortable recreation room, thoughtfully designed for indoor fun, relaxation, and entertainment.
+                      Unwind and enjoy quality time together in our comfortable recreation room, thoughtfully designed
+                      for indoor fun, relaxation, and entertainment.
                     </p>
                   </div>
 
@@ -2049,7 +2050,8 @@ Enjoy a romantic evening under the stars at Misty woods's poolside restaurant. W
                     </h3>
                     <p data-process-reveal
                       class="font-inter-tight text-tagline-3 md:text-tagline-2 text-background-1 font-normal">
-                      A peaceful and comfortable stay designed for families, couples, and small groups looking to relax, reconnect, and enjoy quality time together.
+                      A peaceful and comfortable stay designed for families, couples, and small groups looking to relax,
+                      reconnect, and enjoy quality time together.
                     </p>
                   </div>
 
@@ -2083,10 +2085,11 @@ Enjoy a romantic evening under the stars at Misty woods's poolside restaurant. W
                       </li>
                       <li class="font-inter-tight text-tagline-3 text-background-6/60 flex items-start gap-x-3 py-0.5">
                         <span class="bg-background-1 inline-block h-[25px] w-px"></span>
-                       Suitable for Short & Long Stays
+                        Suitable for Short & Long Stays
                       </li>
                       <li class="font-inter-tight text-tagline-3 text-background-6/60 flex items-start gap-x-3 py-0.5">
-                        <span class="bg-background-1 inline-block h-[25px] w-px"></span>Perfect for Quality Time Together
+                        <span class="bg-background-1 inline-block h-[25px] w-px"></span>Perfect for Quality Time
+                        Together
                       </li>
                     </ul>
                   </div>
@@ -2348,7 +2351,7 @@ Enjoy a romantic evening under the stars at Misty woods's poolside restaurant. W
             </div>
             <h2 data-text-reveal data-reveal-delay="0.2"
               class="font-instrument-sans text-background-2 text-is-heading-3 lg:text-is-heading-2 mx-auto w-full text-center font-medium md:max-w-[600px] lg:max-w-[550px]">
-              A Warm, Exquisite, Practical 
+              A Warm, Exquisite, Practical
 
               <span class="font-instrument-serif text-background-1 font-normal italic">And Urban Space.</span>
             </h2>
@@ -2512,7 +2515,7 @@ Enjoy a romantic evening under the stars at Misty woods's poolside restaurant. W
             <div class="space-y-6 lg:space-y-14">
               <h2 data-text-reveal data-reveal-delay="0.2"
                 class="font-instrument-sans text-is-heading-4 lg:text-is-heading-3 xl:text-is-heading-2 font-medium text-white max-lg:max-w-[550px]">
-               Experience tranquil luxury nestled in the heart of 
+                Experience tranquil luxury nestled in the heart of
                 <span
                   class="font-instrument-serif text-isf-heading-4 lg:text-isf-heading-3 xl:text-isf-heading-2 text-white/60 italic">
                   Wayanad's pristine wilderness
@@ -2591,8 +2594,8 @@ Enjoy a romantic evening under the stars at Misty woods's poolside restaurant. W
                   (po.) 670646
                 </p>
                 <p>
-                  <a href="tel:+91 9447438787"
-                    class="footer-link fint-inter-tight font-normal text-white/60">+91 9447438787</a>
+                  <a href="tel:+91 9447438787" class="footer-link fint-inter-tight font-normal text-white/60">+91
+                    9447438787</a>
                 </p>
                 <p class="font-inter-tight text-tagline-2 font-normal text-white/60">
                   <a href="mailto:hello@arcion.com" class="footer-link">drajayan67@gmail.com</a>
@@ -2612,8 +2615,8 @@ Enjoy a romantic evening under the stars at Misty woods's poolside restaurant. W
                   Aanapara road Kattikulam 670646
                 </p>
                 <p>
-                  <a href="tel:+91 9447438787"
-                    class="footer-link fint-inter-tight font-normal text-white/60">+91 9447438787</a>
+                  <a href="tel:+91 9447438787" class="footer-link fint-inter-tight font-normal text-white/60">+91
+                    9447438787</a>
                 </p>
                 <p class="font-inter-tight text-tagline-2 font-normal text-white/60">
                   <a href="mailto:hello@arcion.com" class="footer-link">drajayan67@gmail.com</a>
@@ -2646,43 +2649,43 @@ Enjoy a romantic evening under the stars at Misty woods's poolside restaurant. W
     <script src="assets/main.js"></script>
 
     <script>
-gsap.from(".video-content span", {
-    y: 30,
-    opacity: 0,
-    duration: 0.8,
-    scrollTrigger: {
-        trigger: ".full-video-section",
-        start: "top 75%",
-        once: true
-    }
-});
+      gsap.from(".video-content span", {
+        y: 30,
+        opacity: 0,
+        duration: 0.8,
+        scrollTrigger: {
+          trigger: ".full-video-section",
+          start: "top 75%",
+          once: true
+        }
+      });
 
-gsap.from(".video-content h2", {
-    y: 50,
-    opacity: 0,
-    duration: 1,
-    delay: 0.15,
-    ease: "power4.out",
-    scrollTrigger: {
-        trigger: ".full-video-section",
-        start: "top 75%",
-        once: true
-    }
-});
+      gsap.from(".video-content h2", {
+        y: 50,
+        opacity: 0,
+        duration: 1,
+        delay: 0.15,
+        ease: "power4.out",
+        scrollTrigger: {
+          trigger: ".full-video-section",
+          start: "top 75%",
+          once: true
+        }
+      });
 
-gsap.from(".video-content p, .video-btn", {
-    y: 30,
-    opacity: 0,
-    duration: 0.8,
-    delay: 0.35,
-    stagger: 0.15,
-    scrollTrigger: {
-        trigger: ".full-video-section",
-        start: "top 75%",
-        once: true
-    }
-});
-</script>
+      gsap.from(".video-content p, .video-btn", {
+        y: 30,
+        opacity: 0,
+        duration: 0.8,
+        delay: 0.35,
+        stagger: 0.15,
+        scrollTrigger: {
+          trigger: ".full-video-section",
+          start: "top 75%",
+          once: true
+        }
+      });
+    </script>
 
   </footer>
 
