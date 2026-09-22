@@ -897,17 +897,45 @@ Head links
 
   <main class="bg-background-3/40">
     <section class="relative overflow-hidden pt-[120px] pb-18 lg:pt-[150px] lg:pb-28 xl:pt-[190px]">
-      <!-- left img  -->
-      <figure data-block-reveal data-delay="0" data-instant class="absolute inset-0 bottom-0 left-0 h-full w-1/2">
-        <img src="images/hero-bg-1.jpg" alt="hero-bg-1" class="size-full object-cover" />
-      </figure>
-
-      <!-- right img  -->
-      <figure data-block-reveal data-delay="0.2" data-instant
-        class="absolute inset-0 right-0 bottom-0 left-auto h-full w-1/2 scale-x-[-1]"
-        >
-        <img src="images/hero2.png" alt="hero-bg-1" class="size-full object-cover" />
-      </figure>
+      <!-- hero background auto carousel -->
+      <div class="hero-bg-carousel absolute inset-0 h-full w-full pointer-events-none z-0 overflow-hidden">
+        <!-- Slide 1 (Original - Visible immediately) -->
+        <div class="hero-slide absolute inset-0 h-full w-full opacity-100 transition-opacity duration-1000 ease-in-out">
+          <figure class="absolute inset-0 bottom-0 left-0 h-full w-1/2">
+            <img src="images/hero-bg-1.jpg" alt="hero-bg-1" class="h-full w-full object-cover" />
+          </figure>
+          <figure class="absolute inset-0 right-0 bottom-0 left-auto h-full w-1/2 scale-x-[-1]">
+            <img src="images/hero2.png" alt="hero-bg-2" class="h-full w-full object-cover" />
+          </figure>
+        </div>
+        <!-- Slide 2 -->
+        <div class="hero-slide absolute inset-0 h-full w-full opacity-0 transition-opacity duration-1000 ease-in-out">
+          <figure class="absolute inset-0 bottom-0 left-0 h-full w-1/2">
+            <img src="images/hero-bg-2.jpg" alt="hero-bg-2" class="h-full w-full object-cover" />
+          </figure>
+          <figure class="absolute inset-0 right-0 bottom-0 left-auto h-full w-1/2 scale-x-[-1]">
+            <img src="images/hero1.png" alt="hero-bg-1" class="h-full w-full object-cover" />
+          </figure>
+        </div>
+        <!-- Slide 3 -->
+        <div class="hero-slide absolute inset-0 h-full w-full opacity-0 transition-opacity duration-1000 ease-in-out">
+          <figure class="absolute inset-0 bottom-0 left-0 h-full w-1/2">
+            <img src="images/img-3.jpg" alt="hero-bg-3" class="h-full w-full object-cover" />
+          </figure>
+          <figure class="absolute inset-0 right-0 bottom-0 left-auto h-full w-1/2 scale-x-[-1]">
+            <img src="images/balconyview.png" alt="hero-bg-balcony" class="h-full w-full object-cover" />
+          </figure>
+        </div>
+        <!-- Slide 4 -->
+        <div class="hero-slide absolute inset-0 h-full w-full opacity-0 transition-opacity duration-1000 ease-in-out">
+          <figure class="absolute inset-0 bottom-0 left-0 h-full w-1/2">
+            <img src="images/img-25.png" alt="hero-bg-4" class="h-full w-full object-cover" />
+          </figure>
+          <figure class="absolute inset-0 right-0 bottom-0 left-auto h-full w-1/2 scale-x-[-1]">
+            <img src="images/herotest2.png" alt="hero-bg-test" class="h-full w-full object-cover" />
+          </figure>
+        </div>
+      </div>
       <div class="main-container relative z-10">
         <div class="space-y-[110px] md:space-y-[150px] xl:space-y-[250px]">
           <!-- text content + buttons  -->
@@ -3027,9 +3055,22 @@ Head links
         }
       });
 
-      // Dual Property Gallery Swiper Initialization
+      // Dual Property Gallery & Hero Background Swiper Initialization
       document.addEventListener("DOMContentLoaded", function () {
         if (typeof Swiper !== "undefined") {
+          // Initialize Hero Background Auto Crossfade Ticker
+          const heroSlides = document.querySelectorAll('.hero-slide');
+          if (heroSlides && heroSlides.length > 1) {
+            let currentHeroIndex = 0;
+            setInterval(function () {
+              heroSlides[currentHeroIndex].classList.remove('opacity-100');
+              heroSlides[currentHeroIndex].classList.add('opacity-0');
+              currentHeroIndex = (currentHeroIndex + 1) % heroSlides.length;
+              heroSlides[currentHeroIndex].classList.remove('opacity-0');
+              heroSlides[currentHeroIndex].classList.add('opacity-100');
+            }, 4000);
+          }
+
           // Initialize Misty Hills Swiper
           new Swiper('.swiper-misty-hills', {
             loop: true,
