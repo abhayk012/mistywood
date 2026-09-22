@@ -901,37 +901,37 @@ Head links
       <div class="hero-bg-carousel absolute inset-0 h-full w-full pointer-events-none z-0 overflow-hidden">
         <!-- Slide 1 (Original - Visible immediately) -->
         <div class="hero-slide absolute inset-0 h-full w-full opacity-100 transition-opacity duration-1000 ease-in-out">
-          <figure class="absolute inset-0 bottom-0 left-0 h-full w-1/2">
+          <figure class="hero-left-slide absolute inset-0 bottom-0 left-0 h-full w-1/2">
             <img src="images/hero-bg-1.jpg" alt="hero-bg-1" class="h-full w-full object-cover" />
           </figure>
-          <figure class="absolute inset-0 right-0 bottom-0 left-auto h-full w-1/2 scale-x-[-1]">
+          <figure class="hero-right-slide absolute inset-0 right-0 bottom-0 left-auto h-full w-1/2 scale-x-[-1]">
             <img src="images/hero2.png" alt="hero-bg-2" class="h-full w-full object-cover" />
           </figure>
         </div>
         <!-- Slide 2 -->
         <div class="hero-slide absolute inset-0 h-full w-full opacity-0 transition-opacity duration-1000 ease-in-out">
-          <figure class="absolute inset-0 bottom-0 left-0 h-full w-1/2">
+          <figure class="hero-left-slide absolute inset-0 bottom-0 left-0 h-full w-1/2">
             <img src="images/hero-bg-2.jpg" alt="hero-bg-2" class="h-full w-full object-cover" />
           </figure>
-          <figure class="absolute inset-0 right-0 bottom-0 left-auto h-full w-1/2 scale-x-[-1]">
+          <figure class="hero-right-slide absolute inset-0 right-0 bottom-0 left-auto h-full w-1/2 scale-x-[-1]">
             <img src="images/hero1.png" alt="hero-bg-1" class="h-full w-full object-cover" />
           </figure>
         </div>
         <!-- Slide 3 -->
         <div class="hero-slide absolute inset-0 h-full w-full opacity-0 transition-opacity duration-1000 ease-in-out">
-          <figure class="absolute inset-0 bottom-0 left-0 h-full w-1/2">
+          <figure class="hero-left-slide absolute inset-0 bottom-0 left-0 h-full w-1/2">
             <img src="images/img-3.jpg" alt="hero-bg-3" class="h-full w-full object-cover" />
           </figure>
-          <figure class="absolute inset-0 right-0 bottom-0 left-auto h-full w-1/2 scale-x-[-1]">
+          <figure class="hero-right-slide absolute inset-0 right-0 bottom-0 left-auto h-full w-1/2 scale-x-[-1]">
             <img src="images/balconyview.png" alt="hero-bg-balcony" class="h-full w-full object-cover" />
           </figure>
         </div>
         <!-- Slide 4 -->
         <div class="hero-slide absolute inset-0 h-full w-full opacity-0 transition-opacity duration-1000 ease-in-out">
-          <figure class="absolute inset-0 bottom-0 left-0 h-full w-1/2">
+          <figure class="hero-left-slide absolute inset-0 bottom-0 left-0 h-full w-1/2">
             <img src="images/img-25.png" alt="hero-bg-4" class="h-full w-full object-cover" />
           </figure>
-          <figure class="absolute inset-0 right-0 bottom-0 left-auto h-full w-1/2 scale-x-[-1]">
+          <figure class="hero-right-slide absolute inset-0 right-0 bottom-0 left-auto h-full w-1/2 scale-x-[-1]">
             <img src="images/herotest2.png" alt="hero-bg-test" class="h-full w-full object-cover" />
           </figure>
         </div>
@@ -3057,6 +3057,25 @@ Head links
 
       // Dual Property Gallery & Hero Background Swiper Initialization
       document.addEventListener("DOMContentLoaded", function () {
+        // Initial Page Load Slide-in Animation from both sides for Hero Background Images
+        if (typeof gsap !== "undefined") {
+          const firstHeroLeft = document.querySelector('.hero-slide:first-child .hero-left-slide');
+          const firstHeroRight = document.querySelector('.hero-slide:first-child .hero-right-slide');
+
+          if (firstHeroLeft && firstHeroRight) {
+            gsap.from(firstHeroLeft, {
+              xPercent: -100,
+              duration: 1.4,
+              ease: "power3.out"
+            });
+            gsap.from(firstHeroRight, {
+              xPercent: 100,
+              duration: 1.4,
+              ease: "power3.out"
+            });
+          }
+        }
+
         if (typeof Swiper !== "undefined") {
           // Initialize Hero Background Auto Crossfade Ticker
           const heroSlides = document.querySelectorAll('.hero-slide');
