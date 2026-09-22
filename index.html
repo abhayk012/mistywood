@@ -2205,7 +2205,7 @@ Head links
         </div>
       </div>
     </section>
-
+    <!-- facilities -->
     <section class="py-18 lg:py-28">
       <div class="main-container">
         <div class="space-y-8 lg:space-y-18">
@@ -2909,7 +2909,8 @@ Head links
     </figure>
 
     <!-- bg overlay  -->
-    <div class="pointer-events-auto absolute inset-0 z-1 size-full select-none" style="background-color: rgba(0, 0, 0, 0.386); mix-blend-mode: darken;">
+    <div class="pointer-events-auto absolute inset-0 z-1 size-full select-none"
+      style="background-color: rgba(0, 0, 0, 0.386); mix-blend-mode: darken;">
     </div>
 
     <div class="main-container relative z-20">
@@ -3163,6 +3164,16 @@ Head links
               clickable: true,
             },
           });
+
+          // Auto-rotate Facilities Tabs smoothly using built-in tab animations
+          const facilityTabs = document.querySelectorAll('[data-process-tab]');
+          if (facilityTabs && facilityTabs.length > 0) {
+            let currentFacilityIndex = 0;
+            setInterval(function () {
+              currentFacilityIndex = (currentFacilityIndex + 1) % facilityTabs.length;
+              facilityTabs[currentFacilityIndex].click();
+            }, 4500);
+          }
         }
       });
     </script>
