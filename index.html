@@ -462,6 +462,181 @@ Head links
       }
 
     }
+
+    /* =========================
+   PROPERTY DUAL GALLERY SECTION
+========================= */
+    .prop-gallery-section {
+      position: relative;
+      background: #f4f6f2;
+      overflow: hidden;
+    }
+
+    .prop-gallery-card {
+      position: relative;
+      border-radius: 20px;
+      overflow: hidden;
+      background: #ffffff;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+      border: 1px solid rgba(49, 93, 53, 0.1);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .prop-gallery-card:hover {
+      box-shadow: 0 22px 45px rgba(0, 0, 0, 0.1);
+    }
+
+    .prop-gallery-header {
+      padding: 24px 28px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid rgba(49, 93, 53, 0.08);
+      background: rgba(255, 255, 255, 0.95);
+    }
+
+    .prop-gallery-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 14px;
+      border-radius: 100px;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      font-family: 'PT Mono', monospace;
+    }
+
+    .badge-hills {
+      background: rgba(117, 147, 109, 0.15);
+      color: #315d35;
+    }
+
+    .badge-wood {
+      background: rgba(199, 138, 77, 0.15);
+      color: #8b5a2b;
+    }
+
+    .prop-swiper-container {
+      position: relative;
+      width: 100%;
+      height: 480px;
+    }
+
+    .prop-swiper-container .swiper-slide {
+      position: relative;
+      overflow: hidden;
+      height: 100%;
+    }
+
+    .prop-swiper-container .swiper-slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+    }
+
+    .prop-swiper-container .swiper-slide:hover img {
+      transform: scale(1.06);
+    }
+
+    .slide-caption-overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 30px 24px 20px;
+      background: linear-gradient(to top, rgba(15, 30, 18, 0.85) 0%, rgba(15, 30, 18, 0.4) 60%, transparent 100%);
+      color: #ffffff;
+      z-index: 2;
+    }
+
+    .slide-caption-overlay h4 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 26px;
+      font-weight: 500;
+      color: #ffffff;
+      margin: 0 0 4px;
+    }
+
+    .slide-caption-overlay p {
+      font-family: 'Manrope', sans-serif;
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.85);
+      margin: 0;
+    }
+
+    .prop-nav-btn {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.9);
+      color: #315d35;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+      border: none;
+      outline: none;
+    }
+
+    .prop-nav-btn:hover {
+      background: #315d35;
+      color: #ffffff;
+      transform: scale(1.08);
+    }
+
+    .prop-nav-btn svg {
+      width: 20px;
+      height: 20px;
+      stroke: currentColor;
+    }
+
+    .prop-pagination {
+      position: absolute;
+      bottom: 20px;
+      left: 50% !important;
+      transform: translateX(-50%);
+      z-index: 10;
+      display: flex;
+      gap: 8px;
+      width: auto !important;
+    }
+
+    .prop-pagination .swiper-pagination-bullet {
+      width: 10px;
+      height: 10px;
+      background: rgba(255, 255, 255, 0.5);
+      opacity: 1;
+      transition: all 0.3s ease;
+      border-radius: 100px;
+    }
+
+    .prop-pagination .swiper-pagination-bullet-active {
+      width: 28px;
+      background: #ffffff;
+    }
+
+    @media (max-width: 991px) {
+      .prop-swiper-container {
+        height: 400px;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .prop-swiper-container {
+        height: 320px;
+      }
+      .prop-gallery-header {
+        padding: 18px 20px 12px;
+      }
+      .slide-caption-overlay h4 {
+        font-size: 20px;
+      }
+    }
   </style>
 
 </head>
@@ -722,17 +897,45 @@ Head links
 
   <main class="bg-background-3/40">
     <section class="relative overflow-hidden pt-[120px] pb-18 lg:pt-[150px] lg:pb-28 xl:pt-[190px]">
-      <!-- left img  -->
-      <figure data-block-reveal data-delay="0" data-instant class="absolute inset-0 bottom-0 left-0 h-full w-1/2">
-        <img src="images/hero-bg-1.jpg" alt="hero-bg-1" class="size-full object-cover" />
-      </figure>
-
-      <!-- right img  -->
-      <figure data-block-reveal data-delay="0.2" data-instant
-        class="absolute inset-0 right-0 bottom-0 left-auto h-full w-1/2 scale-x-[-1]"
-        >
-        <img src="images/hero2.png" alt="hero-bg-1" class="size-full object-cover" />
-      </figure>
+      <!-- hero background auto carousel -->
+      <div class="hero-bg-carousel absolute inset-0 h-full w-full pointer-events-none z-0 overflow-hidden">
+        <!-- Slide 1 (Original - Visible immediately) -->
+        <div class="hero-slide absolute inset-0 h-full w-full opacity-100 transition-opacity duration-1000 ease-in-out">
+          <figure class="hero-left-slide absolute inset-0 bottom-0 left-0 h-full w-1/2">
+            <img src="images/hero-bg-1.jpg" alt="hero-bg-1" class="h-full w-full object-cover" />
+          </figure>
+          <figure class="hero-right-slide absolute inset-0 right-0 bottom-0 left-auto h-full w-1/2 scale-x-[-1]">
+            <img src="images/hero2.png" alt="hero-bg-2" class="h-full w-full object-cover" />
+          </figure>
+        </div>
+        <!-- Slide 2 -->
+        <div class="hero-slide absolute inset-0 h-full w-full opacity-0 transition-opacity duration-1000 ease-in-out">
+          <figure class="hero-left-slide absolute inset-0 bottom-0 left-0 h-full w-1/2">
+            <img src="images/hero-bg-2.jpg" alt="hero-bg-2" class="h-full w-full object-cover" />
+          </figure>
+          <figure class="hero-right-slide absolute inset-0 right-0 bottom-0 left-auto h-full w-1/2 scale-x-[-1]">
+            <img src="images/hero1.png" alt="hero-bg-1" class="h-full w-full object-cover" />
+          </figure>
+        </div>
+        <!-- Slide 3 -->
+        <div class="hero-slide absolute inset-0 h-full w-full opacity-0 transition-opacity duration-1000 ease-in-out">
+          <figure class="hero-left-slide absolute inset-0 bottom-0 left-0 h-full w-1/2">
+            <img src="images/img-3.jpg" alt="hero-bg-3" class="h-full w-full object-cover" />
+          </figure>
+          <figure class="hero-right-slide absolute inset-0 right-0 bottom-0 left-auto h-full w-1/2 scale-x-[-1]">
+            <img src="images/balconyview.png" alt="hero-bg-balcony" class="h-full w-full object-cover" />
+          </figure>
+        </div>
+        <!-- Slide 4 -->
+        <div class="hero-slide absolute inset-0 h-full w-full opacity-0 transition-opacity duration-1000 ease-in-out">
+          <figure class="hero-left-slide absolute inset-0 bottom-0 left-0 h-full w-1/2">
+            <img src="images/img-25.png" alt="hero-bg-4" class="h-full w-full object-cover" />
+          </figure>
+          <figure class="hero-right-slide absolute inset-0 right-0 bottom-0 left-auto h-full w-1/2 scale-x-[-1]">
+            <img src="images/herotest2.png" alt="hero-bg-test" class="h-full w-full object-cover" />
+          </figure>
+        </div>
+      </div>
       <div class="main-container relative z-10">
         <div class="space-y-[110px] md:space-y-[150px] xl:space-y-[250px]">
           <!-- text content + buttons  -->
@@ -1308,6 +1511,171 @@ Head links
     </section>
 
     <!-- =========================
+     DUAL PROPERTY GALLERY SECTION
+========================= -->
+    <section class="prop-gallery-section relative overflow-hidden py-18 lg:py-28">
+      <div class="main-container relative z-10">
+        <div class="space-y-10 lg:space-y-16">
+
+          <!-- Section Header -->
+          <div class="space-y-4 text-center">
+            <div data-block-reveal data-delay="0.1" class="inline-block">
+              <div
+                class="text-tagline-4 font-pt-mono flex items-center justify-center gap-x-1.5 rounded-sm bg-white px-3 py-1.5 text-black shadow-[0_42px_12px_0_rgba(0,0,0,0.00),0_27px_11px_0_rgba(0,0,0,0.01),0_15px_9px_0_rgba(0,0,0,0.03),0_7px_7px_0_rgba(0,0,0,0.05),0_2px_4px_0_rgba(0,0,0,0.06)] backdrop-blur-[61px]">
+                <span class="size-1.5 shrink-0 bg-black"> </span>
+                <span>Properties Gallery</span>
+              </div>
+            </div>
+
+            <h2 data-text-reveal data-reveal-delay="0.2"
+              class="font-instrument-sans text-background-2 text-is-heading-3 lg:text-is-heading-2 mx-auto font-medium md:max-w-[700px]">
+              Explore Our Sanctuaries:
+              <span class="font-instrument-serif text-background-1 font-normal italic"> Misty Hills & Misty Wood</span>
+            </h2>
+            <p data-text-reveal data-reveal-delay="0.3"
+              class="font-inter-tight text-tagline-2 sm:text-tagline-1 text-background-1 mx-auto max-w-[650px] font-normal">
+              Immerse yourself in our twin sanctuaries. Experience elevated hill panoramas at Misty Hills or lush forest retreats at Misty Wood.
+            </p>
+          </div>
+
+          <!-- Dual Gallery Side-by-Side Grid -->
+          <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-10">
+
+            <!-- LEFT SIDE: MISTY HILLS GALLERY -->
+            <div data-block-reveal data-delay="0.2" class="prop-gallery-card group">
+              <!-- Card Header -->
+              <div class="prop-gallery-header">
+                <div>
+                  <span class="prop-gallery-badge badge-hills">
+                    <span class="inline-block size-2 rounded-full bg-[#315d35]"></span>
+                    Misty Hills Property
+                  </span>
+                  <h3 class="font-instrument-sans text-is-heading-5 text-background-1 mt-1 font-medium">
+                    Hilltop Panoramas & Mist
+                  </h3>
+                </div>
+                <!-- Navigation Controls -->
+                <div class="flex items-center gap-2">
+                  <button type="button" class="prop-nav-btn swiper-hills-prev" aria-label="Previous slide">
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M15 18l-6-6 6-6" />
+                    </svg>
+                  </button>
+                  <button type="button" class="prop-nav-btn swiper-hills-next" aria-label="Next slide">
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M9 18l6-6-6-6" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Swiper Slider -->
+              <div class="swiper prop-swiper-container swiper-misty-hills">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="images/img-3.jpg" alt="Misty Hills Vista" />
+                    <div class="slide-caption-overlay">
+                      <h4>Panoramic Mountain Ridge</h4>
+                      <p>Wayanad's morning mist rolling over tea garden slopes.</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/hero1.png" alt="Misty Hills Cottage View" />
+                    <div class="slide-caption-overlay">
+                      <h4>Elevated Suite Balcony</h4>
+                      <p>Sweeping valley views right from your private terrace.</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/img-25.png" alt="Misty Hills Sunset" />
+                    <div class="slide-caption-overlay">
+                      <h4>Golden Hour Horizon</h4>
+                      <p>Watch dramatic sunsets paint the high hills in gold.</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/img-32.jpg" alt="Misty Hills Nature Trail" />
+                    <div class="slide-caption-overlay">
+                      <h4>Private Hillside Walkways</h4>
+                      <p>Gentle trails woven into the natural mountain flora.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination prop-pagination pagination-hills"></div>
+              </div>
+            </div>
+
+            <!-- RIGHT SIDE: MISTY WOOD GALLERY -->
+            <div data-block-reveal data-delay="0.4" class="prop-gallery-card group">
+              <!-- Card Header -->
+              <div class="prop-gallery-header">
+                <div>
+                  <span class="prop-gallery-badge badge-wood">
+                    <span class="inline-block size-2 rounded-full bg-[#8b5a2b]"></span>
+                    Misty Wood Property
+                  </span>
+                  <h3 class="font-instrument-sans text-is-heading-5 text-background-1 mt-1 font-medium">
+                    Canopy Haven & Greenery
+                  </h3>
+                </div>
+                <!-- Navigation Controls -->
+                <div class="flex items-center gap-2">
+                  <button type="button" class="prop-nav-btn swiper-wood-prev" aria-label="Previous slide">
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M15 18l-6-6 6-6" />
+                    </svg>
+                  </button>
+                  <button type="button" class="prop-nav-btn swiper-wood-next" aria-label="Next slide">
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M9 18l6-6-6-6" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Swiper Slider -->
+              <div class="swiper prop-swiper-container swiper-misty-wood">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="images/balconyview.png" alt="Misty Wood Garden View" />
+                    <div class="slide-caption-overlay">
+                      <h4>Forest Balcony Escape</h4>
+                      <p>Immerse in lush tropical foliage and tranquil birdsong.</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/bedroom.png" alt="Misty Wood Room" />
+                    <div class="slide-caption-overlay">
+                      <h4>Woodland Interior Suite</h4>
+                      <p>Warm natural wood textures crafted for deep rest.</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/room1.jpg" alt="Misty Wood Cottage" />
+                    <div class="slide-caption-overlay">
+                      <h4>Private Garden Cottage</h4>
+                      <p>Secluded sanctuary nested beneath ancient trees.</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/hero2.png" alt="Misty Wood Canopy" />
+                    <div class="slide-caption-overlay">
+                      <h4>Mist-Kissed Forest Canopy</h4>
+                      <p>Cool shade and peaceful woodland atmosphere all day.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination prop-pagination pagination-wood"></div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
      FULL WIDTH VIDEO SECTION
 ========================= -->
 
@@ -1443,7 +1811,7 @@ Head links
                       </span>
                     </div>
 
-                    <img src="images/img-10.jpg" alt="Regenerative residential project"
+                    <img src="images/thri.jpeg" alt="Regenerative residential project"
                       class="size-full object-cover" />
                   </figure>
                   <div data-project-content
@@ -1527,16 +1895,16 @@ Head links
                       </span>
                     </div>
 
-                    <img src="images/img-12.jpg" alt="Regenerative residential project"
+                    <img src="images/thirunelli.png" alt="Regenerative residential project"
                       class="size-full object-cover" />
                   </figure>
                   <div data-project-content
                     class="bg-background-3/40 space-y-1 px-6 pt-6 pb-6 backdrop-blur-[5px] md:pb-10.5">
                     <h3
                       class="font-instrument-sans text-is-heading-5 md:text-is-heading-4 text-background-1 font-medium">
-                      Kuruva Island
+                      Thirunelli Temple
                     </h3>
-                    <p class="font-inter-tight text-tagline-2 text-background-1 font-normal">10 km</p>
+                    <p class="font-inter-tight text-tagline-2 text-background-1 font-normal">15 km</p>
                   </div>
                 </div>
 
@@ -2684,6 +3052,81 @@ Head links
           trigger: ".full-video-section",
           start: "top 75%",
           once: true
+        }
+      });
+
+      // Dual Property Gallery & Hero Background Swiper Initialization
+      document.addEventListener("DOMContentLoaded", function () {
+        // Initial Page Load Slide-in Animation from both sides for Hero Background Images
+        if (typeof gsap !== "undefined") {
+          const firstHeroLeft = document.querySelector('.hero-slide:first-child .hero-left-slide');
+          const firstHeroRight = document.querySelector('.hero-slide:first-child .hero-right-slide');
+
+          if (firstHeroLeft && firstHeroRight) {
+            gsap.from(firstHeroLeft, {
+              xPercent: -100,
+              duration: 1.4,
+              ease: "power3.out"
+            });
+            gsap.from(firstHeroRight, {
+              xPercent: 100,
+              duration: 1.4,
+              ease: "power3.out"
+            });
+          }
+        }
+
+        if (typeof Swiper !== "undefined") {
+          // Initialize Hero Background Auto Crossfade Ticker
+          const heroSlides = document.querySelectorAll('.hero-slide');
+          if (heroSlides && heroSlides.length > 1) {
+            let currentHeroIndex = 0;
+            setInterval(function () {
+              heroSlides[currentHeroIndex].classList.remove('opacity-100');
+              heroSlides[currentHeroIndex].classList.add('opacity-0');
+              currentHeroIndex = (currentHeroIndex + 1) % heroSlides.length;
+              heroSlides[currentHeroIndex].classList.remove('opacity-0');
+              heroSlides[currentHeroIndex].classList.add('opacity-100');
+            }, 4000);
+          }
+
+          // Initialize Misty Hills Swiper
+          new Swiper('.swiper-misty-hills', {
+            loop: true,
+            speed: 800,
+            effect: 'slide',
+            autoplay: {
+              delay: 4500,
+              disableOnInteraction: false,
+            },
+            navigation: {
+              nextEl: '.swiper-hills-next',
+              prevEl: '.swiper-hills-prev',
+            },
+            pagination: {
+              el: '.pagination-hills',
+              clickable: true,
+            },
+          });
+
+          // Initialize Misty Wood Swiper
+          new Swiper('.swiper-misty-wood', {
+            loop: true,
+            speed: 800,
+            effect: 'slide',
+            autoplay: {
+              delay: 5000,
+              disableOnInteraction: false,
+            },
+            navigation: {
+              nextEl: '.swiper-wood-next',
+              prevEl: '.swiper-wood-prev',
+            },
+            pagination: {
+              el: '.pagination-wood',
+              clickable: true,
+            },
+          });
         }
       });
     </script>
